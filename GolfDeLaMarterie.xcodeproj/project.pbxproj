@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F036713B2B6CE890005DFAAC /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F036713A2B6CE890005DFAAC /* CourseView.swift */; };
+		F036713D2B6CF1C7005DFAAC /* HoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F036713C2B6CF1C7005DFAAC /* HoleView.swift */; };
 		F0817C6B2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C6A2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift */; };
-		F0817C6D2B6B8A22000C4937 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C6C2B6B8A22000C4937 /* ContentView.swift */; };
-		F0817C6F2B6B8A22000C4937 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C6E2B6B8A22000C4937 /* Item.swift */; };
+		F0817C6D2B6B8A22000C4937 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C6C2B6B8A22000C4937 /* MainTabView.swift */; };
 		F0817C712B6B8A24000C4937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0817C702B6B8A24000C4937 /* Assets.xcassets */; };
 		F0817C752B6B8A25000C4937 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0817C742B6B8A25000C4937 /* Preview Assets.xcassets */; };
 		F0817C7F2B6B8A25000C4937 /* GolfDeLaMarterieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C7E2B6B8A25000C4937 /* GolfDeLaMarterieTests.swift */; };
 		F0817C892B6B8A25000C4937 /* GolfDeLaMarterieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C882B6B8A25000C4937 /* GolfDeLaMarterieUITests.swift */; };
 		F0817C8B2B6B8A25000C4937 /* GolfDeLaMarterieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C8A2B6B8A25000C4937 /* GolfDeLaMarterieUITestsLaunchTests.swift */; };
+		F0817C9B2B6B91AF000C4937 /* GPSLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C9A2B6B91AF000C4937 /* GPSLocation.swift */; };
+		F0817C9D2B6B91C7000C4937 /* Partie & Trou.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C9C2B6B91C7000C4937 /* Partie & Trou.swift */; };
+		F0817CA12B6B91D5000C4937 /* StructPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C9E2B6B91D4000C4937 /* StructPlayer.swift */; };
+		F0817CA22B6B91D5000C4937 /* StructParcours.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C9F2B6B91D4000C4937 /* StructParcours.swift */; };
+		F0817CA32B6B91D5000C4937 /* Struct Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CA02B6B91D5000C4937 /* Struct Distance.swift */; };
+		F0817CA52B6B921E000C4937 /* Firebase Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CA42B6B921E000C4937 /* Firebase Helper.swift */; };
+		F0817CA72B6B9BC3000C4937 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CA62B6B9BC3000C4937 /* BackgroundView.swift */; };
+		F0817CA92B6BA181000C4937 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CA82B6BA181000C4937 /* ProfilView.swift */; };
+		F0817CAB2B6BB4EA000C4937 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CAA2B6BB4EA000C4937 /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F036713A2B6CE890005DFAAC /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
+		F036713C2B6CF1C7005DFAAC /* HoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoleView.swift; sourceTree = "<group>"; };
 		F0817C672B6B8A22000C4937 /* GolfDeLaMarterie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolfDeLaMarterie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0817C6A2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfDeLaMarterieApp.swift; sourceTree = "<group>"; };
-		F0817C6C2B6B8A22000C4937 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		F0817C6E2B6B8A22000C4937 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		F0817C6C2B6B8A22000C4937 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		F0817C702B6B8A24000C4937 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0817C722B6B8A25000C4937 /* GolfDeLaMarterie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GolfDeLaMarterie.entitlements; sourceTree = "<group>"; };
 		F0817C742B6B8A25000C4937 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -47,6 +58,15 @@
 		F0817C842B6B8A25000C4937 /* GolfDeLaMarterieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolfDeLaMarterieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0817C882B6B8A25000C4937 /* GolfDeLaMarterieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfDeLaMarterieUITests.swift; sourceTree = "<group>"; };
 		F0817C8A2B6B8A25000C4937 /* GolfDeLaMarterieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfDeLaMarterieUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F0817C9A2B6B91AF000C4937 /* GPSLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPSLocation.swift; sourceTree = "<group>"; };
+		F0817C9C2B6B91C7000C4937 /* Partie & Trou.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Partie & Trou.swift"; sourceTree = "<group>"; };
+		F0817C9E2B6B91D4000C4937 /* StructPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructPlayer.swift; sourceTree = "<group>"; };
+		F0817C9F2B6B91D4000C4937 /* StructParcours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructParcours.swift; sourceTree = "<group>"; };
+		F0817CA02B6B91D5000C4937 /* Struct Distance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Struct Distance.swift"; sourceTree = "<group>"; };
+		F0817CA42B6B921E000C4937 /* Firebase Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Firebase Helper.swift"; sourceTree = "<group>"; };
+		F0817CA62B6B9BC3000C4937 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		F0817CA82B6BA181000C4937 /* ProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilView.swift; sourceTree = "<group>"; };
+		F0817CAA2B6BB4EA000C4937 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +117,11 @@
 		F0817C692B6B8A22000C4937 /* GolfDeLaMarterie */ = {
 			isa = PBXGroup;
 			children = (
+				F0817C972B6B90EB000C4937 /* Model */,
+				F0817C982B6B90F4000C4937 /* View */,
+				F0817C992B6B90FF000C4937 /* View Model */,
+				F0817C6C2B6B8A22000C4937 /* MainTabView.swift */,
 				F0817C6A2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift */,
-				F0817C6C2B6B8A22000C4937 /* ContentView.swift */,
-				F0817C6E2B6B8A22000C4937 /* Item.swift */,
 				F0817C702B6B8A24000C4937 /* Assets.xcassets */,
 				F0817C722B6B8A25000C4937 /* GolfDeLaMarterie.entitlements */,
 				F0817C732B6B8A25000C4937 /* Preview Content */,
@@ -130,6 +152,38 @@
 				F0817C8A2B6B8A25000C4937 /* GolfDeLaMarterieUITestsLaunchTests.swift */,
 			);
 			path = GolfDeLaMarterieUITests;
+			sourceTree = "<group>";
+		};
+		F0817C972B6B90EB000C4937 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F0817C9A2B6B91AF000C4937 /* GPSLocation.swift */,
+				F0817CA42B6B921E000C4937 /* Firebase Helper.swift */,
+				F0817CA02B6B91D5000C4937 /* Struct Distance.swift */,
+				F0817C9F2B6B91D4000C4937 /* StructParcours.swift */,
+				F0817C9E2B6B91D4000C4937 /* StructPlayer.swift */,
+				F0817C9C2B6B91C7000C4937 /* Partie & Trou.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F0817C982B6B90F4000C4937 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0817C992B6B90FF000C4937 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				F0817CA62B6B9BC3000C4937 /* BackgroundView.swift */,
+				F0817CA82B6BA181000C4937 /* ProfilView.swift */,
+				F0817CAA2B6BB4EA000C4937 /* SettingView.swift */,
+				F036713A2B6CE890005DFAAC /* CourseView.swift */,
+				F036713C2B6CF1C7005DFAAC /* HoleView.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +316,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0817C6D2B6B8A22000C4937 /* ContentView.swift in Sources */,
-				F0817C6F2B6B8A22000C4937 /* Item.swift in Sources */,
+				F0817CA72B6B9BC3000C4937 /* BackgroundView.swift in Sources */,
+				F0817CA32B6B91D5000C4937 /* Struct Distance.swift in Sources */,
+				F0817CA52B6B921E000C4937 /* Firebase Helper.swift in Sources */,
+				F0817C9D2B6B91C7000C4937 /* Partie & Trou.swift in Sources */,
+				F0817C6D2B6B8A22000C4937 /* MainTabView.swift in Sources */,
+				F036713D2B6CF1C7005DFAAC /* HoleView.swift in Sources */,
 				F0817C6B2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift in Sources */,
+				F0817CA92B6BA181000C4937 /* ProfilView.swift in Sources */,
+				F0817C9B2B6B91AF000C4937 /* GPSLocation.swift in Sources */,
+				F0817CA12B6B91D5000C4937 /* StructPlayer.swift in Sources */,
+				F0817CA22B6B91D5000C4937 /* StructParcours.swift in Sources */,
+				F0817CAB2B6BB4EA000C4937 /* SettingView.swift in Sources */,
+				F036713B2B6CE890005DFAAC /* CourseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
