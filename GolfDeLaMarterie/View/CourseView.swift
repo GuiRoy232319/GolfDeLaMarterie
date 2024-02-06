@@ -19,7 +19,8 @@ struct CourseView: View {
                 Text("Bleu").tag(2)
                 Text("Rouge").tag(3)
             })
-            .pickerStyle(.segmented)
+            .pickerStyle(.automatic)
+            .tint(.orange)
             List {
                 ForEach(data) { item in
                     NavigationLink {
@@ -31,7 +32,7 @@ struct CourseView: View {
                         HStack{
                             Image("Hole\(item.id)")
                                 .resizable()
-                                .frame(width: 90, height: 90)
+                                .frame(width: 50, height: 50)
                                 .cornerRadius(45)
                                 .shadow(color:.black, radius: 5, x:1, y:1)
                             Spacer()
@@ -62,11 +63,12 @@ struct CourseView: View {
                             }
                         }
                     }
-                }
                 .listRowSeparatorTint(.orange)
-            }
+                }
             .navigationTitle("Le Parcours")
             .listStyle(.inset)
+            }
+
     }
 }
 

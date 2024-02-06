@@ -9,42 +9,44 @@ import SwiftUI
 
 struct MainTabView: View {
     
+    @Environment(\.modelContext) private var context
+    
     var body: some View {
         TabView {
             ZStack{
                 BackgroundView()
                 ProfilView()
             }
-                .tabItem {
-                    Label("Mon Profil", systemImage: "person.fill")
+            .tabItem {
+                Label("Mon Profil", systemImage: "person.fill")
             }
-                CourseView()
+            .toolbarBackground(.visible, for: .tabBar)
+            CourseView()
                 .tabItem {
                     Label("Carte de Score", systemImage: "flag.and.flag.filled.crossed")
-                    }
-            ZStack{
-                BackgroundView()
-                ProfilView()
-            }
+                }
+                .toolbarBackground(.visible, for: .tabBar)
+            NewGameUIView()
                 .tabItem {
                     Label("Nouvelle Partie", systemImage: "figure.golf")
                 }
-            ZStack{
-                BackgroundView()
-                ProfilView()
-            }
+                .toolbarBackground(.visible, for: .tabBar)
+            SavedGameView()
                 .tabItem {
                     Label("Mes Parties", systemImage: "rectangle.and.pencil.and.ellipsis")
                 }
+                .toolbarBackground(.visible, for: .tabBar)
             SettingView()
                 .tabItem {
                     Label("Réglages", systemImage: "gear")
                 }
+                .tint(.orange)
+                .toolbarBackground(.visible, for: .tabBar)
+
         }
-        .ignoresSafeArea()
-        .tint(.orange)
     }
 }
+
 #Preview {
     MainTabView()
 }

@@ -1,22 +1,23 @@
 //
-//  Datas.swift
-//  Golf La Marterie
+//  Enum DepartureColor.swift
+//  GolfDeLaMarterie
 //
-//  Created by Guillaume Roy on 22/12/2020.
+//  Created by guill roy on 05/02/2024.
 //
 
 import Foundation
-import UIKit
-
-struct boule {
-    var slope : Int64 = 0
-    var SSS : Float = 0.0
-    var Start : String
-}
 
 var slope : Int = 0
 var SSS : Float = 0.0
 var coupsRecus : Int = 0
+
+enum Departurecolor: String, CaseIterable {
+    case Blanc
+    case Jaune
+    case Bleu
+    case Rouge
+    }
+
 
 // Calcul le  nombre de coups rendus par le parcours en fonction du handicap
 func coupRecus(slope: Int64, SSS: Float, index: Double, Par: Int) -> Int{
@@ -40,18 +41,4 @@ func depart(ind: Double, gender: String) -> boule{
             return boule(slope: 129, SSS: 72.8, Start: "Bleu")
         }
     }
-
-
-enum couleur: String, CaseIterable {
-   case Blanc
-    case Jaune
-    case Bleu
-    case Rouge
-    }
-
-enum gender: String, CaseIterable{
-    case Homme
-    case Femme
-}
-
 

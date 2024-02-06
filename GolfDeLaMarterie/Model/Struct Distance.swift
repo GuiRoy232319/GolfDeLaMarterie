@@ -10,8 +10,9 @@ import Foundation
 struct Distance {
     var numTrou: Int
     var distance : Int
-    var color : color
+    var color : Departurecolor
 }
+
 var Dist: [Distance] = [
     Distance(numTrou: 1, distance: 404, color: .Blanc),
     Distance(numTrou: 1, distance: 404, color: .Jaune),
@@ -87,25 +88,22 @@ var Dist: [Distance] = [
     Distance(numTrou: 18, distance: 127, color: .Rouge)
     ]
 
-enum color: String, CaseIterable {
-   case Blanc
-    case Jaune
-    case Bleu
-    case Rouge
-    }
 
-func from(_ depart: color) -> [Distance]{
-    return Dist.filter({$0.color == depart})
-    }
+func from(_ depart: Departurecolor) -> [Distance]{
+        return Dist.filter({$0.color == depart})
+        }
+    
+var blanc = Dist_Depart(trou: from(.Blanc))
+var jaune = Dist_Depart(trou: from(.Jaune))
+var bleu = Dist_Depart(trou: from(.Bleu))
+var rouge = Dist_Depart(trou: from(.Rouge))
+
 
 struct Dist_Depart {
     var trou : [Distance]
 }
 
-var blanc = Dist_Depart(trou: from(.Blanc))
-var jaune = Dist_Depart(trou: from(.Jaune))
-var bleu = Dist_Depart(trou: from(.Bleu))
-var rouge = Dist_Depart(trou: from(.Rouge))
+
 
 
 

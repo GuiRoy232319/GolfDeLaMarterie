@@ -10,11 +10,10 @@ import SwiftData
 
 @main
 struct GolfDeLaMarterieApp: App {
-   
-
     var body: some Scene {
         WindowGroup {
             MainTabView()
         }
+        .modelContainer(for: Player.self)
     }
 }

@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		F036713B2B6CE890005DFAAC /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F036713A2B6CE890005DFAAC /* CourseView.swift */; };
 		F036713D2B6CF1C7005DFAAC /* HoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F036713C2B6CF1C7005DFAAC /* HoleView.swift */; };
+		F03A50E62B70D3BD0043E487 /* NewGameUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03A50E52B70D3BD0043E487 /* NewGameUIView.swift */; };
+		F03A50E82B70D6570043E487 /* Struct Boule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03A50E72B70D6570043E487 /* Struct Boule.swift */; };
+		F03A50EA2B70E9900043E487 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03A50E92B70E9900043E487 /* Player.swift */; };
+		F03A50EC2B70EA370043E487 /* Enum DepartureColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03A50EB2B70EA370043E487 /* Enum DepartureColor.swift */; };
 		F0817C6B2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C6A2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift */; };
 		F0817C6D2B6B8A22000C4937 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C6C2B6B8A22000C4937 /* MainTabView.swift */; };
 		F0817C712B6B8A24000C4937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0817C702B6B8A24000C4937 /* Assets.xcassets */; };
@@ -18,13 +22,16 @@
 		F0817C8B2B6B8A25000C4937 /* GolfDeLaMarterieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C8A2B6B8A25000C4937 /* GolfDeLaMarterieUITestsLaunchTests.swift */; };
 		F0817C9B2B6B91AF000C4937 /* GPSLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C9A2B6B91AF000C4937 /* GPSLocation.swift */; };
 		F0817C9D2B6B91C7000C4937 /* Partie & Trou.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C9C2B6B91C7000C4937 /* Partie & Trou.swift */; };
-		F0817CA12B6B91D5000C4937 /* StructPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C9E2B6B91D4000C4937 /* StructPlayer.swift */; };
 		F0817CA22B6B91D5000C4937 /* StructParcours.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C9F2B6B91D4000C4937 /* StructParcours.swift */; };
 		F0817CA32B6B91D5000C4937 /* Struct Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CA02B6B91D5000C4937 /* Struct Distance.swift */; };
 		F0817CA52B6B921E000C4937 /* Firebase Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CA42B6B921E000C4937 /* Firebase Helper.swift */; };
 		F0817CA72B6B9BC3000C4937 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CA62B6B9BC3000C4937 /* BackgroundView.swift */; };
 		F0817CA92B6BA181000C4937 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CA82B6BA181000C4937 /* ProfilView.swift */; };
 		F0817CAB2B6BB4EA000C4937 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CAA2B6BB4EA000C4937 /* SettingView.swift */; };
+		F0A3DE732B70FCB100982303 /* NewPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE722B70FCB100982303 /* NewPlayerView.swift */; };
+		F0A3DE752B712A3C00982303 /* SavedGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE742B712A3C00982303 /* SavedGameView.swift */; };
+		F0A3DE772B712C1800982303 /* GameDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE762B712C1800982303 /* GameDetailView.swift */; };
+		F0A3DE792B7144A000982303 /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE782B7144A000982303 /* GaugeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,10 @@
 /* Begin PBXFileReference section */
 		F036713A2B6CE890005DFAAC /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 		F036713C2B6CF1C7005DFAAC /* HoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoleView.swift; sourceTree = "<group>"; };
+		F03A50E52B70D3BD0043E487 /* NewGameUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameUIView.swift; sourceTree = "<group>"; };
+		F03A50E72B70D6570043E487 /* Struct Boule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Struct Boule.swift"; sourceTree = "<group>"; };
+		F03A50E92B70E9900043E487 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		F03A50EB2B70EA370043E487 /* Enum DepartureColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum DepartureColor.swift"; sourceTree = "<group>"; };
 		F0817C672B6B8A22000C4937 /* GolfDeLaMarterie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolfDeLaMarterie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0817C6A2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfDeLaMarterieApp.swift; sourceTree = "<group>"; };
 		F0817C6C2B6B8A22000C4937 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -60,13 +71,16 @@
 		F0817C8A2B6B8A25000C4937 /* GolfDeLaMarterieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfDeLaMarterieUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F0817C9A2B6B91AF000C4937 /* GPSLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPSLocation.swift; sourceTree = "<group>"; };
 		F0817C9C2B6B91C7000C4937 /* Partie & Trou.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Partie & Trou.swift"; sourceTree = "<group>"; };
-		F0817C9E2B6B91D4000C4937 /* StructPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructPlayer.swift; sourceTree = "<group>"; };
 		F0817C9F2B6B91D4000C4937 /* StructParcours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructParcours.swift; sourceTree = "<group>"; };
 		F0817CA02B6B91D5000C4937 /* Struct Distance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Struct Distance.swift"; sourceTree = "<group>"; };
 		F0817CA42B6B921E000C4937 /* Firebase Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Firebase Helper.swift"; sourceTree = "<group>"; };
 		F0817CA62B6B9BC3000C4937 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		F0817CA82B6BA181000C4937 /* ProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilView.swift; sourceTree = "<group>"; };
 		F0817CAA2B6BB4EA000C4937 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		F0A3DE722B70FCB100982303 /* NewPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlayerView.swift; sourceTree = "<group>"; };
+		F0A3DE742B712A3C00982303 /* SavedGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedGameView.swift; sourceTree = "<group>"; };
+		F0A3DE762B712C1800982303 /* GameDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailView.swift; sourceTree = "<group>"; };
+		F0A3DE782B7144A000982303 /* GaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +134,6 @@
 				F0817C972B6B90EB000C4937 /* Model */,
 				F0817C982B6B90F4000C4937 /* View */,
 				F0817C992B6B90FF000C4937 /* View Model */,
-				F0817C6C2B6B8A22000C4937 /* MainTabView.swift */,
 				F0817C6A2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift */,
 				F0817C702B6B8A24000C4937 /* Assets.xcassets */,
 				F0817C722B6B8A25000C4937 /* GolfDeLaMarterie.entitlements */,
@@ -161,8 +174,10 @@
 				F0817CA42B6B921E000C4937 /* Firebase Helper.swift */,
 				F0817CA02B6B91D5000C4937 /* Struct Distance.swift */,
 				F0817C9F2B6B91D4000C4937 /* StructParcours.swift */,
-				F0817C9E2B6B91D4000C4937 /* StructPlayer.swift */,
+				F03A50EB2B70EA370043E487 /* Enum DepartureColor.swift */,
+				F03A50E92B70E9900043E487 /* Player.swift */,
 				F0817C9C2B6B91C7000C4937 /* Partie & Trou.swift */,
+				F03A50E72B70D6570043E487 /* Struct Boule.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,6 +185,14 @@
 		F0817C982B6B90F4000C4937 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F03A50E52B70D3BD0043E487 /* NewGameUIView.swift */,
+				F036713A2B6CE890005DFAAC /* CourseView.swift */,
+				F0817CAA2B6BB4EA000C4937 /* SettingView.swift */,
+				F0817CA82B6BA181000C4937 /* ProfilView.swift */,
+				F0817C6C2B6B8A22000C4937 /* MainTabView.swift */,
+				F0A3DE722B70FCB100982303 /* NewPlayerView.swift */,
+				F0A3DE742B712A3C00982303 /* SavedGameView.swift */,
+				F0A3DE762B712C1800982303 /* GameDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,10 +201,8 @@
 			isa = PBXGroup;
 			children = (
 				F0817CA62B6B9BC3000C4937 /* BackgroundView.swift */,
-				F0817CA82B6BA181000C4937 /* ProfilView.swift */,
-				F0817CAA2B6BB4EA000C4937 /* SettingView.swift */,
-				F036713A2B6CE890005DFAAC /* CourseView.swift */,
 				F036713C2B6CF1C7005DFAAC /* HoleView.swift */,
+				F0A3DE782B7144A000982303 /* GaugeView.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -318,17 +339,24 @@
 			files = (
 				F0817CA72B6B9BC3000C4937 /* BackgroundView.swift in Sources */,
 				F0817CA32B6B91D5000C4937 /* Struct Distance.swift in Sources */,
+				F03A50EC2B70EA370043E487 /* Enum DepartureColor.swift in Sources */,
 				F0817CA52B6B921E000C4937 /* Firebase Helper.swift in Sources */,
+				F03A50E62B70D3BD0043E487 /* NewGameUIView.swift in Sources */,
+				F03A50EA2B70E9900043E487 /* Player.swift in Sources */,
+				F03A50E82B70D6570043E487 /* Struct Boule.swift in Sources */,
 				F0817C9D2B6B91C7000C4937 /* Partie & Trou.swift in Sources */,
 				F0817C6D2B6B8A22000C4937 /* MainTabView.swift in Sources */,
+				F0A3DE732B70FCB100982303 /* NewPlayerView.swift in Sources */,
+				F0A3DE792B7144A000982303 /* GaugeView.swift in Sources */,
 				F036713D2B6CF1C7005DFAAC /* HoleView.swift in Sources */,
 				F0817C6B2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift in Sources */,
 				F0817CA92B6BA181000C4937 /* ProfilView.swift in Sources */,
 				F0817C9B2B6B91AF000C4937 /* GPSLocation.swift in Sources */,
-				F0817CA12B6B91D5000C4937 /* StructPlayer.swift in Sources */,
+				F0A3DE752B712A3C00982303 /* SavedGameView.swift in Sources */,
 				F0817CA22B6B91D5000C4937 /* StructParcours.swift in Sources */,
 				F0817CAB2B6BB4EA000C4937 /* SettingView.swift in Sources */,
 				F036713B2B6CE890005DFAAC /* CourseView.swift in Sources */,
+				F0A3DE772B712C1800982303 /* GameDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,16 +520,18 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Golf de la Marterie";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -530,16 +560,18 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Golf de la Marterie";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
