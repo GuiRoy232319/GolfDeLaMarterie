@@ -10,6 +10,11 @@ import SwiftUI
 struct CourseView: View {
     @State private var dist = 0
     private var data = LaMarterie
+    
+    init() {
+      // Large Navigation Title
+      UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.orange]
+    }
 
     var body: some View {
         NavigationStack{
@@ -24,17 +29,15 @@ struct CourseView: View {
             List {
                 ForEach(data) { item in
                     NavigationLink {
-                        ZStack{
-                            BackgroundView()
                             HoleView(item: item)
-                        }
                     } label:{
                         HStack{
-                            Image("Hole\(item.id)")
+                            Image(systemName: "\(item.id).circle")
                                 .resizable()
-                                .frame(width: 50, height: 50)
-                                .cornerRadius(45)
-                                .shadow(color:.black, radius: 5, x:1, y:1)
+                                .foregroundColor(.orange)
+                                .frame(width: 45, height: 45)
+                                .shadow(color:Color(hue: 0.09, saturation: 1.0, brightness: 0.991), radius: 5, x:1, y:1)
+
                             Spacer()
                             VStack{
                                 HStack{

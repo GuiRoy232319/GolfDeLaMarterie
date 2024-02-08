@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProfilView: View {
-//    private var datas: [GridItem] = [GridItem(.fixed(100), spacing: 20, alignment: .center),GridItem(.fixed(100), spacing: 20, alignment:.center),GridItem(.fixed(100), spacing: 20, alignment:.center)]
+    
     var body: some View {
         VStack{
             HStack{
@@ -46,7 +46,7 @@ struct ProfilView: View {
                 Text("1.8")
                     .italic()
                 
-            }  
+            }
             .padding(10)
             TabView{
                 VStack{
@@ -86,94 +86,35 @@ struct ProfilView: View {
                     }
                 }
                 .tabItem {}
+                VStack(){
+                    ZStack {
+                        GaugeView(diameter: 170, progress: 0.31, color: .orange)
+                        GaugeView(diameter: 135, progress: 0.46, color: .green)
+                        GaugeView(diameter: 100, progress: 0.23, color: .red)
+                    }
+                    .padding(10)
+                    VStack(alignment: .leading, spacing: 5.0){
+                        Text("Fairway manqué à gauche : 31%")
+                            .bold()
+                            .fontWeight(.black)
+                            .foregroundColor(.orange)
+                        Text("Fairway touché : 46%")
+                            .bold()
+                            .foregroundColor(.green)
+                        Text("Fairway manqué à droite : 23%")
+                            .bold()
+                            .foregroundColor(.red)
+                    }
+                    
+                }
+                .tabItem {}
             }
             .tabViewStyle(.page)
             .background(Color(.clear))
         }
     }
-
-
-//            ScrollView{
-//                ZStack{
-//                    Gauge(value: 2.6 , in: 0...10) {
-//                        Text(" ")
-//                    }
-//                    .gaugeStyle(.accessoryCircularCapacity)
-//                    .tint(.green)
-//                    Gauge(value: 4.2 , in: 0...10) {
-//                        Text("")
-//                    }
-//                    .frame(width: 120, height: 120)
-//                    .gaugeStyle(.accessoryCircularCapacity)
-//                    .tint(.yellow)
-//                    Gauge(value: 5.9 , in: 0...10) {
-//                        Text("")
-//                    }
-//                    .frame(width: 100, height: 100)
-//                    .gaugeStyle(.accessoryCircularCapacity)
-//                    .tint(.red)
-//                    Gauge(value: 1.8 , in: 0...4) {
-//                        Text("Nombre de Putts")
-//                    }
-//                    .gaugeStyle(.accessoryCircularCapacity)
-//                    .tint(.green)
-//                    Gauge(value: 45 , in: 0...100) {
-//                        Text("GIR")
-//                    }
-//                    .gaugeStyle(.accessoryCircularCapacity)
-//                    .tint(.blue)
-//                    Gauge(value: 1.8 , in: 0...4) {
-//                        Text("Nombre de Putts")
-//                    }
-//                    .gaugeStyle(.accessoryCircularCapacity)
-//                    .tint(.green)
-//                    Gauge(value: 1.8 , in: 0...4) {
-//                        Text("Nombre de Putts")
-//                    }
-//                    .gaugeStyle(.accessoryCircularCapacity)
-//                    .tint(.green)
-//                    Gauge(value: 1.8 , in: 0...4) {
-//                        Text("Nombre de Putts")
-//                    }
-//                    .gaugeStyle(.accessoryCircularCapacity)
-//                    .tint(.green)
-//                    Gauge(value: 1.8 , in: 0...4) {
-//                        Text("Nombre de Putts")
-//                    }
-//                    .gaugeStyle(.accessoryCircularCapacity)
-//                    .tint(.green)
-//                    Gauge(value: 1.8 , in: 0...4) {
-//                        Text("Nombre de Putts")
-//                    }
-//                    .gaugeStyle(.accessoryCircularCapacity)
-//                    .tint(.green)
-//                    Gauge(value: 1.8 , in: 0...4) {
-//                        Text("Nombre de Putts")
-//                    }
-//                    .gaugeStyle(.accessoryCircularCapacity)
-//                    .tint(.green)
-//                    Gauge(value: 1.8 , in: 0...4) {
-//                        Text("Nombre de Putts")
-//                    }
-//                    .gaugeStyle(.accessoryCircularCapacity)
-//                    .tint(.green)
-//                    Gauge(value: 1.8 , in: 0...4) {
-//                        Text("Nombre de Putts")
-//                    }
-//                    .gaugeStyle(.accessoryCircularCapacity)
-//                    .tint(.green)
-//                    Gauge(value: 1.8 , in: 0...4) {
-//                        Text("Nombre de Putts")
-//                    }
-//                    .gaugeStyle(.accessoryCircularCapacity)
-//                    .tint(.green)
-                }
-//            }
-//        }
-//    }
-//}
-
-
+    
+}
 #Preview {
     ProfilView()
 }

@@ -13,6 +13,8 @@
 		F03A50E82B70D6570043E487 /* Struct Boule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03A50E72B70D6570043E487 /* Struct Boule.swift */; };
 		F03A50EA2B70E9900043E487 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03A50E92B70E9900043E487 /* Player.swift */; };
 		F03A50EC2B70EA370043E487 /* Enum DepartureColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03A50EB2B70EA370043E487 /* Enum DepartureColor.swift */; };
+		F04BD5502B73870900701C7A /* youtubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BD54F2B73870900701C7A /* youtubeView.swift */; };
+		F04BD5522B73AAD100701C7A /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BD5512B73AAD100701C7A /* VideoPlayerView.swift */; };
 		F0817C6B2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C6A2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift */; };
 		F0817C6D2B6B8A22000C4937 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C6C2B6B8A22000C4937 /* MainTabView.swift */; };
 		F0817C712B6B8A24000C4937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0817C702B6B8A24000C4937 /* Assets.xcassets */; };
@@ -58,6 +60,8 @@
 		F03A50E72B70D6570043E487 /* Struct Boule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Struct Boule.swift"; sourceTree = "<group>"; };
 		F03A50E92B70E9900043E487 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		F03A50EB2B70EA370043E487 /* Enum DepartureColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum DepartureColor.swift"; sourceTree = "<group>"; };
+		F04BD54F2B73870900701C7A /* youtubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = youtubeView.swift; sourceTree = "<group>"; };
+		F04BD5512B73AAD100701C7A /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		F0817C672B6B8A22000C4937 /* GolfDeLaMarterie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolfDeLaMarterie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0817C6A2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfDeLaMarterieApp.swift; sourceTree = "<group>"; };
 		F0817C6C2B6B8A22000C4937 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -193,6 +197,7 @@
 				F0A3DE722B70FCB100982303 /* NewPlayerView.swift */,
 				F0A3DE742B712A3C00982303 /* SavedGameView.swift */,
 				F0A3DE762B712C1800982303 /* GameDetailView.swift */,
+				F04BD5512B73AAD100701C7A /* VideoPlayerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 				F0817CA62B6B9BC3000C4937 /* BackgroundView.swift */,
 				F036713C2B6CF1C7005DFAAC /* HoleView.swift */,
 				F0A3DE782B7144A000982303 /* GaugeView.swift */,
+				F04BD54F2B73870900701C7A /* youtubeView.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -340,6 +346,7 @@
 				F0817CA72B6B9BC3000C4937 /* BackgroundView.swift in Sources */,
 				F0817CA32B6B91D5000C4937 /* Struct Distance.swift in Sources */,
 				F03A50EC2B70EA370043E487 /* Enum DepartureColor.swift in Sources */,
+				F04BD5522B73AAD100701C7A /* VideoPlayerView.swift in Sources */,
 				F0817CA52B6B921E000C4937 /* Firebase Helper.swift in Sources */,
 				F03A50E62B70D3BD0043E487 /* NewGameUIView.swift in Sources */,
 				F03A50EA2B70E9900043E487 /* Player.swift in Sources */,
@@ -348,6 +355,7 @@
 				F0817C6D2B6B8A22000C4937 /* MainTabView.swift in Sources */,
 				F0A3DE732B70FCB100982303 /* NewPlayerView.swift in Sources */,
 				F0A3DE792B7144A000982303 /* GaugeView.swift in Sources */,
+				F04BD5502B73870900701C7A /* youtubeView.swift in Sources */,
 				F036713D2B6CF1C7005DFAAC /* HoleView.swift in Sources */,
 				F0817C6B2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift in Sources */,
 				F0817CA92B6BA181000C4937 /* ProfilView.swift in Sources */,
