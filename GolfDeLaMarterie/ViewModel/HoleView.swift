@@ -10,12 +10,12 @@ import SwiftUI
 struct HoleView: View {
     
     @State private var isVideoPlayerPresented = false
-    let item : Parcours
+    let item : Trou
     
     var body: some View {
         NavigationView{
             VStack{
-                Image("Green\(item.id)")
+                Image("Green\(item.id!)")
                     .resizable()
                     .frame(height: 250)
                     .cornerRadius(15)
@@ -24,7 +24,7 @@ struct HoleView: View {
                         .colorInvert()
                         .fontWeight(.heavy)
                         .font(.largeTitle)
-                    Text("\(item.parTrou)")
+                    Text("\(item.parTrou!)")
                         .foregroundColor(.orange)
                         .fontWeight(.heavy)
                         .font(.largeTitle)
@@ -33,14 +33,14 @@ struct HoleView: View {
                     Text("HCP:")
                         .bold()
                         .colorInvert()
-                    Text("\(item.HCP)")
+                    Text("\(item.HCP!)")
                         .bold()
                         .italic()
                         .foregroundStyle(.orange)
                     Text("Profondeur Green:")
                         .bold()
                         .colorInvert()
-                    Text("\(item.Greenprof)m")
+                    Text("\(item.Greenprof!)m")
                         .bold()
                         .italic()
                         .foregroundStyle(.orange)
@@ -49,22 +49,22 @@ struct HoleView: View {
                     Image("Blanc")
                         .resizable()
                         .frame(width: 20, height: 20)
-                    Text(" \(item.DistBlanc)m")
+                    Text(" \(item.DistBlanc!)m")
                         .colorInvert()
                     Image("Jaune")
                         .resizable()
                         .frame(width: 20, height: 20)
-                    Text(" \(item.DistJaune)m")
+                    Text(" \(item.DistJaune!)m")
                         .colorInvert()
                     Image("Bleu")
                         .resizable()
                         .frame(width: 20, height: 20)
-                    Text(" \(item.DistBleu)m")
+                    Text(" \(item.DistBleu!)m")
                         .colorInvert()
                     Image("Rouge")
                         .resizable()
                         .frame(width: 20, height: 20)
-                    Text(" \(item.DistRouge)m")
+                    Text(" \(item.DistRouge!)m")
                         .colorInvert()
                 }.font(.headline)
                 Divider()
@@ -80,7 +80,7 @@ et scorer de manière optimale
                 .colorInvert()
                 .italic()
                 .bold()
-                NavigationLink(destination: VideoPlayerView(item: item.youtubeID) ){
+                NavigationLink(destination: VideoPlayerView(item: item.youtubeID!) ){
                     Text("Afficher le survol du trou")
                         .foregroundColor(.white)
                         .background(Color.orange)
@@ -88,13 +88,13 @@ et scorer de manière optimale
                 Spacer()
             }
             .ignoresSafeArea()
-            .navigationTitle("Trou n°\(item.numTrou)")
+            .navigationTitle("Trou n°\(item.numTrou!)")
             .accentColor(.orange)
             .background {
                 Image("Background")
                     .resizable()
                     .ignoresSafeArea()
-                    .blur(radius: 10)
+                    .blur(radius: 30)
             }
         }
     }

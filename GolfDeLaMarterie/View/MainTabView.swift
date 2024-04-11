@@ -13,17 +13,14 @@ struct MainTabView: View {
     
     var body: some View {
         TabView {
-            ZStack{
-                BackgroundView()
-                ProfilView()
-            }
+            ProfilView()
             .tabItem {
                 Label("Mon Profil", systemImage: "person.fill")
             }
             .toolbarBackground(.visible, for: .tabBar)
             CourseView()
                 .tabItem {
-                    Label("Carte de Score", systemImage: "flag.and.flag.filled.crossed")
+                    Label("Le Parcours", systemImage: "flag.and.flag.filled.crossed")
                 }
                 .toolbarBackground(.visible, for: .tabBar)
             NewGameUIView()

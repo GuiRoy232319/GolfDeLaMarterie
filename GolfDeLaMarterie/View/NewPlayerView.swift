@@ -8,11 +8,25 @@
 import SwiftUI
 
 struct NewPlayerView: View {
+    @State public var name: String
+    @State public var lastName: String
+    
+    
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            List{
+                Section{
+                    TextField("Prénom", text: $name)
+                    TextField("Nom", text: $lastName)
+                    }
+                }
+        }
+        .navigationTitle("Ajouter un joueur:")
     }
 }
 
 #Preview {
-    NewPlayerView()
+    NewPlayerView(name: "", lastName: "")
 }

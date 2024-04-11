@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct boule {
+struct boule: Equatable {
     var slope : Int64 = 0
     var SSS : Float = 0.0
     var Start : String

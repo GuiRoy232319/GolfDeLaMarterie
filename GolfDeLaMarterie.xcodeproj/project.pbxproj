@@ -12,9 +12,10 @@
 		F03A50E62B70D3BD0043E487 /* NewGameUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03A50E52B70D3BD0043E487 /* NewGameUIView.swift */; };
 		F03A50E82B70D6570043E487 /* Struct Boule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03A50E72B70D6570043E487 /* Struct Boule.swift */; };
 		F03A50EA2B70E9900043E487 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03A50E92B70E9900043E487 /* Player.swift */; };
-		F03A50EC2B70EA370043E487 /* Enum DepartureColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03A50EB2B70EA370043E487 /* Enum DepartureColor.swift */; };
 		F04BD5502B73870900701C7A /* youtubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BD54F2B73870900701C7A /* youtubeView.swift */; };
 		F04BD5522B73AAD100701C7A /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BD5512B73AAD100701C7A /* VideoPlayerView.swift */; };
+		F0731D732BC7C5D300FAFFBE /* DistanceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0731D722BC7C5D300FAFFBE /* DistanceData.swift */; };
+		F0731D752BC7C60900FAFFBE /* LaMarterieCourseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0731D742BC7C60900FAFFBE /* LaMarterieCourseData.swift */; };
 		F0817C6B2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C6A2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift */; };
 		F0817C6D2B6B8A22000C4937 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C6C2B6B8A22000C4937 /* MainTabView.swift */; };
 		F0817C712B6B8A24000C4937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0817C702B6B8A24000C4937 /* Assets.xcassets */; };
@@ -23,7 +24,7 @@
 		F0817C892B6B8A25000C4937 /* GolfDeLaMarterieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C882B6B8A25000C4937 /* GolfDeLaMarterieUITests.swift */; };
 		F0817C8B2B6B8A25000C4937 /* GolfDeLaMarterieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C8A2B6B8A25000C4937 /* GolfDeLaMarterieUITestsLaunchTests.swift */; };
 		F0817C9B2B6B91AF000C4937 /* GPSLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C9A2B6B91AF000C4937 /* GPSLocation.swift */; };
-		F0817C9D2B6B91C7000C4937 /* Partie & Trou.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C9C2B6B91C7000C4937 /* Partie & Trou.swift */; };
+		F0817C9D2B6B91C7000C4937 /* Hole.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C9C2B6B91C7000C4937 /* Hole.swift */; };
 		F0817CA22B6B91D5000C4937 /* StructParcours.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C9F2B6B91D4000C4937 /* StructParcours.swift */; };
 		F0817CA32B6B91D5000C4937 /* Struct Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CA02B6B91D5000C4937 /* Struct Distance.swift */; };
 		F0817CA52B6B921E000C4937 /* Firebase Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CA42B6B921E000C4937 /* Firebase Helper.swift */; };
@@ -59,9 +60,11 @@
 		F03A50E52B70D3BD0043E487 /* NewGameUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameUIView.swift; sourceTree = "<group>"; };
 		F03A50E72B70D6570043E487 /* Struct Boule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Struct Boule.swift"; sourceTree = "<group>"; };
 		F03A50E92B70E9900043E487 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		F03A50EB2B70EA370043E487 /* Enum DepartureColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum DepartureColor.swift"; sourceTree = "<group>"; };
 		F04BD54F2B73870900701C7A /* youtubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = youtubeView.swift; sourceTree = "<group>"; };
 		F04BD5512B73AAD100701C7A /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		F0731D722BC7C5D300FAFFBE /* DistanceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceData.swift; sourceTree = "<group>"; };
+		F0731D742BC7C60900FAFFBE /* LaMarterieCourseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaMarterieCourseData.swift; sourceTree = "<group>"; };
+		F0731D7C2BC7C95800FAFFBE /* GolfDeLaMarterieTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = GolfDeLaMarterieTests.xctestplan; sourceTree = "<group>"; };
 		F0817C672B6B8A22000C4937 /* GolfDeLaMarterie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolfDeLaMarterie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0817C6A2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfDeLaMarterieApp.swift; sourceTree = "<group>"; };
 		F0817C6C2B6B8A22000C4937 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -74,7 +77,7 @@
 		F0817C882B6B8A25000C4937 /* GolfDeLaMarterieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfDeLaMarterieUITests.swift; sourceTree = "<group>"; };
 		F0817C8A2B6B8A25000C4937 /* GolfDeLaMarterieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfDeLaMarterieUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F0817C9A2B6B91AF000C4937 /* GPSLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPSLocation.swift; sourceTree = "<group>"; };
-		F0817C9C2B6B91C7000C4937 /* Partie & Trou.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Partie & Trou.swift"; sourceTree = "<group>"; };
+		F0817C9C2B6B91C7000C4937 /* Hole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hole.swift; sourceTree = "<group>"; };
 		F0817C9F2B6B91D4000C4937 /* StructParcours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructParcours.swift; sourceTree = "<group>"; };
 		F0817CA02B6B91D5000C4937 /* Struct Distance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Struct Distance.swift"; sourceTree = "<group>"; };
 		F0817CA42B6B921E000C4937 /* Firebase Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Firebase Helper.swift"; sourceTree = "<group>"; };
@@ -112,6 +115,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F0731D6F2BC7C4A000FAFFBE /* Structure&Class */ = {
+			isa = PBXGroup;
+			children = (
+				F0817CA02B6B91D5000C4937 /* Struct Distance.swift */,
+				F03A50E92B70E9900043E487 /* Player.swift */,
+				F0817C9C2B6B91C7000C4937 /* Hole.swift */,
+				F03A50E72B70D6570043E487 /* Struct Boule.swift */,
+				F0817C9F2B6B91D4000C4937 /* StructParcours.swift */,
+			);
+			path = "Structure&Class";
+			sourceTree = "<group>";
+		};
+		F0731D702BC7C59700FAFFBE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F0817CA42B6B921E000C4937 /* Firebase Helper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F0731D712BC7C5B900FAFFBE /* Datas */ = {
+			isa = PBXGroup;
+			children = (
+				F0731D722BC7C5D300FAFFBE /* DistanceData.swift */,
+				F0817C9A2B6B91AF000C4937 /* GPSLocation.swift */,
+				F0731D742BC7C60900FAFFBE /* LaMarterieCourseData.swift */,
+			);
+			path = Datas;
+			sourceTree = "<group>";
+		};
 		F0817C5E2B6B8A22000C4937 = {
 			isa = PBXGroup;
 			children = (
@@ -135,9 +168,11 @@
 		F0817C692B6B8A22000C4937 /* GolfDeLaMarterie */ = {
 			isa = PBXGroup;
 			children = (
+				F0731D702BC7C59700FAFFBE /* Helpers */,
+				F0731D712BC7C5B900FAFFBE /* Datas */,
 				F0817C972B6B90EB000C4937 /* Model */,
 				F0817C982B6B90F4000C4937 /* View */,
-				F0817C992B6B90FF000C4937 /* View Model */,
+				F0817C992B6B90FF000C4937 /* ViewModel */,
 				F0817C6A2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift */,
 				F0817C702B6B8A24000C4937 /* Assets.xcassets */,
 				F0817C722B6B8A25000C4937 /* GolfDeLaMarterie.entitlements */,
@@ -157,6 +192,7 @@
 		F0817C7D2B6B8A25000C4937 /* GolfDeLaMarterieTests */ = {
 			isa = PBXGroup;
 			children = (
+				F0731D7C2BC7C95800FAFFBE /* GolfDeLaMarterieTests.xctestplan */,
 				F0817C7E2B6B8A25000C4937 /* GolfDeLaMarterieTests.swift */,
 			);
 			path = GolfDeLaMarterieTests;
@@ -174,14 +210,7 @@
 		F0817C972B6B90EB000C4937 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F0817C9A2B6B91AF000C4937 /* GPSLocation.swift */,
-				F0817CA42B6B921E000C4937 /* Firebase Helper.swift */,
-				F0817CA02B6B91D5000C4937 /* Struct Distance.swift */,
-				F0817C9F2B6B91D4000C4937 /* StructParcours.swift */,
-				F03A50EB2B70EA370043E487 /* Enum DepartureColor.swift */,
-				F03A50E92B70E9900043E487 /* Player.swift */,
-				F0817C9C2B6B91C7000C4937 /* Partie & Trou.swift */,
-				F03A50E72B70D6570043E487 /* Struct Boule.swift */,
+				F0731D6F2BC7C4A000FAFFBE /* Structure&Class */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -202,7 +231,7 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		F0817C992B6B90FF000C4937 /* View Model */ = {
+		F0817C992B6B90FF000C4937 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				F0817CA62B6B9BC3000C4937 /* BackgroundView.swift */,
@@ -210,7 +239,7 @@
 				F0A3DE782B7144A000982303 /* GaugeView.swift */,
 				F04BD54F2B73870900701C7A /* youtubeView.swift */,
 			);
-			path = "View Model";
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +306,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					F0817C662B6B8A22000C4937 = {
 						CreatedOnToolsVersion = 15.2;
@@ -345,17 +374,18 @@
 			files = (
 				F0817CA72B6B9BC3000C4937 /* BackgroundView.swift in Sources */,
 				F0817CA32B6B91D5000C4937 /* Struct Distance.swift in Sources */,
-				F03A50EC2B70EA370043E487 /* Enum DepartureColor.swift in Sources */,
 				F04BD5522B73AAD100701C7A /* VideoPlayerView.swift in Sources */,
 				F0817CA52B6B921E000C4937 /* Firebase Helper.swift in Sources */,
 				F03A50E62B70D3BD0043E487 /* NewGameUIView.swift in Sources */,
 				F03A50EA2B70E9900043E487 /* Player.swift in Sources */,
 				F03A50E82B70D6570043E487 /* Struct Boule.swift in Sources */,
-				F0817C9D2B6B91C7000C4937 /* Partie & Trou.swift in Sources */,
+				F0817C9D2B6B91C7000C4937 /* Hole.swift in Sources */,
 				F0817C6D2B6B8A22000C4937 /* MainTabView.swift in Sources */,
 				F0A3DE732B70FCB100982303 /* NewPlayerView.swift in Sources */,
 				F0A3DE792B7144A000982303 /* GaugeView.swift in Sources */,
+				F0731D752BC7C60900FAFFBE /* LaMarterieCourseData.swift in Sources */,
 				F04BD5502B73870900701C7A /* youtubeView.swift in Sources */,
+				F0731D732BC7C5D300FAFFBE /* DistanceData.swift in Sources */,
 				F036713D2B6CF1C7005DFAAC /* HoleView.swift in Sources */,
 				F0817C6B2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift in Sources */,
 				F0817CA92B6BA181000C4937 /* ProfilView.swift in Sources */,
@@ -435,6 +465,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -496,6 +527,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -523,6 +555,7 @@
 				CODE_SIGN_ENTITLEMENTS = GolfDeLaMarterie/GolfDeLaMarterie.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"GolfDeLaMarterie/Preview Content\"";
 				DEVELOPMENT_TEAM = 4PACRYHD6Z;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -563,6 +596,7 @@
 				CODE_SIGN_ENTITLEMENTS = GolfDeLaMarterie/GolfDeLaMarterie.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"GolfDeLaMarterie/Preview Content\"";
 				DEVELOPMENT_TEAM = 4PACRYHD6Z;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -602,6 +636,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 4PACRYHD6Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -625,6 +660,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 4PACRYHD6Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -647,6 +683,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 4PACRYHD6Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -669,6 +706,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 4PACRYHD6Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;

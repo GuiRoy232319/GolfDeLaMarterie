@@ -1,0 +1,32 @@
+{
+  "configurations" : [
+    {
+      "id" : "C82085EC-81B2-4A42-B6C9-1F43346850CE",
+      "name" : "Test Scheme Action",
+      "options" : {
+        "targetForVariableExpansion" : {
+          "containerPath" : "container:GolfDeLaMarterie.xcodeproj",
+          "identifier" : "F0817C662B6B8A22000C4937",
+          "name" : "GolfDeLaMarterie"
+        }
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "skippedTests" : [
+        "_TtCC21GolfDeLaMarterieTests21GolfDeLaMarterieTests9TrouTests"
+      ],
+      "target" : {
+        "containerPath" : "container:GolfDeLaMarterie.xcodeproj",
+        "identifier" : "F0817C792B6B8A25000C4937",
+        "name" : "GolfDeLaMarterieTests"
+      }
+    }
+  ],
+  "version" : 1
+}

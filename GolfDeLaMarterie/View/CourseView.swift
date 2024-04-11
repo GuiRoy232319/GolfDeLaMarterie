@@ -37,7 +37,7 @@ struct CourseView: View {
                                 .foregroundColor(.orange)
                                 .frame(width: 45, height: 45)
                                 .shadow(color:Color(hue: 0.09, saturation: 1.0, brightness: 0.991), radius: 5, x:1, y:1)
-
+                            
                             Spacer()
                             VStack{
                                 HStack{
@@ -67,11 +67,14 @@ struct CourseView: View {
                         }
                     }
                 .listRowSeparatorTint(.orange)
+                .listRowBackground(Color.clear)
                 }
             .navigationTitle("Le Parcours")
             .listStyle(.inset)
-            }
-
+        }
+        .background(Color.blue)
+        .scrollContentBackground(.visible)
+        
     }
 }
 

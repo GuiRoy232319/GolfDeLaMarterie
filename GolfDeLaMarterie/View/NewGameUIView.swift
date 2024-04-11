@@ -23,9 +23,9 @@ struct NewGameUIView: View {
                             .frame(width: 20, height: 20)
                         Text("Guillaume")
                         Text("Roy")
-                        Text("Index: 7,8")
+                        Text("Index: 7.8")
                     }
-                    NavigationLink("Ajouter un joueur", destination: NewPlayerView())
+                    NavigationLink("Ajouter un joueur", destination: NewPlayerView(name: "", lastName: ""))
                         .bold()
                         .foregroundColor(.orange)
                 } header: {

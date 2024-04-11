@@ -1,17 +1,11 @@
 //
-//  Struct Distance.swift
-//  Golf La Marterie
+//  DistanceData.swift
+//  GolfDeLaMarterie
 //
-//  Created by Guillaume Roy on 14/01/2021.
+//  Created by guill roy on 11/04/2024.
 //
 
 import Foundation
-
-struct Distance {
-    var numTrou: Int
-    var distance : Int
-    var color : Departurecolor
-}
 
 var Dist: [Distance] = [
     Distance(numTrou: 1, distance: 404, color: .Blanc),
@@ -87,47 +81,3 @@ var Dist: [Distance] = [
     Distance(numTrou: 18, distance: 131, color: .Bleu),
     Distance(numTrou: 18, distance: 127, color: .Rouge)
     ]
-
-
-func from(_ depart: Departurecolor) -> [Distance]{
-        return Dist.filter({$0.color == depart})
-        }
-    
-var blanc = Dist_Depart(trou: from(.Blanc))
-var jaune = Dist_Depart(trou: from(.Jaune))
-var bleu = Dist_Depart(trou: from(.Bleu))
-var rouge = Dist_Depart(trou: from(.Rouge))
-
-
-struct Dist_Depart {
-    var trou : [Distance]
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
