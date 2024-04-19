@@ -12,10 +12,14 @@
 		F03A50E62B70D3BD0043E487 /* NewGameUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03A50E52B70D3BD0043E487 /* NewGameUIView.swift */; };
 		F03A50E82B70D6570043E487 /* Struct Boule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03A50E72B70D6570043E487 /* Struct Boule.swift */; };
 		F03A50EA2B70E9900043E487 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03A50E92B70E9900043E487 /* Player.swift */; };
-		F04BD5502B73870900701C7A /* youtubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BD54F2B73870900701C7A /* youtubeView.swift */; };
 		F04BD5522B73AAD100701C7A /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BD5512B73AAD100701C7A /* VideoPlayerView.swift */; };
 		F0731D732BC7C5D300FAFFBE /* DistanceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0731D722BC7C5D300FAFFBE /* DistanceData.swift */; };
 		F0731D752BC7C60900FAFFBE /* LaMarterieCourseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0731D742BC7C60900FAFFBE /* LaMarterieCourseData.swift */; };
+		F0731D7E2BC927F900FAFFBE /* LiveLeaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0731D7D2BC927F900FAFFBE /* LiveLeaderboard.swift */; };
+		F0731D802BC9297E00FAFFBE /* LeaderBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0731D7F2BC9297E00FAFFBE /* LeaderBoard.swift */; };
+		F0731D822BC92A4E00FAFFBE /* LeaderboardApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0731D812BC92A4E00FAFFBE /* LeaderboardApi.swift */; };
+		F0731D842BC92C0700FAFFBE /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0731D832BC92C0700FAFFBE /* ErrorHandling.swift */; };
+		F0731D862BC92C8400FAFFBE /* MockLeaderBoardApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0731D852BC92C8400FAFFBE /* MockLeaderBoardApi.swift */; };
 		F0817C6B2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C6A2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift */; };
 		F0817C6D2B6B8A22000C4937 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C6C2B6B8A22000C4937 /* MainTabView.swift */; };
 		F0817C712B6B8A24000C4937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0817C702B6B8A24000C4937 /* Assets.xcassets */; };
@@ -31,6 +35,44 @@
 		F0817CA72B6B9BC3000C4937 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CA62B6B9BC3000C4937 /* BackgroundView.swift */; };
 		F0817CA92B6BA181000C4937 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CA82B6BA181000C4937 /* ProfilView.swift */; };
 		F0817CAB2B6BB4EA000C4937 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CAA2B6BB4EA000C4937 /* SettingView.swift */; };
+		F08F30302BD27BC200F84479 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F08F302F2BD27BC200F84479 /* FirebaseAnalytics */; };
+		F08F30322BD27BC200F84479 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = F08F30312BD27BC200F84479 /* FirebaseAnalyticsOnDeviceConversion */; };
+		F08F30342BD27BC200F84479 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F08F30332BD27BC200F84479 /* FirebaseAnalyticsSwift */; };
+		F08F30362BD27BC200F84479 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = F08F30352BD27BC200F84479 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		F08F30382BD27BC200F84479 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = F08F30372BD27BC200F84479 /* FirebaseAppCheck */; };
+		F08F303A2BD27BC200F84479 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F08F30392BD27BC200F84479 /* FirebaseAuth */; };
+		F08F303C2BD27BC200F84479 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F08F303B2BD27BC200F84479 /* FirebaseAuthCombine-Community */; };
+		F08F303E2BD27BC200F84479 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = F08F303D2BD27BC200F84479 /* FirebaseCrashlytics */; };
+		F08F30402BD27BC200F84479 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = F08F303F2BD27BC200F84479 /* FirebaseDatabase */; };
+		F08F30422BD27BC200F84479 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F08F30412BD27BC200F84479 /* FirebaseDatabaseSwift */; };
+		F08F30442BD27BC200F84479 /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = F08F30432BD27BC200F84479 /* FirebaseDynamicLinks */; };
+		F08F30462BD27BC200F84479 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F08F30452BD27BC200F84479 /* FirebaseFirestore */; };
+		F08F30482BD27BC200F84479 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F08F30472BD27BC200F84479 /* FirebaseFirestoreCombine-Community */; };
+		F08F304A2BD27BC200F84479 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F08F30492BD27BC200F84479 /* FirebaseFirestoreSwift */; };
+		F08F304C2BD27BC200F84479 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = F08F304B2BD27BC200F84479 /* FirebasePerformance */; };
+		F08F304E2BD27BC200F84479 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F08F304D2BD27BC200F84479 /* FirebaseStorage */; };
+		F08F30502BD27BC200F84479 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F08F304F2BD27BC200F84479 /* FirebaseStorageCombine-Community */; };
+		F08F30522BD27C2000F84479 /* GolfDeLaMarterie Firebase.plist in Resources */ = {isa = PBXBuildFile; fileRef = F08F30512BD27C2000F84479 /* GolfDeLaMarterie Firebase.plist */; };
+		F09D3AE42BCD1535008EB889 /* AVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09D3AE32BCD1535008EB889 /* AVPlayer.swift */; };
+		F09D3AE62BCD225B008EB889 /* Hole1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AE52BCD225B008EB889 /* Hole1.mp4 */; };
+		F09D3AFA2BCD31CF008EB889 /* Hole14.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AE82BCD31B4008EB889 /* Hole14.mp4 */; };
+		F09D3AFB2BCD31CF008EB889 /* Hole11.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AE92BCD31B5008EB889 /* Hole11.mp4 */; };
+		F09D3AFC2BCD31CF008EB889 /* Hole7.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AEA2BCD31B5008EB889 /* Hole7.mp4 */; };
+		F09D3AFD2BCD31CF008EB889 /* Hole4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AEB2BCD31B6008EB889 /* Hole4.mp4 */; };
+		F09D3AFE2BCD31CF008EB889 /* Overview.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AEC2BCD31B8008EB889 /* Overview.mp4 */; };
+		F09D3AFF2BCD31CF008EB889 /* Hole8.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AED2BCD31BC008EB889 /* Hole8.mp4 */; };
+		F09D3B002BCD31CF008EB889 /* Hole6.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AEE2BCD31BD008EB889 /* Hole6.mp4 */; };
+		F09D3B012BCD31CF008EB889 /* Hole15.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AEF2BCD31BF008EB889 /* Hole15.mp4 */; };
+		F09D3B022BCD31CF008EB889 /* Hole16.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AF02BCD31C2008EB889 /* Hole16.mp4 */; };
+		F09D3B032BCD31CF008EB889 /* Hole10.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AF12BCD31C3008EB889 /* Hole10.mp4 */; };
+		F09D3B042BCD31CF008EB889 /* Hole17.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AF22BCD31C5008EB889 /* Hole17.mp4 */; };
+		F09D3B052BCD31CF008EB889 /* Hole9.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AF32BCD31C7008EB889 /* Hole9.mp4 */; };
+		F09D3B062BCD31CF008EB889 /* Hole12.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AF42BCD31C8008EB889 /* Hole12.mp4 */; };
+		F09D3B072BCD31CF008EB889 /* Hole2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AF52BCD31CA008EB889 /* Hole2.mp4 */; };
+		F09D3B082BCD31CF008EB889 /* Hole5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AF62BCD31CB008EB889 /* Hole5.mp4 */; };
+		F09D3B092BCD31CF008EB889 /* Hole18.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AF72BCD31CD008EB889 /* Hole18.mp4 */; };
+		F09D3B0A2BCD31CF008EB889 /* Hole13.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AF82BCD31CE008EB889 /* Hole13.mp4 */; };
+		F09D3B0B2BCD31CF008EB889 /* Hole3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AF92BCD31CF008EB889 /* Hole3.mp4 */; };
 		F0A3DE732B70FCB100982303 /* NewPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE722B70FCB100982303 /* NewPlayerView.swift */; };
 		F0A3DE752B712A3C00982303 /* SavedGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE742B712A3C00982303 /* SavedGameView.swift */; };
 		F0A3DE772B712C1800982303 /* GameDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE762B712C1800982303 /* GameDetailView.swift */; };
@@ -60,11 +102,15 @@
 		F03A50E52B70D3BD0043E487 /* NewGameUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameUIView.swift; sourceTree = "<group>"; };
 		F03A50E72B70D6570043E487 /* Struct Boule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Struct Boule.swift"; sourceTree = "<group>"; };
 		F03A50E92B70E9900043E487 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		F04BD54F2B73870900701C7A /* youtubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = youtubeView.swift; sourceTree = "<group>"; };
 		F04BD5512B73AAD100701C7A /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		F0731D722BC7C5D300FAFFBE /* DistanceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceData.swift; sourceTree = "<group>"; };
 		F0731D742BC7C60900FAFFBE /* LaMarterieCourseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaMarterieCourseData.swift; sourceTree = "<group>"; };
 		F0731D7C2BC7C95800FAFFBE /* GolfDeLaMarterieTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = GolfDeLaMarterieTests.xctestplan; sourceTree = "<group>"; };
+		F0731D7D2BC927F900FAFFBE /* LiveLeaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveLeaderboard.swift; sourceTree = "<group>"; };
+		F0731D7F2BC9297E00FAFFBE /* LeaderBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoard.swift; sourceTree = "<group>"; };
+		F0731D812BC92A4E00FAFFBE /* LeaderboardApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardApi.swift; sourceTree = "<group>"; };
+		F0731D832BC92C0700FAFFBE /* ErrorHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
+		F0731D852BC92C8400FAFFBE /* MockLeaderBoardApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLeaderBoardApi.swift; sourceTree = "<group>"; };
 		F0817C672B6B8A22000C4937 /* GolfDeLaMarterie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolfDeLaMarterie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0817C6A2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfDeLaMarterieApp.swift; sourceTree = "<group>"; };
 		F0817C6C2B6B8A22000C4937 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -84,6 +130,27 @@
 		F0817CA62B6B9BC3000C4937 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		F0817CA82B6BA181000C4937 /* ProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilView.swift; sourceTree = "<group>"; };
 		F0817CAA2B6BB4EA000C4937 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		F08F30512BD27C2000F84479 /* GolfDeLaMarterie Firebase.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GolfDeLaMarterie Firebase.plist"; sourceTree = "<group>"; };
+		F09D3AE32BCD1535008EB889 /* AVPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayer.swift; sourceTree = "<group>"; };
+		F09D3AE52BCD225B008EB889 /* Hole1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole1.mp4; sourceTree = "<group>"; };
+		F09D3AE82BCD31B4008EB889 /* Hole14.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole14.mp4; sourceTree = "<group>"; };
+		F09D3AE92BCD31B5008EB889 /* Hole11.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole11.mp4; sourceTree = "<group>"; };
+		F09D3AEA2BCD31B5008EB889 /* Hole7.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole7.mp4; sourceTree = "<group>"; };
+		F09D3AEB2BCD31B6008EB889 /* Hole4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole4.mp4; sourceTree = "<group>"; };
+		F09D3AEC2BCD31B8008EB889 /* Overview.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Overview.mp4; sourceTree = "<group>"; };
+		F09D3AED2BCD31BC008EB889 /* Hole8.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole8.mp4; sourceTree = "<group>"; };
+		F09D3AEE2BCD31BD008EB889 /* Hole6.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole6.mp4; sourceTree = "<group>"; };
+		F09D3AEF2BCD31BF008EB889 /* Hole15.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole15.mp4; sourceTree = "<group>"; };
+		F09D3AF02BCD31C2008EB889 /* Hole16.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole16.mp4; sourceTree = "<group>"; };
+		F09D3AF12BCD31C3008EB889 /* Hole10.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole10.mp4; sourceTree = "<group>"; };
+		F09D3AF22BCD31C5008EB889 /* Hole17.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole17.mp4; sourceTree = "<group>"; };
+		F09D3AF32BCD31C7008EB889 /* Hole9.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole9.mp4; sourceTree = "<group>"; };
+		F09D3AF42BCD31C8008EB889 /* Hole12.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole12.mp4; sourceTree = "<group>"; };
+		F09D3AF52BCD31CA008EB889 /* Hole2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole2.mp4; sourceTree = "<group>"; };
+		F09D3AF62BCD31CB008EB889 /* Hole5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole5.mp4; sourceTree = "<group>"; };
+		F09D3AF72BCD31CD008EB889 /* Hole18.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole18.mp4; sourceTree = "<group>"; };
+		F09D3AF82BCD31CE008EB889 /* Hole13.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole13.mp4; sourceTree = "<group>"; };
+		F09D3AF92BCD31CF008EB889 /* Hole3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole3.mp4; sourceTree = "<group>"; };
 		F0A3DE722B70FCB100982303 /* NewPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlayerView.swift; sourceTree = "<group>"; };
 		F0A3DE742B712A3C00982303 /* SavedGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedGameView.swift; sourceTree = "<group>"; };
 		F0A3DE762B712C1800982303 /* GameDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailView.swift; sourceTree = "<group>"; };
@@ -95,6 +162,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F08F30482BD27BC200F84479 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				F08F30422BD27BC200F84479 /* FirebaseDatabaseSwift in Frameworks */,
+				F08F304C2BD27BC200F84479 /* FirebasePerformance in Frameworks */,
+				F08F30442BD27BC200F84479 /* FirebaseDynamicLinks in Frameworks */,
+				F08F304A2BD27BC200F84479 /* FirebaseFirestoreSwift in Frameworks */,
+				F08F304E2BD27BC200F84479 /* FirebaseStorage in Frameworks */,
+				F08F30502BD27BC200F84479 /* FirebaseStorageCombine-Community in Frameworks */,
+				F08F30342BD27BC200F84479 /* FirebaseAnalyticsSwift in Frameworks */,
+				F08F303A2BD27BC200F84479 /* FirebaseAuth in Frameworks */,
+				F08F30302BD27BC200F84479 /* FirebaseAnalytics in Frameworks */,
+				F08F30462BD27BC200F84479 /* FirebaseFirestore in Frameworks */,
+				F08F30322BD27BC200F84479 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				F08F30382BD27BC200F84479 /* FirebaseAppCheck in Frameworks */,
+				F08F303E2BD27BC200F84479 /* FirebaseCrashlytics in Frameworks */,
+				F08F30402BD27BC200F84479 /* FirebaseDatabase in Frameworks */,
+				F08F303C2BD27BC200F84479 /* FirebaseAuthCombine-Community in Frameworks */,
+				F08F30362BD27BC200F84479 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +207,7 @@
 				F0817C9C2B6B91C7000C4937 /* Hole.swift */,
 				F03A50E72B70D6570043E487 /* Struct Boule.swift */,
 				F0817C9F2B6B91D4000C4937 /* StructParcours.swift */,
+				F0731D7F2BC9297E00FAFFBE /* LeaderBoard.swift */,
 			);
 			path = "Structure&Class";
 			sourceTree = "<group>";
@@ -130,7 +215,9 @@
 		F0731D702BC7C59700FAFFBE /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				F0731D832BC92C0700FAFFBE /* ErrorHandling.swift */,
 				F0817CA42B6B921E000C4937 /* Firebase Helper.swift */,
+				F0731D852BC92C8400FAFFBE /* MockLeaderBoardApi.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -138,6 +225,7 @@
 		F0731D712BC7C5B900FAFFBE /* Datas */ = {
 			isa = PBXGroup;
 			children = (
+				F09D3AE72BCD22A3008EB889 /* Videos */,
 				F0731D722BC7C5D300FAFFBE /* DistanceData.swift */,
 				F0817C9A2B6B91AF000C4937 /* GPSLocation.swift */,
 				F0731D742BC7C60900FAFFBE /* LaMarterieCourseData.swift */,
@@ -149,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				F0817C692B6B8A22000C4937 /* GolfDeLaMarterie */,
+				F08F30512BD27C2000F84479 /* GolfDeLaMarterie Firebase.plist */,
 				F0817C7D2B6B8A25000C4937 /* GolfDeLaMarterieTests */,
 				F0817C872B6B8A25000C4937 /* GolfDeLaMarterieUITests */,
 				F0817C682B6B8A22000C4937 /* Products */,
@@ -211,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				F0731D6F2BC7C4A000FAFFBE /* Structure&Class */,
+				F0731D812BC92A4E00FAFFBE /* LeaderboardApi.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -226,7 +316,7 @@
 				F0A3DE722B70FCB100982303 /* NewPlayerView.swift */,
 				F0A3DE742B712A3C00982303 /* SavedGameView.swift */,
 				F0A3DE762B712C1800982303 /* GameDetailView.swift */,
-				F04BD5512B73AAD100701C7A /* VideoPlayerView.swift */,
+				F0731D7D2BC927F900FAFFBE /* LiveLeaderboard.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -234,12 +324,39 @@
 		F0817C992B6B90FF000C4937 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F04BD5512B73AAD100701C7A /* VideoPlayerView.swift */,
 				F0817CA62B6B9BC3000C4937 /* BackgroundView.swift */,
 				F036713C2B6CF1C7005DFAAC /* HoleView.swift */,
 				F0A3DE782B7144A000982303 /* GaugeView.swift */,
-				F04BD54F2B73870900701C7A /* youtubeView.swift */,
+				F09D3AE32BCD1535008EB889 /* AVPlayer.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F09D3AE72BCD22A3008EB889 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				F09D3AF52BCD31CA008EB889 /* Hole2.mp4 */,
+				F09D3AF92BCD31CF008EB889 /* Hole3.mp4 */,
+				F09D3AEB2BCD31B6008EB889 /* Hole4.mp4 */,
+				F09D3AF62BCD31CB008EB889 /* Hole5.mp4 */,
+				F09D3AEE2BCD31BD008EB889 /* Hole6.mp4 */,
+				F09D3AEA2BCD31B5008EB889 /* Hole7.mp4 */,
+				F09D3AED2BCD31BC008EB889 /* Hole8.mp4 */,
+				F09D3AF32BCD31C7008EB889 /* Hole9.mp4 */,
+				F09D3AF12BCD31C3008EB889 /* Hole10.mp4 */,
+				F09D3AE92BCD31B5008EB889 /* Hole11.mp4 */,
+				F09D3AF42BCD31C8008EB889 /* Hole12.mp4 */,
+				F09D3AF82BCD31CE008EB889 /* Hole13.mp4 */,
+				F09D3AE82BCD31B4008EB889 /* Hole14.mp4 */,
+				F09D3AEF2BCD31BF008EB889 /* Hole15.mp4 */,
+				F09D3AF02BCD31C2008EB889 /* Hole16.mp4 */,
+				F09D3AF22BCD31C5008EB889 /* Hole17.mp4 */,
+				F09D3AF72BCD31CD008EB889 /* Hole18.mp4 */,
+				F09D3AEC2BCD31B8008EB889 /* Overview.mp4 */,
+				F09D3AE52BCD225B008EB889 /* Hole1.mp4 */,
+			);
+			path = Videos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +375,25 @@
 			dependencies = (
 			);
 			name = GolfDeLaMarterie;
+			packageProductDependencies = (
+				F08F302F2BD27BC200F84479 /* FirebaseAnalytics */,
+				F08F30312BD27BC200F84479 /* FirebaseAnalyticsOnDeviceConversion */,
+				F08F30332BD27BC200F84479 /* FirebaseAnalyticsSwift */,
+				F08F30352BD27BC200F84479 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				F08F30372BD27BC200F84479 /* FirebaseAppCheck */,
+				F08F30392BD27BC200F84479 /* FirebaseAuth */,
+				F08F303B2BD27BC200F84479 /* FirebaseAuthCombine-Community */,
+				F08F303D2BD27BC200F84479 /* FirebaseCrashlytics */,
+				F08F303F2BD27BC200F84479 /* FirebaseDatabase */,
+				F08F30412BD27BC200F84479 /* FirebaseDatabaseSwift */,
+				F08F30432BD27BC200F84479 /* FirebaseDynamicLinks */,
+				F08F30452BD27BC200F84479 /* FirebaseFirestore */,
+				F08F30472BD27BC200F84479 /* FirebaseFirestoreCombine-Community */,
+				F08F30492BD27BC200F84479 /* FirebaseFirestoreSwift */,
+				F08F304B2BD27BC200F84479 /* FirebasePerformance */,
+				F08F304D2BD27BC200F84479 /* FirebaseStorage */,
+				F08F304F2BD27BC200F84479 /* FirebaseStorageCombine-Community */,
+			);
 			productName = GolfDeLaMarterie;
 			productReference = F0817C672B6B8A22000C4937 /* GolfDeLaMarterie.app */;
 			productType = "com.apple.product-type.application";
@@ -330,6 +466,9 @@
 				Base,
 			);
 			mainGroup = F0817C5E2B6B8A22000C4937;
+			packageReferences = (
+				F08F302E2BD27BC200F84479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = F0817C682B6B8A22000C4937 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -346,8 +485,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F09D3AFD2BCD31CF008EB889 /* Hole4.mp4 in Resources */,
+				F09D3AE62BCD225B008EB889 /* Hole1.mp4 in Resources */,
+				F09D3B032BCD31CF008EB889 /* Hole10.mp4 in Resources */,
+				F09D3AFE2BCD31CF008EB889 /* Overview.mp4 in Resources */,
+				F09D3B062BCD31CF008EB889 /* Hole12.mp4 in Resources */,
+				F08F30522BD27C2000F84479 /* GolfDeLaMarterie Firebase.plist in Resources */,
 				F0817C752B6B8A25000C4937 /* Preview Assets.xcassets in Resources */,
+				F09D3B052BCD31CF008EB889 /* Hole9.mp4 in Resources */,
+				F09D3AFB2BCD31CF008EB889 /* Hole11.mp4 in Resources */,
+				F09D3B012BCD31CF008EB889 /* Hole15.mp4 in Resources */,
+				F09D3AFA2BCD31CF008EB889 /* Hole14.mp4 in Resources */,
+				F09D3B072BCD31CF008EB889 /* Hole2.mp4 in Resources */,
+				F09D3B002BCD31CF008EB889 /* Hole6.mp4 in Resources */,
+				F09D3B022BCD31CF008EB889 /* Hole16.mp4 in Resources */,
 				F0817C712B6B8A24000C4937 /* Assets.xcassets in Resources */,
+				F09D3B042BCD31CF008EB889 /* Hole17.mp4 in Resources */,
+				F09D3B092BCD31CF008EB889 /* Hole18.mp4 in Resources */,
+				F09D3AFC2BCD31CF008EB889 /* Hole7.mp4 in Resources */,
+				F09D3B0B2BCD31CF008EB889 /* Hole3.mp4 in Resources */,
+				F09D3B0A2BCD31CF008EB889 /* Hole13.mp4 in Resources */,
+				F09D3AFF2BCD31CF008EB889 /* Hole8.mp4 in Resources */,
+				F09D3B082BCD31CF008EB889 /* Hole5.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,17 +536,22 @@
 				F04BD5522B73AAD100701C7A /* VideoPlayerView.swift in Sources */,
 				F0817CA52B6B921E000C4937 /* Firebase Helper.swift in Sources */,
 				F03A50E62B70D3BD0043E487 /* NewGameUIView.swift in Sources */,
+				F0731D7E2BC927F900FAFFBE /* LiveLeaderboard.swift in Sources */,
 				F03A50EA2B70E9900043E487 /* Player.swift in Sources */,
 				F03A50E82B70D6570043E487 /* Struct Boule.swift in Sources */,
 				F0817C9D2B6B91C7000C4937 /* Hole.swift in Sources */,
 				F0817C6D2B6B8A22000C4937 /* MainTabView.swift in Sources */,
+				F0731D822BC92A4E00FAFFBE /* LeaderboardApi.swift in Sources */,
+				F0731D802BC9297E00FAFFBE /* LeaderBoard.swift in Sources */,
 				F0A3DE732B70FCB100982303 /* NewPlayerView.swift in Sources */,
 				F0A3DE792B7144A000982303 /* GaugeView.swift in Sources */,
 				F0731D752BC7C60900FAFFBE /* LaMarterieCourseData.swift in Sources */,
-				F04BD5502B73870900701C7A /* youtubeView.swift in Sources */,
+				F09D3AE42BCD1535008EB889 /* AVPlayer.swift in Sources */,
 				F0731D732BC7C5D300FAFFBE /* DistanceData.swift in Sources */,
 				F036713D2B6CF1C7005DFAAC /* HoleView.swift in Sources */,
+				F0731D842BC92C0700FAFFBE /* ErrorHandling.swift in Sources */,
 				F0817C6B2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift in Sources */,
+				F0731D862BC92C8400FAFFBE /* MockLeaderBoardApi.swift in Sources */,
 				F0817CA92B6BA181000C4937 /* ProfilView.swift in Sources */,
 				F0817C9B2B6B91AF000C4937 /* GPSLocation.swift in Sources */,
 				F0A3DE752B712A3C00982303 /* SavedGameView.swift in Sources */,
@@ -573,7 +737,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -581,10 +745,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.GolfDeLaMarterie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -614,7 +779,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -622,10 +787,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.GolfDeLaMarterie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -645,10 +811,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.GolfDeLaMarterieTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GolfDeLaMarterie.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GolfDeLaMarterie";
 			};
 			name = Debug;
@@ -669,10 +836,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.GolfDeLaMarterieTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GolfDeLaMarterie.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GolfDeLaMarterie";
 			};
 			name = Release;
@@ -763,6 +931,105 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F08F302E2BD27BC200F84479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.24.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F08F302F2BD27BC200F84479 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F08F302E2BD27BC200F84479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		F08F30312BD27BC200F84479 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F08F302E2BD27BC200F84479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		F08F30332BD27BC200F84479 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F08F302E2BD27BC200F84479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		F08F30352BD27BC200F84479 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F08F302E2BD27BC200F84479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		F08F30372BD27BC200F84479 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F08F302E2BD27BC200F84479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		F08F30392BD27BC200F84479 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F08F302E2BD27BC200F84479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F08F303B2BD27BC200F84479 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F08F302E2BD27BC200F84479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		F08F303D2BD27BC200F84479 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F08F302E2BD27BC200F84479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		F08F303F2BD27BC200F84479 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F08F302E2BD27BC200F84479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		F08F30412BD27BC200F84479 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F08F302E2BD27BC200F84479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		F08F30432BD27BC200F84479 /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F08F302E2BD27BC200F84479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+		F08F30452BD27BC200F84479 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F08F302E2BD27BC200F84479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		F08F30472BD27BC200F84479 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F08F302E2BD27BC200F84479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		F08F30492BD27BC200F84479 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F08F302E2BD27BC200F84479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		F08F304B2BD27BC200F84479 /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F08F302E2BD27BC200F84479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		F08F304D2BD27BC200F84479 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F08F302E2BD27BC200F84479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		F08F304F2BD27BC200F84479 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F08F302E2BD27BC200F84479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F0817C5F2B6B8A22000C4937 /* Project object */;
 }

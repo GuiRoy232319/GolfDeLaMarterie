@@ -10,6 +10,7 @@ import SwiftUI
 struct CourseView: View {
     @State private var dist = 0
     private var data = LaMarterie
+    @State private var selectedIndex: Int? = nil
     
     init() {
       // Large Navigation Title
@@ -29,36 +30,36 @@ struct CourseView: View {
             List {
                 ForEach(data) { item in
                     NavigationLink {
-                            HoleView(item: item)
+                        HoleView(selectedIndex: $selectedIndex, item: item)
                     } label:{
                         HStack{
-                            Image(systemName: "\(item.id).circle")
+                            Image(systemName: "\(item.id!).circle")
                                 .resizable()
                                 .foregroundColor(.orange)
                                 .frame(width: 45, height: 45)
                                 .shadow(color:Color(hue: 0.09, saturation: 1.0, brightness: 0.991), radius: 5, x:1, y:1)
-                            
-                            Spacer()
                             VStack{
                                 HStack{
-                                    Text("Trou n°\(item.numTrou)")
+                                    Text("Trou n°\(item.numTrou!)")
                                         .bold()
-                                    Text("HCP: \(item.HCP)")
+                                        .padding(.trailing,60)
+                                    Text("HCP: \(item.HCP!)")
                                 }
                                 HStack{
-                                    Text("Par: \(item.parTrou)")
+                                    Text("Par: \(item.parTrou!)")
                                         .bold()
+                                        .padding(.trailing,55)
                                     if dist == 0{
-                                        Text("Dist: \(item.DistBlanc)m")
+                                        Text("Dist: \(item.DistBlanc!)m")
                                         .italic()}
                                     if dist == 1{
-                                        Text("Dist: \(item.DistJaune)m")
+                                        Text("Dist: \(item.DistJaune!)m")
                                         .italic()}
                                     if dist == 2{
-                                        Text("Dist: \(item.DistBleu)m")
+                                        Text("Dist: \(item.DistBleu!)m")
                                         .italic()}
                                     if dist == 3{
-                                        Text("Dist: \(item.DistRouge)m")
+                                        Text("Dist: \(item.DistRouge!)m")
                                         .italic()}
                                     }
                                 }
@@ -77,8 +78,6 @@ struct CourseView: View {
         
     }
 }
-
-                                   
 #Preview {
     CourseView()
 }

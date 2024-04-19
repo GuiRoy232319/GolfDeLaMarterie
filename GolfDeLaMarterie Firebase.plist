@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBa5ogSIsT5JnjwLLMpFLzG3zEd5HfZ0LE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1049799290881</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.GolfDeLaMarterie</string>
+	<key>PROJECT_ID</key>
+	<string>golfdelamarterie</string>
+	<key>STORAGE_BUCKET</key>
+	<string>golfdelamarterie.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1049799290881:ios:13d7290a54253b40bc5000</string>
+</dict>
+</plist>
