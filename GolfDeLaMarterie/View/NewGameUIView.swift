@@ -12,6 +12,13 @@ struct NewGameUIView: View {
     @State private var signatureIsOn = false
     var gameMode = ["Stroke Play","Stableford","Scramble","Match Play","Foursome","Greensome","Patsome", "Ringer Score", "Eclectic"]
     @State private var selectedGameMode = "Stroke Play"
+    @Binding internal var firstName : String
+    @Binding internal var lastname : String
+    @Binding internal var mail : String
+    @Binding internal var tel : String
+    @Binding internal var index : Double
+    @Binding internal var gend : Bool
+    
     
     var body: some View {
         NavigationStack{
@@ -25,13 +32,13 @@ struct NewGameUIView: View {
                         Text("Roy")
                         Text("Index: 7.8")
                     }
-                    NavigationLink("Ajouter un joueur", destination: NewPlayerView(name: "", lastName: ""))
+                    NavigationLink("Ajouter un joueur", destination:
+                                    NewPlayerView(firstName: firstName, lastName: lastname, mail: mail, tel: tel, index: index, gend: gend)
                         .bold()
-                        .foregroundColor(.orange)
-                } header: {
-                    Text("Les joueurs")
-                        .fontWeight(.black)
-                }
+                    )} header: {
+                        Text("Les joueurs")
+                            .fontWeight(.black)
+                    }
                 Section{
                     Toggle(isOn: $competitionIsOn) {
                         Text("Mode Compétition")
@@ -59,23 +66,20 @@ struct NewGameUIView: View {
                     Text("Mode de jeu")
                         .fontWeight(.black)
                 }
-            }
-                Button(action: {
-                    
-                }, label: {
+                NavigationLink {
+                    ScoringView()
+                } label: {
                     Text("Valider les réglages")
                         .bold()
                         .foregroundColor(.white)
                         .padding()
                         .background(.orange, in: .capsule)
                         .cornerRadius(20)
-                    }
-                )
-            Spacer()
-            .navigationTitle("Nouvelle Partie")
+                }
+                Spacer()
+                    .navigationTitle("Nouvelle Partie")
+            }
         }
     }
 }
-#Preview {
-    NewGameUIView()
-}
+

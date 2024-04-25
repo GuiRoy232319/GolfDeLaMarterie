@@ -10,14 +10,14 @@ import Foundation
 struct Distance {
     var numTrou: Int
     var distance : Int
-    var color : Parcours.Departurecolor
+    var color : Departurecolor
 }
 
 struct Dist_Depart {
     var trou : [Distance]
 }
 ///Filter Distance by DepartureColor
-private func from(_ depart: Parcours.Departurecolor) -> [Distance]{
+private func from(_ depart: Departurecolor) -> [Distance]{
         return Dist.filter({$0.color == depart})
         }
 

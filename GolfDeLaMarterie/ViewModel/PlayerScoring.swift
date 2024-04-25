@@ -22,7 +22,7 @@ struct PlayerScoring: View {
                 .fontWeight(.black)
             HStack{
                 VStack{
-                    Text("coups")
+                    Text("Coups")
                         .fontWeight(.bold)
                         .fontDesign(.rounded)
                     Picker("Nombre de coups", selection: $shootScore){

@@ -6,13 +6,18 @@
 //
 
 import SwiftUI
+import SwiftData
 
-struct PreviewData: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+@MainActor
+let previewContainer: ModelContainer = {
+    do{
+        let container = try ModelContainer(for: Player.self, configurations: ModelConfiguration(isStoredInMemoryOnly: true))
+        let modelContext = container.mainContext
+        if try modelContext.fetch(FetchDescriptor<Player>()).isEmpty{
+            SamplePlayer.content.forEach {container.mainContext.insert($0)}
+        }
+        return container
+    } catch{
+        fatalError("Failed to create container")
     }
-}
-
-#Preview {
-    PreviewData()
-}
+}()

@@ -13,7 +13,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     FirebaseApp.configure()
-
     return true
   }
 }
@@ -22,12 +21,30 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 @main
 struct GolfDeLaMarterieApp: App {
+
+    
+    @Binding var firstName: String
+    @Binding var lastName: String
+    @Binding var mail: String
+    @Binding var tel: String
+    @Binding var index: Double
+    @Binding var gend: Bool
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
+    init() {
+        _firstName = Binding.constant("")
+        _lastName = Binding.constant("")
+        _mail = Binding.constant("")
+        _tel = Binding.constant("")
+        _index = Binding.constant(54)
+        _gend = Binding.constant(true)
+    }
     
     var body: some Scene {
         WindowGroup {
-            MainTabView()
+            MainTabView(firstName: $firstName, lastname: $lastName, mail: $mail, tel: $tel, index: $index, gend: $gend)
+                .modelContainer(previewContainer)
         }
-        .modelContainer(for: Player.self)
+        
     }
 }

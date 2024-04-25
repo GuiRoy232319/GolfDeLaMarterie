@@ -9,7 +9,7 @@ import Foundation
 final class Parcours: Identifiable{
     var slope : Int = 0
     var SSS : Float = 0.0
-    var coupsRecus : Int = 0
+    var coupsRecus : Int64 = 0
     var allHoles: [Trou] = LaMarterie
     
 /// Determines the ideal departure based on gender and index
@@ -27,10 +27,12 @@ final class Parcours: Identifiable{
             }
         }
     
-    enum Departurecolor: String, CaseIterable {
-        case Blanc = "Blanc"
-        case Jaune = "Jaune"
-        case Bleu = "Bleu"
-        case Rouge = "Rouge"
+    ///get the number of strokes returned by the course according to the handicap
+    func coupRecus(slope: Int64, SSS: Float, index: Double, Par: Int64) -> Int64{
+            let first = (index * Double(slope)) / 113
+            let second =  (SSS - Float(Par))
+            coupsRecus = Int64(first) + Int64(second)
+            return coupsRecus
         }
+ 
 }

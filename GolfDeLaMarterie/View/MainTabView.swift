@@ -10,6 +10,12 @@ import SwiftUI
 struct MainTabView: View {
     
     @Environment(\.modelContext) private var context
+    @Binding internal var firstName : String
+    @Binding internal var lastname : String
+    @Binding internal var mail : String
+    @Binding internal var tel : String
+    @Binding internal var index : Double
+    @Binding internal var gend : Bool
     
     var body: some View {
         TabView {
@@ -23,7 +29,7 @@ struct MainTabView: View {
                     Label("Le Parcours", systemImage: "flag.and.flag.filled.crossed")
                 }
                 .toolbarBackground(.visible, for: .tabBar)
-            NewGameUIView()
+            NewGameUIView(firstName: $firstName, lastname: $lastname, mail: $mail, tel: $tel, index: $index, gend: $gend)
                 .tabItem {
                     Label("Nouvelle Partie", systemImage: "figure.golf")
                 }
@@ -44,6 +50,6 @@ struct MainTabView: View {
     }
 }
 
-#Preview {
-    MainTabView()
-}
+//#Preview {
+//    MainTabView()
+//}

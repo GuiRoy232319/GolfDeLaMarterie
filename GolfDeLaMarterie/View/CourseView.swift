@@ -8,75 +8,108 @@
 import SwiftUI
 
 struct CourseView: View {
-    @State private var dist = 0
     private var data = LaMarterie
-    @State private var selectedIndex: Int? = nil
-    
+    @State private var selectedIndex: Int = 0
+    @State private var selectedHoleIndex = 0
+   
     init() {
-      // Large Navigation Title
-      UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.orange]
+        // Large Navigation Title
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.orange]
     }
-
+    
     var body: some View {
-        NavigationStack{
-            Picker("distance", selection: $dist, content: {
-                Text("Blanc").tag(0)
-                Text("Jaune").tag(1)
-                Text("Bleu").tag(2)
-                Text("Rouge").tag(3)
-            })
-            .pickerStyle(.automatic)
-            .tint(.orange)
-            List {
-                ForEach(data) { item in
-                    NavigationLink {
-                        HoleView(selectedIndex: $selectedIndex, item: item)
-                    } label:{
+        TabView {
+            ForEach(data) { item in
+                VStack {
+                    Spacer()
+                    Text("Trou N°\(item.numTrou!)")
+                        .bold()
+                        .font(.largeTitle)
+                        .foregroundColor(.orange)
+                    VStack{
+                        LocalVideoView(videoFilename: item.holeBG!, videoExtension: "mp4")
                         HStack{
-                            Image(systemName: "\(item.id!).circle")
-                                .resizable()
+                            Text("Par:")
+                                .colorInvert()
+                                .fontWeight(.heavy)
+                                .font(.largeTitle)
+                            
+                            Text("\(item.parTrou!)")
+                            
+                                .fontWeight(.heavy)
+                                .font(.largeTitle)
                                 .foregroundColor(.orange)
-                                .frame(width: 45, height: 45)
-                                .shadow(color:Color(hue: 0.09, saturation: 1.0, brightness: 0.991), radius: 5, x:1, y:1)
-                            VStack{
-                                HStack{
-                                    Text("Trou n°\(item.numTrou!)")
-                                        .bold()
-                                        .padding(.trailing,60)
-                                    Text("HCP: \(item.HCP!)")
-                                }
-                                HStack{
-                                    Text("Par: \(item.parTrou!)")
-                                        .bold()
-                                        .padding(.trailing,55)
-                                    if dist == 0{
-                                        Text("Dist: \(item.DistBlanc!)m")
-                                        .italic()}
-                                    if dist == 1{
-                                        Text("Dist: \(item.DistJaune!)m")
-                                        .italic()}
-                                    if dist == 2{
-                                        Text("Dist: \(item.DistBleu!)m")
-                                        .italic()}
-                                    if dist == 3{
-                                        Text("Dist: \(item.DistRouge!)m")
-                                        .italic()}
-                                    }
-                                }
-                            Spacer()
-                            }
                         }
+                        HStack{
+                            Text("HCP:")
+                                .bold()
+                                .colorInvert()
+                            Text("\(item.HCP!)")
+                                .bold()
+                                .italic()
+                                .foregroundStyle(.orange)
+                            Text("Profondeur Green:")
+                                .bold()
+                                .colorInvert()
+                            Text("\(item.Greenprof!)m")
+                                .bold()
+                                .italic()
+                                .foregroundStyle(.orange)
+                        }
+                        HStack{
+                            Image("Blanc")
+                                .resizable()
+                                .frame(width: 20, height: 20)
+                            Text(" \(item.DistBlanc!)m")
+                                .colorInvert()
+                            Image("Jaune")
+                                .resizable()
+                                .frame(width: 20, height: 20)
+                            Text(" \(item.DistJaune!)m")
+                                .colorInvert()
+                            Image("Bleu")
+                                .resizable()
+                                .frame(width: 20, height: 20)
+                            Text(" \(item.DistBleu!)m")
+                                .colorInvert()
+                            Image("Rouge")
+                                .resizable()
+                                .frame(width: 20, height: 20)
+                            Text(" \(item.DistRouge!)m")
+                                .colorInvert()
+                        }.font(.headline)
+                        Divider()
+                            .colorInvert()
+                        Text("""
+                                        \(item.advice!)
+                                        """
+                        )
+                        .multilineTextAlignment(.center)
+                        .colorInvert()
+                        .italic()
+                        .bold()
+                        .dynamicTypeSize(.medium)
+                        Spacer()
                     }
-                .listRowSeparatorTint(.orange)
-                .listRowBackground(Color.clear)
                 }
-            .navigationTitle("Le Parcours")
-            .listStyle(.inset)
+                .accentColor(.orange)
+                .background {
+                    Image("Background2")
+                        .resizable()
+                        .ignoresSafeArea()
+                        .blur(radius: 75)
+                    
+                }
+                .tabItem{}
+            }
         }
-        .background(Color.blue)
+        .tabViewStyle(.page)
+        .ignoresSafeArea()
+        .navigationTitle("Le Parcours")
+        .listStyle(.inset)
         .scrollContentBackground(.visible)
-        
     }
+   
 }
 #Preview {
     CourseView()

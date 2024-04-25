@@ -25,7 +25,7 @@ struct ProfilView: View {
                         .cornerRadius(75)
                         .shadow(color: .black, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: 1, y: 1)
                     VStack{
-                        Text("Hannibal Lecter")
+                        Text("Player Name")
                             .bold()
                         Text("Index: 7.8")
                             .italic()
@@ -47,19 +47,11 @@ struct ProfilView: View {
 
                 }
                 .padding(10)
-                HStack{
-                    Label("Nombre moyen de putts:", systemImage: "figure.golf")
-                        .bold()
-                    Text("1.8")
-                        .italic()
-                    
-                }
-        
                 Divider()
                 TabView{
                     VStack{
                         ZStack {
-                            GaugeView(diameter: 170, progress: 0.7, color: .red)
+                            GaugeView(diameter: 170, progress: 0.75, color: .red)
                             GaugeView(diameter: 135, progress: 0.5, color: .yellow)
                             GaugeView(diameter: 100, progress: 0.3, color: .orange)
                         }

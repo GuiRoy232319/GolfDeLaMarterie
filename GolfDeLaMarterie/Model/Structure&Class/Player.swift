@@ -9,31 +9,48 @@ import Foundation
 import SwiftData
 
 @Model
-class Player: Identifiable{
-    var id: String
-    var firstName: String = ""
-    var lastName: String = ""
+final class Player {
+    var firstName: String
+    var lastName: String
     var gender: gender
-    var index: Double = 0
-    var mail: String = ""
-    var coupsRecus: Int64! = 0
-   
-    init(firstName: String, lastName: String, gender: gender, index: Double, mail: String){
-        self.id = UUID().uuidString
+    var index: Double
+    var mail: String
+    
+    @Relationship(deleteRule: .cascade, inverse: .none)
+    var friends : [Friend]? = []
+
+    init(firstName: String, lastName: String, gender: gender, index: Double, mail: String, friends: [Friend]){
         self.firstName = firstName
         self.lastName = lastName
         self.gender = gender
         self.index = index
         self.mail = mail
+        self.friends = friends
     }
-    ///get the number of strokes returned by the course according to the handicap
-       func coupRecus(slope: Int64, SSS: Float, index: Double, Par: Int64) -> Int64{
-               let first = (index * Double(slope)) / 113
-               let second =  (SSS - Float(Par))
-               coupsRecus = Int64(first) + Int64(second)
-               return coupsRecus
-           }
+}
     
+    
+
+extension Player: Hashable {
+    static func == (lhs: Player, rhs: Player) -> Bool {
+        lhs.id == rhs.id &&
+        lhs.firstName == rhs.firstName &&
+        lhs.lastName == rhs.lastName &&
+        lhs.gender == rhs.gender &&
+        lhs.index == rhs.index &&
+        lhs.mail == rhs.mail &&
+        lhs.friends == rhs.friends
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+        hasher.combine(firstName)
+        hasher.combine(lastName)
+        hasher.combine(gender)
+        hasher.combine(index)
+        hasher.combine(mail)
+        hasher.combine(friends)
+    }
 }
 
 enum gender: Hashable, Codable, CaseIterable{
