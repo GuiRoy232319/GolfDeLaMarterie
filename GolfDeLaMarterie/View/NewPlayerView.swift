@@ -11,12 +11,12 @@ import SwiftData
 struct NewPlayerView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var player : [Player]
-    @State var firstName: String
-    @State var lastName: String
-    @State var mail: String
-    @State var tel: String
-    @State var index: Double
-    @State var gend: Bool
+    @State var firstName: String = ""
+    @State var lastName: String = ""
+    @State var mail: String = ""
+    @State var tel: String = ""
+    @State var index: Double = 24
+    @State var gend: Bool = true
     
     var body: some View {
         NavigationView{
@@ -65,6 +65,6 @@ struct NewPlayerView: View {
 }
 
 #Preview {
-    NewPlayerView(firstName: "john", lastName: "Wick", mail: "Babayaga@FuckOff.com", tel: "666", index: 26 , gend: true)
+    NewPlayerView()
         .modelContainer(previewContainer)
 }

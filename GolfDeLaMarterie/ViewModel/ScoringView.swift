@@ -23,15 +23,24 @@ struct ScoringView: View {
                         .mapStyle(.hybrid)
                         .frame(width: 350, height: 200)
                         .cornerRadius(30)
+                        .padding(.top,40)
                     Divider()
                     HStack{
+                        Text("Trou n°")
+                            .fontWeight(.heavy)
+                            .font(.largeTitle)
+                        Text("\(item.numTrou!)")
+                            .fontWeight(.heavy)
+                            .font(.largeTitle)
+                            .foregroundColor(.red)
                         Text("Par:")
                             .fontWeight(.heavy)
                             .font(.largeTitle)
+                            .padding(.leading, 30)
                         Text("\(item.parTrou!)")
                             .fontWeight(.heavy)
                             .font(.largeTitle)
-                            .foregroundColor(.orange)
+                            .foregroundColor(.red)
                     }
                     HStack{
                         Text("HCP:")
@@ -84,7 +93,7 @@ struct ScoringView: View {
                                 .shadow(color:.blue ,radius: 5)
                                 .tabItem{}
                         }.tabViewStyle(.page)
-                        Spacer()
+                            .padding(.bottom,110)
                     }
                 }
                 .background {
@@ -93,7 +102,7 @@ struct ScoringView: View {
                 }
             }
         }.tabViewStyle(.page)
-            .ignoresSafeArea()
+            .ignoresSafeArea(edges: .top)
     }
 }
 

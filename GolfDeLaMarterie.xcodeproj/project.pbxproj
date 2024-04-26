@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F0238E072BDB91D500818EBE /* SignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0238E062BDB91D500818EBE /* SignatureView.swift */; };
+		F0238E092BDBB06400818EBE /* GameDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0238E082BDBB06400818EBE /* GameDetailView.swift */; };
 		F036713B2B6CE890005DFAAC /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F036713A2B6CE890005DFAAC /* CourseView.swift */; };
 		F036713D2B6CF1C7005DFAAC /* HoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F036713C2B6CF1C7005DFAAC /* HoleView.swift */; };
 		F038E3202BD689B70024A4CD /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = F038E31F2BD689B70024A4CD /* Friend.swift */; };
@@ -79,7 +81,6 @@
 		F09D3B0B2BCD31CF008EB889 /* Hole3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AF92BCD31CF008EB889 /* Hole3.mp4 */; };
 		F0A3DE732B70FCB100982303 /* NewPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE722B70FCB100982303 /* NewPlayerView.swift */; };
 		F0A3DE752B712A3C00982303 /* SavedGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE742B712A3C00982303 /* SavedGameView.swift */; };
-		F0A3DE772B712C1800982303 /* GameDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE762B712C1800982303 /* GameDetailView.swift */; };
 		F0A3DE792B7144A000982303 /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE782B7144A000982303 /* GaugeView.swift */; };
 		F0BB441B2BD8FA250051FD3A /* ScoringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BB441A2BD8FA250051FD3A /* ScoringView.swift */; };
 /* End PBXBuildFile section */
@@ -102,6 +103,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F0238E062BDB91D500818EBE /* SignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureView.swift; sourceTree = "<group>"; };
+		F0238E082BDBB06400818EBE /* GameDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDetailView.swift; sourceTree = "<group>"; };
 		F036713A2B6CE890005DFAAC /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 		F036713C2B6CF1C7005DFAAC /* HoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoleView.swift; sourceTree = "<group>"; };
 		F038E31F2BD689B70024A4CD /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
@@ -162,7 +165,6 @@
 		F09D3AF92BCD31CF008EB889 /* Hole3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole3.mp4; sourceTree = "<group>"; };
 		F0A3DE722B70FCB100982303 /* NewPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlayerView.swift; sourceTree = "<group>"; };
 		F0A3DE742B712A3C00982303 /* SavedGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedGameView.swift; sourceTree = "<group>"; };
-		F0A3DE762B712C1800982303 /* GameDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailView.swift; sourceTree = "<group>"; };
 		F0A3DE782B7144A000982303 /* GaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeView.swift; sourceTree = "<group>"; };
 		F0BB441A2BD8FA250051FD3A /* ScoringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -327,9 +329,9 @@
 				F0817CAA2B6BB4EA000C4937 /* SettingView.swift */,
 				F0817CA82B6BA181000C4937 /* ProfilView.swift */,
 				F0817C6C2B6B8A22000C4937 /* MainTabView.swift */,
+				F0238E082BDBB06400818EBE /* GameDetailView.swift */,
 				F0A3DE722B70FCB100982303 /* NewPlayerView.swift */,
 				F0A3DE742B712A3C00982303 /* SavedGameView.swift */,
-				F0A3DE762B712C1800982303 /* GameDetailView.swift */,
 				F0731D7D2BC927F900FAFFBE /* LiveLeaderboard.swift */,
 			);
 			path = View;
@@ -344,6 +346,7 @@
 				F0817CA62B6B9BC3000C4937 /* BackgroundView.swift */,
 				F036713C2B6CF1C7005DFAAC /* HoleView.swift */,
 				F0A3DE782B7144A000982303 /* GaugeView.swift */,
+				F0238E062BDB91D500818EBE /* SignatureView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				F0817C632B6B8A22000C4937 /* Sources */,
 				F0817C642B6B8A22000C4937 /* Frameworks */,
 				F0817C652B6B8A22000C4937 /* Resources */,
+				F0CEFA282BDA9E5E00B538EA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -541,6 +545,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F0CEFA282BDA9E5E00B538EA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "\n${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F0817C632B6B8A22000C4937 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -553,6 +582,7 @@
 				F0817CA52B6B921E000C4937 /* Firebase Helper.swift in Sources */,
 				F03A50E62B70D3BD0043E487 /* NewGameUIView.swift in Sources */,
 				F0731D7E2BC927F900FAFFBE /* LiveLeaderboard.swift in Sources */,
+				F0238E092BDBB06400818EBE /* GameDetailView.swift in Sources */,
 				F03A50EA2B70E9900043E487 /* Player.swift in Sources */,
 				F03A50E82B70D6570043E487 /* Struct Boule.swift in Sources */,
 				F0817C9D2B6B91C7000C4937 /* Hole.swift in Sources */,
@@ -561,6 +591,7 @@
 				F0731D802BC9297E00FAFFBE /* LeaderBoard.swift in Sources */,
 				F0A3DE732B70FCB100982303 /* NewPlayerView.swift in Sources */,
 				F0A3DE792B7144A000982303 /* GaugeView.swift in Sources */,
+				F0238E072BDB91D500818EBE /* SignatureView.swift in Sources */,
 				F04B1B952BD66A8800C38178 /* SamplePlayer.swift in Sources */,
 				F0731D752BC7C60900FAFFBE /* LaMarterieCourseData.swift in Sources */,
 				F09D3AE42BCD1535008EB889 /* AVPlayer.swift in Sources */,
@@ -578,7 +609,6 @@
 				F0BB441B2BD8FA250051FD3A /* ScoringView.swift in Sources */,
 				F0817CAB2B6BB4EA000C4937 /* SettingView.swift in Sources */,
 				F036713B2B6CE890005DFAAC /* CourseView.swift in Sources */,
-				F0A3DE772B712C1800982303 /* GameDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,6 +770,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"GolfDeLaMarterie/Preview Content\"";
 				DEVELOPMENT_TEAM = 4PACRYHD6Z;
 				ENABLE_HARDENED_RUNTIME = YES;

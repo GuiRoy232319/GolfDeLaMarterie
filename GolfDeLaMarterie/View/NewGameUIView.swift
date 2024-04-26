@@ -33,7 +33,7 @@ struct NewGameUIView: View {
                         Text("Index: 7.8")
                     }
                     NavigationLink("Ajouter un joueur", destination:
-                                    NewPlayerView(firstName: firstName, lastName: lastname, mail: mail, tel: tel, index: index, gend: gend)
+                                    NewPlayerView()
                         .bold()
                     )} header: {
                         Text("Les joueurs")
@@ -68,18 +68,18 @@ struct NewGameUIView: View {
                 }
                 NavigationLink {
                     ScoringView()
-                } label: {
+                }label: {
                     Text("Valider les réglages")
                         .bold()
-                        .foregroundColor(.white)
-                        .padding()
-                        .background(.orange, in: .capsule)
+                        .foregroundStyle(.orange)
                         .cornerRadius(20)
                 }
-                Spacer()
                     .navigationTitle("Nouvelle Partie")
             }
         }
     }
 }
 
+#Preview {
+    NewGameUIView(firstName: Binding.constant(""), lastname: Binding.constant(""), mail: Binding.constant(""), tel: Binding.constant(""), index: Binding.constant(24), gend: Binding.constant(true))
+}
