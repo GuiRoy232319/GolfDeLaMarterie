@@ -3,17 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		F0238E072BDB91D500818EBE /* SignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0238E062BDB91D500818EBE /* SignatureView.swift */; };
-		F0238E092BDBB06400818EBE /* GameDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0238E082BDBB06400818EBE /* GameDetailView.swift */; };
+		F0238E092BDBB06400818EBE /* LeaderbordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0238E082BDBB06400818EBE /* LeaderbordView.swift */; };
 		F036713B2B6CE890005DFAAC /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F036713A2B6CE890005DFAAC /* CourseView.swift */; };
-		F036713D2B6CF1C7005DFAAC /* HoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F036713C2B6CF1C7005DFAAC /* HoleView.swift */; };
 		F038E3202BD689B70024A4CD /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = F038E31F2BD689B70024A4CD /* Friend.swift */; };
 		F03A50E62B70D3BD0043E487 /* NewGameUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03A50E52B70D3BD0043E487 /* NewGameUIView.swift */; };
-		F03A50E82B70D6570043E487 /* Struct Boule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03A50E72B70D6570043E487 /* Struct Boule.swift */; };
+		F03A50E82B70D6570043E487 /* StructBoule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03A50E72B70D6570043E487 /* StructBoule.swift */; };
 		F03A50EA2B70E9900043E487 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03A50E92B70E9900043E487 /* Player.swift */; };
 		F04B1B932BD668F900C38178 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B1B922BD668F900C38178 /* PreviewData.swift */; };
 		F04B1B952BD66A8800C38178 /* SamplePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B1B942BD66A8800C38178 /* SamplePlayer.swift */; };
@@ -34,13 +33,12 @@
 		F0817C892B6B8A25000C4937 /* GolfDeLaMarterieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C882B6B8A25000C4937 /* GolfDeLaMarterieUITests.swift */; };
 		F0817C8B2B6B8A25000C4937 /* GolfDeLaMarterieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C8A2B6B8A25000C4937 /* GolfDeLaMarterieUITestsLaunchTests.swift */; };
 		F0817C9B2B6B91AF000C4937 /* GPSLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C9A2B6B91AF000C4937 /* GPSLocation.swift */; };
-		F0817C9D2B6B91C7000C4937 /* Hole.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C9C2B6B91C7000C4937 /* Hole.swift */; };
+		F0817C9D2B6B91C7000C4937 /* StructHole.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C9C2B6B91C7000C4937 /* StructHole.swift */; };
 		F0817CA22B6B91D5000C4937 /* StructParcours.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C9F2B6B91D4000C4937 /* StructParcours.swift */; };
 		F0817CA32B6B91D5000C4937 /* Struct Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CA02B6B91D5000C4937 /* Struct Distance.swift */; };
-		F0817CA52B6B921E000C4937 /* Firebase Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CA42B6B921E000C4937 /* Firebase Helper.swift */; };
+		F0817CA52B6B921E000C4937 /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CA42B6B921E000C4937 /* FirebaseHelper.swift */; };
 		F0817CA72B6B9BC3000C4937 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CA62B6B9BC3000C4937 /* BackgroundView.swift */; };
 		F0817CA92B6BA181000C4937 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CA82B6BA181000C4937 /* ProfilView.swift */; };
-		F0817CAB2B6BB4EA000C4937 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CAA2B6BB4EA000C4937 /* SettingView.swift */; };
 		F08F30302BD27BC200F84479 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F08F302F2BD27BC200F84479 /* FirebaseAnalytics */; };
 		F08F30322BD27BC200F84479 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = F08F30312BD27BC200F84479 /* FirebaseAnalyticsOnDeviceConversion */; };
 		F08F30342BD27BC200F84479 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F08F30332BD27BC200F84479 /* FirebaseAnalyticsSwift */; };
@@ -83,6 +81,8 @@
 		F0A3DE752B712A3C00982303 /* SavedGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE742B712A3C00982303 /* SavedGameView.swift */; };
 		F0A3DE792B7144A000982303 /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE782B7144A000982303 /* GaugeView.swift */; };
 		F0BB441B2BD8FA250051FD3A /* ScoringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BB441A2BD8FA250051FD3A /* ScoringView.swift */; };
+		F0C89ED92BDD92DE00CA247B /* RecapScoringSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C89ED82BDD92DE00CA247B /* RecapScoringSwiftUIView.swift */; };
+		F0F224B72BDFC38B007E8BA2 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F0F224B62BDFC38B007E8BA2 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,12 +104,11 @@
 
 /* Begin PBXFileReference section */
 		F0238E062BDB91D500818EBE /* SignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureView.swift; sourceTree = "<group>"; };
-		F0238E082BDBB06400818EBE /* GameDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDetailView.swift; sourceTree = "<group>"; };
+		F0238E082BDBB06400818EBE /* LeaderbordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderbordView.swift; sourceTree = "<group>"; };
 		F036713A2B6CE890005DFAAC /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
-		F036713C2B6CF1C7005DFAAC /* HoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoleView.swift; sourceTree = "<group>"; };
 		F038E31F2BD689B70024A4CD /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		F03A50E52B70D3BD0043E487 /* NewGameUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameUIView.swift; sourceTree = "<group>"; };
-		F03A50E72B70D6570043E487 /* Struct Boule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Struct Boule.swift"; sourceTree = "<group>"; };
+		F03A50E72B70D6570043E487 /* StructBoule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructBoule.swift; sourceTree = "<group>"; };
 		F03A50E92B70E9900043E487 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		F04B1B922BD668F900C38178 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		F04B1B942BD66A8800C38178 /* SamplePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePlayer.swift; sourceTree = "<group>"; };
@@ -127,7 +126,6 @@
 		F0817C6A2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfDeLaMarterieApp.swift; sourceTree = "<group>"; };
 		F0817C6C2B6B8A22000C4937 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		F0817C702B6B8A24000C4937 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F0817C722B6B8A25000C4937 /* GolfDeLaMarterie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GolfDeLaMarterie.entitlements; sourceTree = "<group>"; };
 		F0817C742B6B8A25000C4937 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F0817C7A2B6B8A25000C4937 /* GolfDeLaMarterieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolfDeLaMarterieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0817C7E2B6B8A25000C4937 /* GolfDeLaMarterieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfDeLaMarterieTests.swift; sourceTree = "<group>"; };
@@ -135,13 +133,12 @@
 		F0817C882B6B8A25000C4937 /* GolfDeLaMarterieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfDeLaMarterieUITests.swift; sourceTree = "<group>"; };
 		F0817C8A2B6B8A25000C4937 /* GolfDeLaMarterieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfDeLaMarterieUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F0817C9A2B6B91AF000C4937 /* GPSLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPSLocation.swift; sourceTree = "<group>"; };
-		F0817C9C2B6B91C7000C4937 /* Hole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hole.swift; sourceTree = "<group>"; };
+		F0817C9C2B6B91C7000C4937 /* StructHole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructHole.swift; sourceTree = "<group>"; };
 		F0817C9F2B6B91D4000C4937 /* StructParcours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructParcours.swift; sourceTree = "<group>"; };
 		F0817CA02B6B91D5000C4937 /* Struct Distance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Struct Distance.swift"; sourceTree = "<group>"; };
-		F0817CA42B6B921E000C4937 /* Firebase Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Firebase Helper.swift"; sourceTree = "<group>"; };
+		F0817CA42B6B921E000C4937 /* FirebaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
 		F0817CA62B6B9BC3000C4937 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		F0817CA82B6BA181000C4937 /* ProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilView.swift; sourceTree = "<group>"; };
-		F0817CAA2B6BB4EA000C4937 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		F08F30512BD27C2000F84479 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F09D3AE32BCD1535008EB889 /* AVPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayer.swift; sourceTree = "<group>"; };
 		F09D3AE52BCD225B008EB889 /* Hole1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole1.mp4; sourceTree = "<group>"; };
@@ -167,6 +164,8 @@
 		F0A3DE742B712A3C00982303 /* SavedGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedGameView.swift; sourceTree = "<group>"; };
 		F0A3DE782B7144A000982303 /* GaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeView.swift; sourceTree = "<group>"; };
 		F0BB441A2BD8FA250051FD3A /* ScoringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringView.swift; sourceTree = "<group>"; };
+		F0C89ED82BDD92DE00CA247B /* RecapScoringSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecapScoringSwiftUIView.swift; sourceTree = "<group>"; };
+		F0F224B62BDFC38B007E8BA2 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,25 +210,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F0731D6F2BC7C4A000FAFFBE /* Structure&Class */ = {
-			isa = PBXGroup;
-			children = (
-				F0817CA02B6B91D5000C4937 /* Struct Distance.swift */,
-				F03A50E92B70E9900043E487 /* Player.swift */,
-				F0817C9C2B6B91C7000C4937 /* Hole.swift */,
-				F03A50E72B70D6570043E487 /* Struct Boule.swift */,
-				F0817C9F2B6B91D4000C4937 /* StructParcours.swift */,
-				F0731D7F2BC9297E00FAFFBE /* LeaderBoard.swift */,
-				F038E31F2BD689B70024A4CD /* Friend.swift */,
-			);
-			path = "Structure&Class";
-			sourceTree = "<group>";
-		};
 		F0731D702BC7C59700FAFFBE /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				F0731D832BC92C0700FAFFBE /* ErrorHandling.swift */,
-				F0817CA42B6B921E000C4937 /* Firebase Helper.swift */,
+				F0817CA42B6B921E000C4937 /* FirebaseHelper.swift */,
 				F0731D852BC92C8400FAFFBE /* MockLeaderBoardApi.swift */,
 				F04B1B922BD668F900C38178 /* PreviewData.swift */,
 				F04B1B942BD66A8800C38178 /* SamplePlayer.swift */,
@@ -237,22 +222,12 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		F0731D712BC7C5B900FAFFBE /* Datas */ = {
-			isa = PBXGroup;
-			children = (
-				F09D3AE72BCD22A3008EB889 /* Videos */,
-				F0731D722BC7C5D300FAFFBE /* DistanceData.swift */,
-				F0817C9A2B6B91AF000C4937 /* GPSLocation.swift */,
-				F0731D742BC7C60900FAFFBE /* LaMarterieCourseData.swift */,
-			);
-			path = Datas;
-			sourceTree = "<group>";
-		};
 		F0817C5E2B6B8A22000C4937 = {
 			isa = PBXGroup;
 			children = (
 				F0817C692B6B8A22000C4937 /* GolfDeLaMarterie */,
 				F08F30512BD27C2000F84479 /* GoogleService-Info.plist */,
+				F0F224B62BDFC38B007E8BA2 /* Localizable.xcstrings */,
 				F0817C7D2B6B8A25000C4937 /* GolfDeLaMarterieTests */,
 				F0817C872B6B8A25000C4937 /* GolfDeLaMarterieUITests */,
 				F0817C682B6B8A22000C4937 /* Products */,
@@ -272,25 +247,19 @@
 		F0817C692B6B8A22000C4937 /* GolfDeLaMarterie */ = {
 			isa = PBXGroup;
 			children = (
-				F0731D702BC7C59700FAFFBE /* Helpers */,
-				F0731D712BC7C5B900FAFFBE /* Datas */,
-				F0817C972B6B90EB000C4937 /* Model */,
-				F0817C982B6B90F4000C4937 /* View */,
+				F0F224BC2BDFE9AE007E8BA2 /* Leaderboard */,
+				F0F224BB2BDFE9A2007E8BA2 /* SaveGames */,
+				F0F224BA2BDFE99B007E8BA2 /* NewGame */,
+				F0F224B92BDFE994007E8BA2 /* Course */,
+				F0F224B82BDFE98B007E8BA2 /* Profil */,
 				F0817C992B6B90FF000C4937 /* ViewModel */,
+				F0731D702BC7C59700FAFFBE /* Helpers */,
 				F0817C6A2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift */,
 				F0817C702B6B8A24000C4937 /* Assets.xcassets */,
-				F0817C722B6B8A25000C4937 /* GolfDeLaMarterie.entitlements */,
-				F0817C732B6B8A25000C4937 /* Preview Content */,
+				F0817C742B6B8A25000C4937 /* Preview Assets.xcassets */,
+				F0817C6C2B6B8A22000C4937 /* MainTabView.swift */,
 			);
 			path = GolfDeLaMarterie;
-			sourceTree = "<group>";
-		};
-		F0817C732B6B8A25000C4937 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				F0817C742B6B8A25000C4937 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		F0817C7D2B6B8A25000C4937 /* GolfDeLaMarterieTests */ = {
@@ -311,42 +280,10 @@
 			path = GolfDeLaMarterieUITests;
 			sourceTree = "<group>";
 		};
-		F0817C972B6B90EB000C4937 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				F09D3AE32BCD1535008EB889 /* AVPlayer.swift */,
-				F0731D6F2BC7C4A000FAFFBE /* Structure&Class */,
-				F0731D812BC92A4E00FAFFBE /* LeaderboardApi.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F0817C982B6B90F4000C4937 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F03A50E52B70D3BD0043E487 /* NewGameUIView.swift */,
-				F036713A2B6CE890005DFAAC /* CourseView.swift */,
-				F0817CAA2B6BB4EA000C4937 /* SettingView.swift */,
-				F0817CA82B6BA181000C4937 /* ProfilView.swift */,
-				F0817C6C2B6B8A22000C4937 /* MainTabView.swift */,
-				F0238E082BDBB06400818EBE /* GameDetailView.swift */,
-				F0A3DE722B70FCB100982303 /* NewPlayerView.swift */,
-				F0A3DE742B712A3C00982303 /* SavedGameView.swift */,
-				F0731D7D2BC927F900FAFFBE /* LiveLeaderboard.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		F0817C992B6B90FF000C4937 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				F05204792BD92D51005596C8 /* PlayerScoring.swift */,
-				F0BB441A2BD8FA250051FD3A /* ScoringView.swift */,
-				F04BD5512B73AAD100701C7A /* VideoPlayerView.swift */,
 				F0817CA62B6B9BC3000C4937 /* BackgroundView.swift */,
-				F036713C2B6CF1C7005DFAAC /* HoleView.swift */,
-				F0A3DE782B7144A000982303 /* GaugeView.swift */,
-				F0238E062BDB91D500818EBE /* SignatureView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -377,6 +314,163 @@
 			path = Videos;
 			sourceTree = "<group>";
 		};
+		F0F224B82BDFE98B007E8BA2 /* Profil */ = {
+			isa = PBXGroup;
+			children = (
+				F0F224C82BDFEBAF007E8BA2 /* Model */,
+				F0F224C72BDFEBAD007E8BA2 /* View */,
+				F0F224C62BDFEBAA007E8BA2 /* ViewModel */,
+			);
+			path = Profil;
+			sourceTree = "<group>";
+		};
+		F0F224B92BDFE994007E8BA2 /* Course */ = {
+			isa = PBXGroup;
+			children = (
+				F0F224C52BDFEB94007E8BA2 /* Model */,
+				F0F224C42BDFEB92007E8BA2 /* View */,
+				F0F224C32BDFEB8A007E8BA2 /* ViewModel */,
+			);
+			path = Course;
+			sourceTree = "<group>";
+		};
+		F0F224BA2BDFE99B007E8BA2 /* NewGame */ = {
+			isa = PBXGroup;
+			children = (
+				F0F224C12BDFEAF5007E8BA2 /* Model */,
+				F0F224C02BDFEAEE007E8BA2 /* View */,
+				F0F224C22BDFEAFC007E8BA2 /* ViewModel */,
+			);
+			path = NewGame;
+			sourceTree = "<group>";
+		};
+		F0F224BB2BDFE9A2007E8BA2 /* SaveGames */ = {
+			isa = PBXGroup;
+			children = (
+				F0A3DE742B712A3C00982303 /* SavedGameView.swift */,
+			);
+			path = SaveGames;
+			sourceTree = "<group>";
+		};
+		F0F224BC2BDFE9AE007E8BA2 /* Leaderboard */ = {
+			isa = PBXGroup;
+			children = (
+				F0F224BD2BDFEA74007E8BA2 /* Model */,
+				F0F224BF2BDFEABA007E8BA2 /* View */,
+				F0F224BE2BDFEA9B007E8BA2 /* ViewModel */,
+			);
+			path = Leaderboard;
+			sourceTree = "<group>";
+		};
+		F0F224BD2BDFEA74007E8BA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F0731D7F2BC9297E00FAFFBE /* LeaderBoard.swift */,
+				F0731D812BC92A4E00FAFFBE /* LeaderboardApi.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F0F224BE2BDFEA9B007E8BA2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F0238E082BDBB06400818EBE /* LeaderbordView.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F0F224BF2BDFEABA007E8BA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F0731D7D2BC927F900FAFFBE /* LiveLeaderboard.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0F224C02BDFEAEE007E8BA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F03A50E52B70D3BD0043E487 /* NewGameUIView.swift */,
+				F0BB441A2BD8FA250051FD3A /* ScoringView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0F224C12BDFEAF5007E8BA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F0817C9A2B6B91AF000C4937 /* GPSLocation.swift */,
+				F0731D722BC7C5D300FAFFBE /* DistanceData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F0F224C22BDFEAFC007E8BA2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F0C89ED82BDD92DE00CA247B /* RecapScoringSwiftUIView.swift */,
+				F05204792BD92D51005596C8 /* PlayerScoring.swift */,
+				F0A3DE722B70FCB100982303 /* NewPlayerView.swift */,
+				F0238E062BDB91D500818EBE /* SignatureView.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F0F224C32BDFEB8A007E8BA2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F09D3AE32BCD1535008EB889 /* AVPlayer.swift */,
+				F04BD5512B73AAD100701C7A /* VideoPlayerView.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F0F224C42BDFEB92007E8BA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F036713A2B6CE890005DFAAC /* CourseView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F0F224C52BDFEB94007E8BA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F03A50E72B70D6570043E487 /* StructBoule.swift */,
+				F0817C9F2B6B91D4000C4937 /* StructParcours.swift */,
+				F0817C9C2B6B91C7000C4937 /* StructHole.swift */,
+				F0817CA02B6B91D5000C4937 /* Struct Distance.swift */,
+				F09D3AE72BCD22A3008EB889 /* Videos */,
+				F0731D742BC7C60900FAFFBE /* LaMarterieCourseData.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F0F224C62BDFEBAA007E8BA2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F0A3DE782B7144A000982303 /* GaugeView.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F0F224C72BDFEBAD007E8BA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F0817CA82B6BA181000C4937 /* ProfilView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0F224C82BDFEBAF007E8BA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F038E31F2BD689B70024A4CD /* Friend.swift */,
+				F03A50E92B70E9900043E487 /* Player.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -387,7 +481,7 @@
 				F0817C632B6B8A22000C4937 /* Sources */,
 				F0817C642B6B8A22000C4937 /* Frameworks */,
 				F0817C652B6B8A22000C4937 /* Resources */,
-				F0CEFA282BDA9E5E00B538EA /* ShellScript */,
+				F0F224B02BDF8281007E8BA2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -477,12 +571,13 @@
 				};
 			};
 			buildConfigurationList = F0817C622B6B8A22000C4937 /* Build configuration list for PBXProject "GolfDeLaMarterie" */;
-			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = fr;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = F0817C5E2B6B8A22000C4937;
 			packageReferences = (
@@ -520,6 +615,7 @@
 				F09D3B022BCD31CF008EB889 /* Hole16.mp4 in Resources */,
 				F0817C712B6B8A24000C4937 /* Assets.xcassets in Resources */,
 				F09D3B042BCD31CF008EB889 /* Hole17.mp4 in Resources */,
+				F0F224B72BDFC38B007E8BA2 /* Localizable.xcstrings in Resources */,
 				F09D3B092BCD31CF008EB889 /* Hole18.mp4 in Resources */,
 				F09D3AFC2BCD31CF008EB889 /* Hole7.mp4 in Resources */,
 				F09D3B0B2BCD31CF008EB889 /* Hole3.mp4 in Resources */,
@@ -546,7 +642,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		F0CEFA282BDA9E5E00B538EA /* ShellScript */ = {
+		F0F224B02BDF8281007E8BA2 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
 			files = (
@@ -566,7 +662,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "\n${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+			shellScript = "\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -579,15 +675,16 @@
 				F0817CA32B6B91D5000C4937 /* Struct Distance.swift in Sources */,
 				F052047A2BD92D51005596C8 /* PlayerScoring.swift in Sources */,
 				F04BD5522B73AAD100701C7A /* VideoPlayerView.swift in Sources */,
-				F0817CA52B6B921E000C4937 /* Firebase Helper.swift in Sources */,
+				F0817CA52B6B921E000C4937 /* FirebaseHelper.swift in Sources */,
 				F03A50E62B70D3BD0043E487 /* NewGameUIView.swift in Sources */,
 				F0731D7E2BC927F900FAFFBE /* LiveLeaderboard.swift in Sources */,
-				F0238E092BDBB06400818EBE /* GameDetailView.swift in Sources */,
+				F0238E092BDBB06400818EBE /* LeaderbordView.swift in Sources */,
 				F03A50EA2B70E9900043E487 /* Player.swift in Sources */,
-				F03A50E82B70D6570043E487 /* Struct Boule.swift in Sources */,
-				F0817C9D2B6B91C7000C4937 /* Hole.swift in Sources */,
+				F03A50E82B70D6570043E487 /* StructBoule.swift in Sources */,
+				F0817C9D2B6B91C7000C4937 /* StructHole.swift in Sources */,
 				F0817C6D2B6B8A22000C4937 /* MainTabView.swift in Sources */,
 				F0731D822BC92A4E00FAFFBE /* LeaderboardApi.swift in Sources */,
+				F0C89ED92BDD92DE00CA247B /* RecapScoringSwiftUIView.swift in Sources */,
 				F0731D802BC9297E00FAFFBE /* LeaderBoard.swift in Sources */,
 				F0A3DE732B70FCB100982303 /* NewPlayerView.swift in Sources */,
 				F0A3DE792B7144A000982303 /* GaugeView.swift in Sources */,
@@ -597,7 +694,6 @@
 				F09D3AE42BCD1535008EB889 /* AVPlayer.swift in Sources */,
 				F0731D732BC7C5D300FAFFBE /* DistanceData.swift in Sources */,
 				F04B1B932BD668F900C38178 /* PreviewData.swift in Sources */,
-				F036713D2B6CF1C7005DFAAC /* HoleView.swift in Sources */,
 				F0731D842BC92C0700FAFFBE /* ErrorHandling.swift in Sources */,
 				F0817C6B2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift in Sources */,
 				F0731D862BC92C8400FAFFBE /* MockLeaderBoardApi.swift in Sources */,
@@ -607,7 +703,6 @@
 				F038E3202BD689B70024A4CD /* Friend.swift in Sources */,
 				F0817CA22B6B91D5000C4937 /* StructParcours.swift in Sources */,
 				F0BB441B2BD8FA250051FD3A /* ScoringView.swift in Sources */,
-				F0817CAB2B6BB4EA000C4937 /* SettingView.swift in Sources */,
 				F036713B2B6CE890005DFAAC /* CourseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -680,7 +775,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -698,6 +793,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -754,6 +850,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -771,7 +868,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_ASSET_PATHS = "\"GolfDeLaMarterie/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 4PACRYHD6Z;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -787,7 +884,8 @@
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -813,7 +911,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"GolfDeLaMarterie/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 4PACRYHD6Z;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -829,7 +927,8 @@
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";

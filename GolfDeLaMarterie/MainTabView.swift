@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct MainTabView: View {
-    
     @Environment(\.modelContext) private var context
     @Binding internal var firstName : String
     @Binding internal var lastname : String
@@ -39,9 +38,9 @@ struct MainTabView: View {
                     Label("Mes Parties", systemImage: "rectangle.and.pencil.and.ellipsis")
                 }
                 .toolbarBackground(.visible, for: .tabBar)
-            SettingView()
+            LiveLeaderboard()
                 .tabItem {
-                    Label("Réglages", systemImage: "gear")
+                    Label("Live Score", systemImage: "gear")
                 }
                 .tint(.orange)
                 .toolbarBackground(.visible, for: .tabBar)

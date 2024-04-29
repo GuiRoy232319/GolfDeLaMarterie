@@ -17,7 +17,8 @@ extension UIViewController{
                 rootViewController.present(alertController, animated: true, completion: nil)
             }
         }
-    }}
+    }
+}
 
 
 public enum NetworkError: Error, LocalizedError {

@@ -13,7 +13,7 @@ struct SavedGameView: View {
             List{
                 Section{
                     NavigationLink {
-                        GameDetailView()
+                        LeaderboardView()
                     } label: {
                         Text("Stroke Play du 12/12/2023")
                     }
@@ -24,7 +24,7 @@ struct SavedGameView: View {
                 }
                 Section{
                     NavigationLink {
-                        GameDetailView()
+                        LeaderboardView()
                     } label: {
                         Text("Stroke Play du 12/12/2023")
                     }
@@ -35,7 +35,7 @@ struct SavedGameView: View {
                 }
                 Section{
                     NavigationLink {
-                        GameDetailView()
+                        LeaderboardView()
                     } label: {
                         Text("Stroke Play du 12/12/2023")
                     }
@@ -46,7 +46,7 @@ struct SavedGameView: View {
                 }
                 Section{
                     NavigationLink {
-                        GameDetailView()
+                        LeaderboardView()
                     } label: {
                         Text("Stroke Play du 12/12/2023")
                     }
@@ -57,7 +57,7 @@ struct SavedGameView: View {
                 }
                 Section{
                     NavigationLink {
-                        GameDetailView()
+                        LeaderboardView()
                     } label: {
                         Text("Stroke Play du 12/12/2023")
                     }
@@ -68,7 +68,7 @@ struct SavedGameView: View {
                 }  
                 Section{
                     NavigationLink {
-                        GameDetailView()
+                        LeaderboardView()
                     } label: {
                         Text("Stroke Play du 12/12/2023")
                     }
@@ -79,7 +79,7 @@ struct SavedGameView: View {
                 }
                 Section{
                     NavigationLink {
-                        GameDetailView()
+                       LeaderboardView()
                     } label: {
                         Text("Stroke Play du 12/12/2023")
                     }
@@ -90,7 +90,7 @@ struct SavedGameView: View {
                 }
                 Section{
                     NavigationLink {
-                        GameDetailView()
+                        LeaderboardView()
                     } label: {
                         Text("Stroke Play du 12/12/2023")
                     }
