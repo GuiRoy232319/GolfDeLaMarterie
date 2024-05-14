@@ -14,7 +14,7 @@ let previewContainer: ModelContainer = {
         let container = try ModelContainer(for: Player.self, configurations: ModelConfiguration(isStoredInMemoryOnly: true))
         let modelContext = container.mainContext
         if try modelContext.fetch(FetchDescriptor<Player>()).isEmpty{
-            SamplePlayer.content.forEach {container.mainContext.insert($0)}
+            container.mainContext.insert(SamplePlayer.content)
         }
         return container
     } catch{

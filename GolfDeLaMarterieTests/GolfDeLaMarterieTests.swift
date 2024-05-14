@@ -34,4 +34,77 @@ class ParcoursTest : XCTestCase{
         XCTAssertEqual(instance.depart(ind: 23.6, gender: "Femme"), boule(slope: 127, SSS: 71.8, Start: "Rouge"))
     }
 }
+class TournamentTest: XCTestCase{
+    
+    func testTournamentData() async {
+        let mockSession = MockGolfData()
+        let _ = mockSession
+        let golfApi = ScheduleAPI(session: mockSession)
+        do {
+            let result = try await golfApi.fetchAllTournament()
+            if !result.isEmpty{
+                XCTAssertEqual(result.first!.Name, "Masters Tournament")
+                XCTAssertEqual(result.first!.TournamentID, 487)
+            }
+        } catch {
+            XCTFail("Une erreur inattendue est survenue : \(error)")
+               }
+    }
+    
+    func testInvalidUrl() async{
+        let mockSession = MockGolfData()
+        let golfApi = ScheduleAPI(session: mockSession)
+        golfApi.site = ""
+        do{
+            let _ = try await golfApi.fetchAllTournament()
+        }catch {
+            XCTAssertEqual(error as! ScheduleAPI.LiveLeaderBoardError, ScheduleAPI.LiveLeaderBoardError.invalidURL)
+        }
+    }
+    func testInvalidData() async{
+        let mockSession = MockLeaderBoardData()
+        let golfApi = ScheduleAPI(session: mockSession)
+        do{
+            let _ = try await golfApi.fetchAllTournament()
+        }catch {
+            XCTAssertEqual(error as! ScheduleAPI.LiveLeaderBoardError, ScheduleAPI.LiveLeaderBoardError.requestFailed)
+        }
+    }
+}
 
+class LeaderboardTest: XCTestCase{
+    func testLeaderBoardData() async {
+        let mockSession = MockLeaderBoardData()
+        let leaderApi = leaderboardAPI(session: mockSession)
+        do {
+            let result = try await leaderApi.fetchTournamentData(id: 487)
+            if !result.Players.isEmpty{
+                XCTAssertEqual(result.Players.first!.Name, "Scott Scheffler")
+                XCTAssertEqual(result.Players.first!.TotalScore, -13.6)
+            }
+        } catch {
+            XCTFail("Une erreur inattendue est survenue : \(error)")
+               }
+    }
+    
+    func testInvalidUrl() async{
+        let mockSession = MockLeaderBoardData()
+
+        let leaderApi = leaderboardAPI(session: mockSession)
+        leaderApi.site = ""
+        do{
+            let _ = try await leaderApi.fetchTournamentData(id: 487)
+        }catch {
+            XCTAssertEqual(error as! ScheduleAPI.LiveLeaderBoardError, ScheduleAPI.LiveLeaderBoardError.invalidURL)
+        }
+    }
+    func testInvalidData() async{
+        let mockSession = MockGolfData()
+        let leaderApi = leaderboardAPI(session: mockSession)
+        do{
+            let _ = try await leaderApi.fetchTournamentData(id: 487)
+        }catch {
+            XCTAssertEqual(error as! ScheduleAPI.LiveLeaderBoardError, ScheduleAPI.LiveLeaderBoardError.requestFailed)
+        }
+    }
+}

@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ProfilView: View {
+    @Environment(\.modelContext) private var modelContext
+    @Query private var player : [Player]
     @State var pickerChoice: Int = 0
     var statDatas : [String] = ["Score Moyen","GIR et Putts Moyen","Mise en jeu"]
     
@@ -17,113 +20,123 @@ struct ProfilView: View {
     }
     
     var body: some View {
-        VStack{
-            Image("moi")
-                .resizable()
-                .renderingMode(.original)
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 150, height: 150)
-                .cornerRadius(75)
-                .shadow(color: .black, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: 1, y: 1)
-                .padding(20)
+        NavigationStack{
             VStack{
-                Text("Player Name")
-                    .bold()
-                Text("Index: 7.8")
-                    .italic()
-                Button {
-                    
-                } label: {
-                    Label("Editer",systemImage: "pencil")
-                        .foregroundColor(.orange)
-                }
-            }
-            Divider()
-            HStack{
-                Label("Meilleur Score Brut:", systemImage: "star.circle.fill")
-                    .bold()
-                Text("80")
-                    .italic()
-            }
-            .padding(10)
-            Divider()
-            Picker(selection: $pickerChoice, label: Text("Analyse")) {
-                ForEach(0..<3){ stat in
-                    Text(statDatas[stat])
-                }
-            }.pickerStyle(.segmented)
-            if pickerChoice == 0{
+                Image("moi")
+                    .resizable()
+                    .renderingMode(.original)
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 150, height: 150)
+                    .cornerRadius(75)
+                    .shadow(color: .black, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: 1, y: 1)
+                    .padding(20)
                 VStack{
-                    ZStack {
-                        GaugeView(diameter: 170, progress: 0.75, color: .red)
-                        GaugeView(diameter: 135, progress: 0.5, color: .yellow)
-                        GaugeView(diameter: 100, progress: 0.3, color: .orange)
-                    }
-                    .padding(10)
-                    VStack{
-                        Text("Score moyen par 3: 3.5")
-                            .bold()
-                            .foregroundColor(.red)
-                        Text("Score moyen Par 4: 4.1")
-                            .bold()
-                            .foregroundColor(.yellow)
-                        Text("Score moyen Par 5: 4.9")
-                            .bold()
+                    Text(player.first!.firstName + " " + player.first!.lastName)
+                        .bold()
+                    Text(String(format: "Index: %.1f", Float(round(player.first!.index * 10) / 10)))
+                        .italic()
+                    Button {
+                        
+                    } label: {
+                        Label("Editer",systemImage: "pencil")
                             .foregroundColor(.orange)
                     }
                 }
-                .padding(20)
-            }
-            if pickerChoice == 1{
-                VStack{
-                    ZStack {
-                        GaugeView(diameter: 170, progress: 0.62, color: .green)
-                        GaugeView(diameter: 135, progress: 0.48, color: .blue)
+                Divider()
+                HStack{
+                    Label("Meilleur Score Brut:", systemImage: "star.circle.fill")
+                        .bold()
+                    Text("80")
+                        .italic()
+                }
+                .padding(10)
+                Divider()
+                Picker(selection: $pickerChoice, label: Text("Analyse")) {
+                    ForEach(0..<3){ stat in
+                        Text(statDatas[stat])
                     }
-                    .padding(10)
-                    VStack{
+                }.pickerStyle(.segmented)
+                    .padding(.vertical, 15.0)
+                    .padding(.horizontal, 5)
+                if pickerChoice == 0{
+                    VStack(alignment: .center){
+                        HStack{
+                            Text("Score moyen Par 3 :")
+                                .font(.headline)
+                            GaugeView(progress: 3.5, par: 3)
+                                .gaugeStyle(.accessoryCircular)
+                                .padding(10)
+                        }
+                        Divider()
+                        HStack{
+                            Text("Score moyen Par 4 :")
+                                .font(.headline)
+                            GaugeView(progress: 4.5 , par: 4)
+                                .gaugeStyle(.accessoryCircular)
+                                .padding(10)
+                            
+                        }
+                        Divider()
+                        HStack{
+                            Text("Score moyen Par 5:")
+                                .font(.headline)
+                            GaugeView(progress: 5.1, par: 5)
+                                .gaugeStyle(.accessoryCircular)
+                                .padding(10)
+                        }
+                    }
+                }
+                if pickerChoice == 1{
+                    VStack(alignment: .center){
+                        GaugeView(gradient: Gradient(colors: [.red,.blue, .green]), progress: 62, par: 50)
+                            .gaugeStyle(.accessoryLinear)
+                            .padding(.bottom, 10)
                         Text("Green en régulation : 62%")
-                            .bold()
-                            .fontWeight(.black)
-                            .foregroundColor(.green)
+                            .font(.headline)
+                        Divider()
+                            .padding(.bottom, 20)
+                        GaugeView(progress: 1.8, par: 2)
+                            .gaugeStyle(.accessoryLinear)
+                            .padding(.bottom, 10)
                         Text("Nombre de Putts moyen: 1.8")
-                            .bold()
-                            .foregroundColor(.blue)
+                            .font(.headline)
                     }
+                    .padding(20)
                 }
-                .padding(20)
-            }
-            if pickerChoice == 2{
-                VStack(){
-                    ZStack {
-                        GaugeView(diameter: 170, progress: 0.31, color: .orange)
-                        GaugeView(diameter: 135, progress: 0.46, color: .green)
-                        GaugeView(diameter: 100, progress: 0.23, color: .red)
-                    }
-                    .padding(10)
-                    VStack(alignment: .leading, spacing: 5.0){
+                if pickerChoice == 2{
+                    VStack(alignment: .center){
+                        GaugeView(gradient: Gradient(colors: [.green,.blue,.red,.red]),progress: 31, par: 50)
+                            .gaugeStyle(.accessoryLinear)
+                            .padding(.bottom, 10)
                         Text("Fairway manqué à gauche : 31%")
-                            .bold()
-                            .fontWeight(.black)
-                            .foregroundColor(.orange)
+                            .font(.headline)
+                        Divider()
+                            .padding(.bottom, 20)
+                        GaugeView(gradient: Gradient(colors: [.red,.blue, .green, .green]),progress: 46, par: 50)
+                            .gaugeStyle(.accessoryLinear)
+                            .padding(.bottom, 10)
                         Text("Fairway touché : 46%")
-                            .bold()
-                            .foregroundColor(.green)
+                            .font(.headline)
+                        Divider()
+                            .padding(.bottom, 20)
+                        GaugeView(gradient: Gradient(colors: [.green,.blue,.red,.red]),progress: 23, par: 50)
+                            .gaugeStyle(.accessoryLinear)
+                            .padding(.bottom, 10)
                         Text("Fairway manqué à droite : 23%")
-                            .bold()
-                            .foregroundColor(.red)
+                            .font(.headline)
                     }
+                    .padding(5)
                 }
-                .padding(20)
             }
-        }
-        .ignoresSafeArea()
-        .background {
-            Color(.secondarySystemFill)
-                .blur(radius: 10)
+            .navigationTitle("Mon Profil")
+            .ignoresSafeArea()
+            .background {
+                Color(.secondarySystemFill)
+                .blur(radius: 10)}
         }
     }
 }
 #Preview {
     ProfilView()
+        .modelContainer(previewContainer)
 }

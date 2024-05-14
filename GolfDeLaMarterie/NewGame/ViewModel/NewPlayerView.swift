@@ -10,7 +10,7 @@ import SwiftData
 
 struct NewPlayerView: View {
     @Environment(\.modelContext) private var modelContext
-    @Query private var player : [Player]
+    @Query private var player : [Friend]
     @State var firstName: String = ""
     @State var lastName: String = ""
     @State var mail: String = ""
@@ -25,7 +25,9 @@ struct NewPlayerView: View {
                     ForEach(player){ player in
                         HStack{ 
                             Text(player.firstName + " " + player.lastName)
-                            Text(String(format: "%.1f", Float(round(player.index * 10) / 10)))
+                            Spacer()
+                            Text(String(format: "Index: %.1f", Float(round(player.index * 10) / 10)))
+                                .font(.subheadline)
                         }
                     }
                 } header: {
@@ -37,7 +39,7 @@ struct NewPlayerView: View {
                         TextField("Prénom", text: $firstName)
                         TextField("Nom", text: $lastName)
                         HStack{
-                            Text(String(format: "%.1f", Float(round(index * 10) / 10)))
+                            Text(String(format: "Index: %.1f", Float(round(index * 10) / 10)))
                             Slider(value: $index, in: 0...54)
                         }
                         TextField("Téléphone", text: $tel)
@@ -48,13 +50,16 @@ struct NewPlayerView: View {
                             } else {Text("Femme")
                             }
                         }.toggleStyle(.button)
-                    }
-                    Button {
+                        Button{
 
-                    } label: {
-                    Text("Enregistrer le joueur dans mes amis")
+                        } label: {
+                        Text("Enregistrer le joueur dans mes amis")
+                                
+                        }
+                        .buttonStyle(BorderedProminentButtonStyle())
                     }
-                    .buttonStyle(BorderedProminentButtonStyle())
+                   
+                    
                 } header:{
                     Text("Nouveau joueur")
                         .fontWeight(.black)

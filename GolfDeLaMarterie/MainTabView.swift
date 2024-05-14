@@ -17,38 +17,34 @@ struct MainTabView: View {
     @Binding internal var gend : Bool
     
     var body: some View {
-        TabView {
+         TabView{
             ProfilView()
             .tabItem {
                 Label("Mon Profil", systemImage: "person.fill")
             }
-            .toolbarBackground(.visible, for: .tabBar)
             CourseView()
                 .tabItem {
                     Label("Le Parcours", systemImage: "flag.and.flag.filled.crossed")
                 }
-                .toolbarBackground(.visible, for: .tabBar)
             NewGameUIView(firstName: $firstName, lastname: $lastname, mail: $mail, tel: $tel, index: $index, gend: $gend)
                 .tabItem {
                     Label("Nouvelle Partie", systemImage: "figure.golf")
                 }
-                .toolbarBackground(.visible, for: .tabBar)
             SavedGameView()
                 .tabItem {
                     Label("Mes Parties", systemImage: "rectangle.and.pencil.and.ellipsis")
                 }
-                .toolbarBackground(.visible, for: .tabBar)
-            LiveLeaderboard()
+             Schedule2024View()
                 .tabItem {
-                    Label("Live Score", systemImage: "gear")
+                    Label("LeaderBoard", systemImage: "list.star")
                 }
-                .tint(.orange)
-                .toolbarBackground(.visible, for: .tabBar)
-
         }
+      
+        .tabViewStyle(.automatic)
+ 
     }
 }
 
-//#Preview {
-//    MainTabView()
-//}
+#Preview {
+    MainTabView(firstName: Binding.constant("John"), lastname: Binding.constant("Wick"), mail: Binding.constant("Babayage@FuckOff.com"), tel: Binding.constant("+16552489345"), index: Binding.constant(0.4), gend: Binding.constant(true))
+}

@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F002D5132BECBEAE008DBE03 /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = F002D5122BECBEAE008DBE03 /* Fastfile */; };
+		F011F4542BE3AACD0041CADD /* LeaderBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F4532BE3AACD0041CADD /* LeaderBoardViewModel.swift */; };
 		F0238E072BDB91D500818EBE /* SignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0238E062BDB91D500818EBE /* SignatureView.swift */; };
-		F0238E092BDBB06400818EBE /* LeaderbordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0238E082BDBB06400818EBE /* LeaderbordView.swift */; };
+		F030D7552BEA24A000831DC6 /* ScheduleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030D7542BEA24A000831DC6 /* ScheduleModel.swift */; };
 		F036713B2B6CE890005DFAAC /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F036713A2B6CE890005DFAAC /* CourseView.swift */; };
 		F038E3202BD689B70024A4CD /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = F038E31F2BD689B70024A4CD /* Friend.swift */; };
 		F03A50E62B70D3BD0043E487 /* NewGameUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03A50E52B70D3BD0043E487 /* NewGameUIView.swift */; };
@@ -18,11 +20,12 @@
 		F04B1B952BD66A8800C38178 /* SamplePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B1B942BD66A8800C38178 /* SamplePlayer.swift */; };
 		F04BD5522B73AAD100701C7A /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BD5512B73AAD100701C7A /* VideoPlayerView.swift */; };
 		F052047A2BD92D51005596C8 /* PlayerScoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05204792BD92D51005596C8 /* PlayerScoring.swift */; };
+		F059D43B2BEDFC4A007AD479 /* MockSchedule&Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F059D43A2BEDFC49007AD479 /* MockSchedule&Leaderboard.swift */; };
+		F059D43D2BEDFF3B007AD479 /* MockLeaderBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F059D43C2BEDFF3B007AD479 /* MockLeaderBoard.swift */; };
 		F0731D732BC7C5D300FAFFBE /* DistanceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0731D722BC7C5D300FAFFBE /* DistanceData.swift */; };
 		F0731D752BC7C60900FAFFBE /* LaMarterieCourseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0731D742BC7C60900FAFFBE /* LaMarterieCourseData.swift */; };
-		F0731D7E2BC927F900FAFFBE /* LiveLeaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0731D7D2BC927F900FAFFBE /* LiveLeaderboard.swift */; };
-		F0731D802BC9297E00FAFFBE /* LeaderBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0731D7F2BC9297E00FAFFBE /* LeaderBoard.swift */; };
-		F0731D822BC92A4E00FAFFBE /* LeaderboardApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0731D812BC92A4E00FAFFBE /* LeaderboardApi.swift */; };
+		F0731D7E2BC927F900FAFFBE /* Schedulde2024View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0731D7D2BC927F900FAFFBE /* Schedulde2024View.swift */; };
+		F0731D802BC9297E00FAFFBE /* StructLeaderBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0731D7F2BC9297E00FAFFBE /* StructLeaderBoard.swift */; };
 		F0731D842BC92C0700FAFFBE /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0731D832BC92C0700FAFFBE /* ErrorHandling.swift */; };
 		F0731D862BC92C8400FAFFBE /* MockLeaderBoardApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0731D852BC92C8400FAFFBE /* MockLeaderBoardApi.swift */; };
 		F0817C6B2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C6A2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift */; };
@@ -57,6 +60,7 @@
 		F08F304E2BD27BC200F84479 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F08F304D2BD27BC200F84479 /* FirebaseStorage */; };
 		F08F30502BD27BC200F84479 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F08F304F2BD27BC200F84479 /* FirebaseStorageCombine-Community */; };
 		F08F30522BD27C2000F84479 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F08F30512BD27C2000F84479 /* GoogleService-Info.plist */; };
+		F0932B9E2BE4BF9E0065CC0A /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0932B9D2BE4BF9E0065CC0A /* LeaderboardView.swift */; };
 		F09D3AE42BCD1535008EB889 /* AVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09D3AE32BCD1535008EB889 /* AVPlayer.swift */; };
 		F09D3AE62BCD225B008EB889 /* Hole1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AE52BCD225B008EB889 /* Hole1.mp4 */; };
 		F09D3AFA2BCD31CF008EB889 /* Hole14.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AE82BCD31B4008EB889 /* Hole14.mp4 */; };
@@ -82,6 +86,7 @@
 		F0A3DE792B7144A000982303 /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE782B7144A000982303 /* GaugeView.swift */; };
 		F0BB441B2BD8FA250051FD3A /* ScoringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BB441A2BD8FA250051FD3A /* ScoringView.swift */; };
 		F0C89ED92BDD92DE00CA247B /* RecapScoringSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C89ED82BDD92DE00CA247B /* RecapScoringSwiftUIView.swift */; };
+		F0E603022BF363F600D0D83F /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = F0E603012BF363F600D0D83F /* Reachability */; };
 		F0F224B72BDFC38B007E8BA2 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F0F224B62BDFC38B007E8BA2 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
@@ -103,8 +108,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F002D5122BECBEAE008DBE03 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
+		F011F4532BE3AACD0041CADD /* LeaderBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardViewModel.swift; sourceTree = "<group>"; };
 		F0238E062BDB91D500818EBE /* SignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureView.swift; sourceTree = "<group>"; };
-		F0238E082BDBB06400818EBE /* LeaderbordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderbordView.swift; sourceTree = "<group>"; };
+		F030D7542BEA24A000831DC6 /* ScheduleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleModel.swift; sourceTree = "<group>"; };
 		F036713A2B6CE890005DFAAC /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 		F038E31F2BD689B70024A4CD /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		F03A50E52B70D3BD0043E487 /* NewGameUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameUIView.swift; sourceTree = "<group>"; };
@@ -114,12 +121,13 @@
 		F04B1B942BD66A8800C38178 /* SamplePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePlayer.swift; sourceTree = "<group>"; };
 		F04BD5512B73AAD100701C7A /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		F05204792BD92D51005596C8 /* PlayerScoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScoring.swift; sourceTree = "<group>"; };
+		F059D43A2BEDFC49007AD479 /* MockSchedule&Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MockSchedule&Leaderboard.swift"; sourceTree = "<group>"; };
+		F059D43C2BEDFF3B007AD479 /* MockLeaderBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLeaderBoard.swift; sourceTree = "<group>"; };
 		F0731D722BC7C5D300FAFFBE /* DistanceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceData.swift; sourceTree = "<group>"; };
 		F0731D742BC7C60900FAFFBE /* LaMarterieCourseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaMarterieCourseData.swift; sourceTree = "<group>"; };
 		F0731D7C2BC7C95800FAFFBE /* GolfDeLaMarterieTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = GolfDeLaMarterieTests.xctestplan; sourceTree = "<group>"; };
-		F0731D7D2BC927F900FAFFBE /* LiveLeaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveLeaderboard.swift; sourceTree = "<group>"; };
-		F0731D7F2BC9297E00FAFFBE /* LeaderBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoard.swift; sourceTree = "<group>"; };
-		F0731D812BC92A4E00FAFFBE /* LeaderboardApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardApi.swift; sourceTree = "<group>"; };
+		F0731D7D2BC927F900FAFFBE /* Schedulde2024View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedulde2024View.swift; sourceTree = "<group>"; };
+		F0731D7F2BC9297E00FAFFBE /* StructLeaderBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructLeaderBoard.swift; sourceTree = "<group>"; };
 		F0731D832BC92C0700FAFFBE /* ErrorHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
 		F0731D852BC92C8400FAFFBE /* MockLeaderBoardApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLeaderBoardApi.swift; sourceTree = "<group>"; };
 		F0817C672B6B8A22000C4937 /* GolfDeLaMarterie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolfDeLaMarterie.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +148,7 @@
 		F0817CA62B6B9BC3000C4937 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		F0817CA82B6BA181000C4937 /* ProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilView.swift; sourceTree = "<group>"; };
 		F08F30512BD27C2000F84479 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F0932B9D2BE4BF9E0065CC0A /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 		F09D3AE32BCD1535008EB889 /* AVPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayer.swift; sourceTree = "<group>"; };
 		F09D3AE52BCD225B008EB889 /* Hole1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole1.mp4; sourceTree = "<group>"; };
 		F09D3AE82BCD31B4008EB889 /* Hole14.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole14.mp4; sourceTree = "<group>"; };
@@ -186,6 +195,7 @@
 				F08F30462BD27BC200F84479 /* FirebaseFirestore in Frameworks */,
 				F08F30322BD27BC200F84479 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				F08F30382BD27BC200F84479 /* FirebaseAppCheck in Frameworks */,
+				F0E603022BF363F600D0D83F /* Reachability in Frameworks */,
 				F08F303E2BD27BC200F84479 /* FirebaseCrashlytics in Frameworks */,
 				F08F30402BD27BC200F84479 /* FirebaseDatabase in Frameworks */,
 				F08F303C2BD27BC200F84479 /* FirebaseAuthCombine-Community in Frameworks */,
@@ -258,6 +268,7 @@
 				F0817C702B6B8A24000C4937 /* Assets.xcassets */,
 				F0817C742B6B8A25000C4937 /* Preview Assets.xcassets */,
 				F0817C6C2B6B8A22000C4937 /* MainTabView.swift */,
+				F002D5122BECBEAE008DBE03 /* Fastfile */,
 			);
 			path = GolfDeLaMarterie;
 			sourceTree = "<group>";
@@ -365,8 +376,10 @@
 		F0F224BD2BDFEA74007E8BA2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F0731D7F2BC9297E00FAFFBE /* LeaderBoard.swift */,
-				F0731D812BC92A4E00FAFFBE /* LeaderboardApi.swift */,
+				F0731D7F2BC9297E00FAFFBE /* StructLeaderBoard.swift */,
+				F030D7542BEA24A000831DC6 /* ScheduleModel.swift */,
+				F059D43A2BEDFC49007AD479 /* MockSchedule&Leaderboard.swift */,
+				F059D43C2BEDFF3B007AD479 /* MockLeaderBoard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -374,7 +387,7 @@
 		F0F224BE2BDFEA9B007E8BA2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				F0238E082BDBB06400818EBE /* LeaderbordView.swift */,
+				F011F4532BE3AACD0041CADD /* LeaderBoardViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -382,7 +395,8 @@
 		F0F224BF2BDFEABA007E8BA2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F0731D7D2BC927F900FAFFBE /* LiveLeaderboard.swift */,
+				F0731D7D2BC927F900FAFFBE /* Schedulde2024View.swift */,
+				F0932B9D2BE4BF9E0065CC0A /* LeaderboardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -506,6 +520,7 @@
 				F08F304B2BD27BC200F84479 /* FirebasePerformance */,
 				F08F304D2BD27BC200F84479 /* FirebaseStorage */,
 				F08F304F2BD27BC200F84479 /* FirebaseStorageCombine-Community */,
+				F0E603012BF363F600D0D83F /* Reachability */,
 			);
 			productName = GolfDeLaMarterie;
 			productReference = F0817C672B6B8A22000C4937 /* GolfDeLaMarterie.app */;
@@ -582,6 +597,7 @@
 			mainGroup = F0817C5E2B6B8A22000C4937;
 			packageReferences = (
 				F08F302E2BD27BC200F84479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F0E603002BF363F600D0D83F /* XCRemoteSwiftPackageReference "Reachability" */,
 			);
 			productRefGroup = F0817C682B6B8A22000C4937 /* Products */;
 			projectDirPath = "";
@@ -605,6 +621,7 @@
 				F09D3AFE2BCD31CF008EB889 /* Overview.mp4 in Resources */,
 				F09D3B062BCD31CF008EB889 /* Hole12.mp4 in Resources */,
 				F08F30522BD27C2000F84479 /* GoogleService-Info.plist in Resources */,
+				F002D5132BECBEAE008DBE03 /* Fastfile in Resources */,
 				F0817C752B6B8A25000C4937 /* Preview Assets.xcassets in Resources */,
 				F09D3B052BCD31CF008EB889 /* Hole9.mp4 in Resources */,
 				F09D3AFB2BCD31CF008EB889 /* Hole11.mp4 in Resources */,
@@ -671,27 +688,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F011F4542BE3AACD0041CADD /* LeaderBoardViewModel.swift in Sources */,
 				F0817CA72B6B9BC3000C4937 /* BackgroundView.swift in Sources */,
 				F0817CA32B6B91D5000C4937 /* Struct Distance.swift in Sources */,
 				F052047A2BD92D51005596C8 /* PlayerScoring.swift in Sources */,
 				F04BD5522B73AAD100701C7A /* VideoPlayerView.swift in Sources */,
 				F0817CA52B6B921E000C4937 /* FirebaseHelper.swift in Sources */,
 				F03A50E62B70D3BD0043E487 /* NewGameUIView.swift in Sources */,
-				F0731D7E2BC927F900FAFFBE /* LiveLeaderboard.swift in Sources */,
-				F0238E092BDBB06400818EBE /* LeaderbordView.swift in Sources */,
+				F0731D7E2BC927F900FAFFBE /* Schedulde2024View.swift in Sources */,
 				F03A50EA2B70E9900043E487 /* Player.swift in Sources */,
 				F03A50E82B70D6570043E487 /* StructBoule.swift in Sources */,
+				F0932B9E2BE4BF9E0065CC0A /* LeaderboardView.swift in Sources */,
 				F0817C9D2B6B91C7000C4937 /* StructHole.swift in Sources */,
+				F030D7552BEA24A000831DC6 /* ScheduleModel.swift in Sources */,
 				F0817C6D2B6B8A22000C4937 /* MainTabView.swift in Sources */,
-				F0731D822BC92A4E00FAFFBE /* LeaderboardApi.swift in Sources */,
 				F0C89ED92BDD92DE00CA247B /* RecapScoringSwiftUIView.swift in Sources */,
-				F0731D802BC9297E00FAFFBE /* LeaderBoard.swift in Sources */,
+				F0731D802BC9297E00FAFFBE /* StructLeaderBoard.swift in Sources */,
 				F0A3DE732B70FCB100982303 /* NewPlayerView.swift in Sources */,
 				F0A3DE792B7144A000982303 /* GaugeView.swift in Sources */,
+				F059D43B2BEDFC4A007AD479 /* MockSchedule&Leaderboard.swift in Sources */,
 				F0238E072BDB91D500818EBE /* SignatureView.swift in Sources */,
 				F04B1B952BD66A8800C38178 /* SamplePlayer.swift in Sources */,
 				F0731D752BC7C60900FAFFBE /* LaMarterieCourseData.swift in Sources */,
 				F09D3AE42BCD1535008EB889 /* AVPlayer.swift in Sources */,
+				F059D43D2BEDFF3B007AD479 /* MockLeaderBoard.swift in Sources */,
 				F0731D732BC7C5D300FAFFBE /* DistanceData.swift in Sources */,
 				F04B1B932BD668F900C38178 /* PreviewData.swift in Sources */,
 				F0731D842BC92C0700FAFFBE /* ErrorHandling.swift in Sources */,
@@ -1091,6 +1111,14 @@
 				minimumVersion = 10.24.0;
 			};
 		};
+		F0E603002BF363F600D0D83F /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1178,6 +1206,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F08F302E2BD27BC200F84479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
+		};
+		F0E603012BF363F600D0D83F /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F0E603002BF363F600D0D83F /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

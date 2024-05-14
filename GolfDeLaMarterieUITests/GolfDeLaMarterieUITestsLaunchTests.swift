@@ -7,6 +7,7 @@
 
 import XCTest
 
+
 final class GolfDeLaMarterieUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
@@ -19,6 +20,7 @@ final class GolfDeLaMarterieUITestsLaunchTests: XCTestCase {
 
     func testLaunch() throws {
         let app = XCUIApplication()
+       
         app.launch()
 
         // Insert steps here to perform after app launch but before taking a screenshot,

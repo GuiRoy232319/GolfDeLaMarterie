@@ -8,31 +8,26 @@
 import SwiftUI
 
 struct GaugeView: View {
-    var diameter: CGFloat
-    var progress: Double
     @State private var currentProgress: Double = 0
-    var color: Color
-    
+    var gradient = Gradient(colors: [.blue, .green, .red])
+    var progress: Double
+    var par : Int = 3
+
     var body: some View {
-        ZStack {
-            Circle()
-                .stroke(lineWidth: 15)
-                .opacity(0.3)
-                .foregroundColor(Color.gray)
-                .shadow(color: color , radius: 5)
-            Circle()
-                .trim(from: 0.0, to: (min(self.currentProgress, 2.0)))
-                .stroke(style: StrokeStyle(lineWidth: 13, lineCap: .round, lineJoin: .round))
-                .rotationEffect(Angle(degrees: -90))
-                .foregroundColor(Color.black.opacity(0.2))
-            Circle()
-                .trim(from: 0.0, to: CGFloat(min(self.currentProgress, 2.0)))
-                .stroke(style: StrokeStyle(lineWidth: 11, lineCap: .round, lineJoin: .round))
-                .rotationEffect(Angle(degrees: -90))
-                .foregroundColor(color)
-           
+        VStack{
+            Gauge(
+                value: currentProgress,
+                in:0...Double((par * 2)) ,
+                label: {
+                    Text("Score moyen par \(par)")
+                },
+
+                currentValueLabel: {  Text(String(format: "%.1f", Float(round(progress * 10) / 10))) },
+                minimumValueLabel: { Text("0") },
+                maximumValueLabel: { Text("\(par * 2)") }
+            )
+            .tint(gradient)
         }
-        .frame(width: diameter, height: diameter)
         .onAppear {
             withAnimation(.linear(duration: 1.5)){
                 self.currentProgress = progress
@@ -41,5 +36,5 @@ struct GaugeView: View {
     }
 }
 #Preview {
-    GaugeView(diameter: 100, progress: 1.78, color: .red)
+    GaugeView(progress: 3.5, par: 3)
 }

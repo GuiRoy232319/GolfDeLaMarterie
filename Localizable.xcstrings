@@ -57,6 +57,16 @@
         }
       }
     },
+    "0" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "0"
+          }
+        }
+      }
+    },
     "80" : {
       "localizations" : {
         "en" : {
@@ -268,6 +278,7 @@
       }
     },
     "Général" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -359,6 +370,7 @@
       }
     },
     "is true" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -409,11 +421,22 @@
       }
     },
     "Leaderboard" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Leaderboard"
+          }
+        }
+      }
+    },
+    "LeaderBoard" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LeaderBoard"
           }
         }
       }
@@ -429,6 +452,7 @@
       }
     },
     "Loading..." : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -508,6 +532,9 @@
           }
         }
       }
+    },
+    "Missed Cut" : {
+
     },
     "Mode Compétition" : {
       "localizations" : {
@@ -761,6 +788,7 @@
       }
     },
     "Réglages" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -790,6 +818,16 @@
         }
       }
     },
+    "Schedule" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schedule"
+          }
+        }
+      }
+    },
     "Score Joueur 1" : {
       "localizations" : {
         "en" : {
@@ -811,7 +849,28 @@
         }
       }
     },
+    "Score moyen par %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Average Score"
+          }
+        }
+      }
+    },
+    "Score moyen Par 3 :" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Average Score Par 3:"
+          }
+        }
+      }
+    },
     "Score moyen par 3: 3.5" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -821,7 +880,18 @@
         }
       }
     },
+    "Score moyen Par 4 :" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Average Score Par 4:"
+          }
+        }
+      }
+    },
     "Score moyen Par 4: 4.1" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -831,7 +901,18 @@
         }
       }
     },
+    "Score moyen Par 5:" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Average Score Par 5:"
+          }
+        }
+      }
+    },
     "Score moyen Par 5: 4.9" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -902,6 +983,7 @@
       }
     },
     "test" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -912,6 +994,7 @@
       }
     },
     "Test" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -922,6 +1005,7 @@
       }
     },
     "test un" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -940,6 +1024,9 @@
           }
         }
       }
+    },
+    "Tournois" : {
+
     },
     "Trou n°" : {
       "localizations" : {
@@ -982,6 +1069,7 @@
       }
     },
     "Version 1.0.2" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {

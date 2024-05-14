@@ -1,0 +1,28 @@
+///Compilation
+lane :build do
+  gym
+end
+
+///Launch Test
+lane :test do
+  scan
+end
+
+///ScreenShot
+lane :screenshots do
+  snapshot
+end
+
+/// Deploiement
+lane :deploy do
+  deliver
+end
+
+
+///Release Lane
+lane :release do
+  build
+  test
+  screenshots
+  deploy
+end

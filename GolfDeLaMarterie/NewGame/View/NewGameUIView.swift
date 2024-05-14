@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct NewGameUIView: View {
+    @Environment(\.modelContext) private var modelContext
+    @Query var players: [Player]
     @State private var competitionIsOn = false
     @State private var signatureIsOn = false
     var gameMode = ["Stroke Play","Stableford","Scramble","Match Play","Foursome","Greensome","Patsome", "Ringer Score", "Eclectic"]
@@ -28,9 +31,9 @@ struct NewGameUIView: View {
                         Image("Blanc")
                             .resizable()
                             .frame(width: 20, height: 20)
-                        Text("Guillaume")
-                        Text("Roy")
-                        Text("Index: 7.8")
+                        Text(players.first!.firstName)
+                        Text(players.first!.lastName)
+                        Text(String(format: "Index: %.1f", Float(round(players.first!.index * 10) / 10)))
                     }
                     NavigationLink("Ajouter un joueur", destination:
                                     NewPlayerView()
@@ -82,4 +85,5 @@ struct NewGameUIView: View {
 
 #Preview {
     NewGameUIView(firstName: Binding.constant(""), lastname: Binding.constant(""), mail: Binding.constant(""), tel: Binding.constant(""), index: Binding.constant(24), gend: Binding.constant(true))
+        .modelContainer(previewContainer)
 }
