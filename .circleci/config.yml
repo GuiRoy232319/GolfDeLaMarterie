@@ -1,43 +1,45 @@
-# Couldn't automatically generate a config from your source code.
-# This is a generic template to serve as a base for your custom config
-# See: https://circleci.com/docs/configuration-reference
+# .circleci/config.yml
 version: 2.1
 jobs:
-  test:
-    docker:
-      - image: cimg/base:stable
+  build-and-test:
+    macos:
+      xcode: 14.0.1
+    environment:
+      FL_OUTPUT_DIR: output
+      FASTLANE_LANE: test
     steps:
       - checkout
-      # Replace this with a real test runner invocation
+      - run: bundle install
       - run:
-          name: Run tests
-          command: echo 'replace me with real tests!' && false
-  build:
-    docker:
-      - image: cimg/base:stable
-    steps:
-      - checkout
-      # Replace this with steps to build a package, or executable
-      - run:
-          name: Build an artifact
-          command: touch example.txt
+          name: Fastlane
+          command: bundle exec fastlane $FASTLANE_LANE
       - store_artifacts:
-          path: example.txt
-  deploy:
-    docker:
-      - image: cimg/base:stable
+          path: output
+      - store_test_results:
+          path: output/scan
+
+  adhoc:
+    macos:
+      xcode: 14.0.1
+    environment:
+      FL_OUTPUT_DIR: output
+      FASTLANE_LANE: adhoc
     steps:
-      # Replace this with steps to deploy to users
+      - checkout
+      - run: bundle install
       - run:
-          name: deploy
-          command: '#e.g. ./deploy.sh'
+          name: Fastlane
+          command: bundle exec fastlane $FASTLANE_LANE
+      - store_artifacts:
+          path: output
+
 workflows:
-  example:
+  build-test-adhoc:
     jobs:
-      - test
-      - build:
+      - build-and-test
+      - adhoc:
+          filters:
+            branches:
+              only: development
           requires:
-            - test
-      - deploy:
-          requires:
-            - test
+            - build-and-test
