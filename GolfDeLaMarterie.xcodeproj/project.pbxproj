@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F002D5132BECBEAE008DBE03 /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = F002D5122BECBEAE008DBE03 /* Fastfile */; };
 		F011F4542BE3AACD0041CADD /* LeaderBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F4532BE3AACD0041CADD /* LeaderBoardViewModel.swift */; };
 		F0238E072BDB91D500818EBE /* SignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0238E062BDB91D500818EBE /* SignatureView.swift */; };
 		F030D7552BEA24A000831DC6 /* ScheduleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030D7542BEA24A000831DC6 /* ScheduleModel.swift */; };
@@ -108,7 +107,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F002D5122BECBEAE008DBE03 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
 		F011F4532BE3AACD0041CADD /* LeaderBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardViewModel.swift; sourceTree = "<group>"; };
 		F0238E062BDB91D500818EBE /* SignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureView.swift; sourceTree = "<group>"; };
 		F030D7542BEA24A000831DC6 /* ScheduleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleModel.swift; sourceTree = "<group>"; };
@@ -268,7 +266,6 @@
 				F0817C702B6B8A24000C4937 /* Assets.xcassets */,
 				F0817C742B6B8A25000C4937 /* Preview Assets.xcassets */,
 				F0817C6C2B6B8A22000C4937 /* MainTabView.swift */,
-				F002D5122BECBEAE008DBE03 /* Fastfile */,
 			);
 			path = GolfDeLaMarterie;
 			sourceTree = "<group>";
@@ -621,7 +618,6 @@
 				F09D3AFE2BCD31CF008EB889 /* Overview.mp4 in Resources */,
 				F09D3B062BCD31CF008EB889 /* Hole12.mp4 in Resources */,
 				F08F30522BD27C2000F84479 /* GoogleService-Info.plist in Resources */,
-				F002D5132BECBEAE008DBE03 /* Fastfile in Resources */,
 				F0817C752B6B8A25000C4937 /* Preview Assets.xcassets in Resources */,
 				F09D3B052BCD31CF008EB889 /* Hole9.mp4 in Resources */,
 				F09D3AFB2BCD31CF008EB889 /* Hole11.mp4 in Resources */,
