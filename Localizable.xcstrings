@@ -320,6 +320,7 @@
       }
     },
     "Guillaume" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -360,6 +361,7 @@
       }
     },
     "Index: 7.8" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -809,6 +811,7 @@
       }
     },
     "Roy" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
