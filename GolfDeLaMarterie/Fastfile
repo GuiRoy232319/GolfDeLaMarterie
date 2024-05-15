@@ -1,28 +1,19 @@
-///Compilation
-lane :build do
-  gym
-end
+# fastlane/Fastfile
+default_platform :ios
 
-///Launch Test
-lane :test do
-  scan
-end
+platform :ios do
+  before_all do
+    setup_circle_ci
+  end
 
-///ScreenShot
-lane :screenshots do
-  snapshot
-end
+  desc "Runs all the tests"
+  lane :test do
+    scan
+  end
 
-/// Deploiement
-lane :deploy do
-  deliver
-end
-
-
-///Release Lane
-lane :release do
-  build
-  test
-  screenshots
-  deploy
+  desc "Ad-hoc build"
+  lane :adhoc do
+    match(type: "adhoc")
+    gym(export_method: "ad-hoc")
+  end
 end
