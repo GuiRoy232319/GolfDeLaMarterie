@@ -9,9 +9,6 @@ jobs:
       FL_OUTPUT_DIR: output
       FASTLANE_LANE: test
     steps:
-      - run: 
-          name: Remove corrupted Package.resolved
-          command: rm /Users/distiller/project/GolfDeLaMarterie.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
       - checkout
       - run: bundle install
       - run:
@@ -45,6 +42,6 @@ workflows:
       - adhoc:
           filters:
             branches:
-              only: development
+              only: main
           requires:
             - build-and-test
