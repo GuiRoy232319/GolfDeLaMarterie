@@ -10,14 +10,17 @@ import Foundation
 
 class leaderboardAPI{
     private let session : URLSessionProtocol
+    
     init(session: URLSessionProtocol = URLSession.shared){
         self.session = session
     }
+    
     var site = "https://api.sportsdata.io/golf/v2/json/Leaderboard/"
     let authKey = "?key=acfd2c6acf10425bba8673ef43d8cae9"
     
     func fetchTournamentData(id: Int) async throws ->LeaderBoard{
-        guard let url = URL(string: site + "\(id)" + authKey) else { throw LeaderBoardError.invalidURL}
+        guard site != "" else {throw LeaderBoardError.invalidURL}
+        guard let url = URL(string: site + "\(id)" + authKey) else { throw LeaderBoardError.requestFailed}
         do{
             let urlRequest = URLRequest(url: url)
             let (data, _) = try await session.data(for: urlRequest)

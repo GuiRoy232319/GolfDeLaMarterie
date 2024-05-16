@@ -7,12 +7,6 @@
 
 import Foundation
 
-protocol URLSessionProtocol {
-    func data(for request: URLRequest) async throws -> (Data, URLResponse)
-}
-
-// Implémentation réelle de URLSessionProtocol
-extension URLSession: URLSessionProtocol {}
 final class MockEdamamApi: URLSessionProtocol{
     var invalidData = false
     

@@ -112,7 +112,7 @@ final class MockGolfData: URLSessionProtocol{
                     "StreaksOfSixBirdiesOrBetter": 0.0
                     }
                 ]
-            }
+        }
         """.data(using: .utf8)!
             let response = HTTPURLResponse(url: URL(string: "https://example.com")!, statusCode: 200, httpVersion: nil, headerFields: nil)!
             return (testData, response)

@@ -83,6 +83,7 @@
 		F0A3DE732B70FCB100982303 /* NewPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE722B70FCB100982303 /* NewPlayerView.swift */; };
 		F0A3DE752B712A3C00982303 /* SavedGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE742B712A3C00982303 /* SavedGameView.swift */; };
 		F0A3DE792B7144A000982303 /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE782B7144A000982303 /* GaugeView.swift */; };
+		F0A665F92BF613D200C767BE /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A665F82BF613D200C767BE /* URLSessionProtocol.swift */; };
 		F0BB441B2BD8FA250051FD3A /* ScoringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BB441A2BD8FA250051FD3A /* ScoringView.swift */; };
 		F0C89ED92BDD92DE00CA247B /* RecapScoringSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C89ED82BDD92DE00CA247B /* RecapScoringSwiftUIView.swift */; };
 		F0E603022BF363F600D0D83F /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = F0E603012BF363F600D0D83F /* Reachability */; };
@@ -170,6 +171,7 @@
 		F0A3DE722B70FCB100982303 /* NewPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlayerView.swift; sourceTree = "<group>"; };
 		F0A3DE742B712A3C00982303 /* SavedGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedGameView.swift; sourceTree = "<group>"; };
 		F0A3DE782B7144A000982303 /* GaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeView.swift; sourceTree = "<group>"; };
+		F0A665F82BF613D200C767BE /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		F0BB441A2BD8FA250051FD3A /* ScoringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringView.swift; sourceTree = "<group>"; };
 		F0C89ED82BDD92DE00CA247B /* RecapScoringSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecapScoringSwiftUIView.swift; sourceTree = "<group>"; };
 		F0F224B62BDFC38B007E8BA2 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
@@ -377,6 +379,7 @@
 				F030D7542BEA24A000831DC6 /* ScheduleModel.swift */,
 				F059D43A2BEDFC49007AD479 /* MockSchedule&Leaderboard.swift */,
 				F059D43C2BEDFF3B007AD479 /* MockLeaderBoard.swift */,
+				F0A665F82BF613D200C767BE /* URLSessionProtocol.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -717,6 +720,7 @@
 				F0817C9B2B6B91AF000C4937 /* GPSLocation.swift in Sources */,
 				F0A3DE752B712A3C00982303 /* SavedGameView.swift in Sources */,
 				F038E3202BD689B70024A4CD /* Friend.swift in Sources */,
+				F0A665F92BF613D200C767BE /* URLSessionProtocol.swift in Sources */,
 				F0817CA22B6B91D5000C4937 /* StructParcours.swift in Sources */,
 				F0BB441B2BD8FA250051FD3A /* ScoringView.swift in Sources */,
 				F036713B2B6CE890005DFAAC /* CourseView.swift in Sources */,
