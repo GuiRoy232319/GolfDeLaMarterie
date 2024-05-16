@@ -1,45 +1,23 @@
-# .circleci/config.yml
 version: 2.1
-jobs:
-  build-and-test:
-    macos:
-      xcode: 15.0.1
-    environment:
-      FL_OUTPUT_DIR: output
-      FASTLANE_LANE: test
-    steps:
-      - checkout
-      - run: bundle install
-      - run:
-          name: Fastlane
-          command: bundle exec fastlane $FASTLANE_LANE
-      - store_artifacts:
-          path: output
-      - store_test_results:
-          path: output/scan
 
-  adhoc:
+jobs:
+  build:
     macos:
       xcode: 15.0.1
-    environment:
-      FL_OUTPUT_DIR: output
-      FASTLANE_LANE: adhoc
     steps:
       - checkout
-      - run: bundle install
       - run:
-          name: Fastlane
-          command: bundle exec fastlane $FASTLANE_LANE
-      - store_artifacts:
-          path: output
+          name: Install Fastlane
+          command: gem install fastlane -NV
+      - run:
+          name: Install CocoaPods
+          command: pod install
+      - run:
+          name: Run Tests
+          command: fastlane test
 
 workflows:
-  build-test-adhoc:
+  version: 2
+  build:
     jobs:
-      - build-and-test
-      - adhoc:
-          filters:
-            branches:
-              only: development
-          requires:
-            - build-and-test
+      - build
