@@ -32,8 +32,6 @@
 		F0817C712B6B8A24000C4937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0817C702B6B8A24000C4937 /* Assets.xcassets */; };
 		F0817C752B6B8A25000C4937 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0817C742B6B8A25000C4937 /* Preview Assets.xcassets */; };
 		F0817C7F2B6B8A25000C4937 /* GolfDeLaMarterieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C7E2B6B8A25000C4937 /* GolfDeLaMarterieTests.swift */; };
-		F0817C892B6B8A25000C4937 /* GolfDeLaMarterieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C882B6B8A25000C4937 /* GolfDeLaMarterieUITests.swift */; };
-		F0817C8B2B6B8A25000C4937 /* GolfDeLaMarterieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C8A2B6B8A25000C4937 /* GolfDeLaMarterieUITestsLaunchTests.swift */; };
 		F0817C9B2B6B91AF000C4937 /* GPSLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C9A2B6B91AF000C4937 /* GPSLocation.swift */; };
 		F0817C9D2B6B91C7000C4937 /* StructHole.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C9C2B6B91C7000C4937 /* StructHole.swift */; };
 		F0817CA22B6B91D5000C4937 /* StructParcours.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C9F2B6B91D4000C4937 /* StructParcours.swift */; };
@@ -137,8 +135,6 @@
 		F0817C7A2B6B8A25000C4937 /* GolfDeLaMarterieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolfDeLaMarterieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0817C7E2B6B8A25000C4937 /* GolfDeLaMarterieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfDeLaMarterieTests.swift; sourceTree = "<group>"; };
 		F0817C842B6B8A25000C4937 /* GolfDeLaMarterieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolfDeLaMarterieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0817C882B6B8A25000C4937 /* GolfDeLaMarterieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfDeLaMarterieUITests.swift; sourceTree = "<group>"; };
-		F0817C8A2B6B8A25000C4937 /* GolfDeLaMarterieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfDeLaMarterieUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F0817C9A2B6B91AF000C4937 /* GPSLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPSLocation.swift; sourceTree = "<group>"; };
 		F0817C9C2B6B91C7000C4937 /* StructHole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructHole.swift; sourceTree = "<group>"; };
 		F0817C9F2B6B91D4000C4937 /* StructParcours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructParcours.swift; sourceTree = "<group>"; };
@@ -239,7 +235,6 @@
 				F08F30512BD27C2000F84479 /* GoogleService-Info.plist */,
 				F0F224B62BDFC38B007E8BA2 /* Localizable.xcstrings */,
 				F0817C7D2B6B8A25000C4937 /* GolfDeLaMarterieTests */,
-				F0817C872B6B8A25000C4937 /* GolfDeLaMarterieUITests */,
 				F0817C682B6B8A22000C4937 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -279,15 +274,6 @@
 				F0817C7E2B6B8A25000C4937 /* GolfDeLaMarterieTests.swift */,
 			);
 			path = GolfDeLaMarterieTests;
-			sourceTree = "<group>";
-		};
-		F0817C872B6B8A25000C4937 /* GolfDeLaMarterieUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F0817C882B6B8A25000C4937 /* GolfDeLaMarterieUITests.swift */,
-				F0817C8A2B6B8A25000C4937 /* GolfDeLaMarterieUITestsLaunchTests.swift */,
-			);
-			path = GolfDeLaMarterieUITests;
 			sourceTree = "<group>";
 		};
 		F0817C992B6B90FF000C4937 /* ViewModel */ = {
@@ -739,8 +725,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0817C892B6B8A25000C4937 /* GolfDeLaMarterieUITests.swift in Sources */,
-				F0817C8B2B6B8A25000C4937 /* GolfDeLaMarterieUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
