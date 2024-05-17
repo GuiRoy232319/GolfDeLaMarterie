@@ -10,7 +10,6 @@ platform :ios do
   lane :test do
     scan(
 scheme: "GolfDeLaMarterie",
-project: "./GolfDeLaMarterie.xcodeproj",
 device: "iPhone 15"
 )
   end
