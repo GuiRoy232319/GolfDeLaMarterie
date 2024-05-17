@@ -9,7 +9,9 @@ platform :ios do
   desc "Runs all the tests"
   lane :test do
     scan(
-scheme: "GolfDeLaMarterie"
+scheme: "GolfDeLaMarterieTests",
+project: "./GolfDeLaMarterie.xcodeproj",
+device: "iPhone 15"
 )
   end
 end
