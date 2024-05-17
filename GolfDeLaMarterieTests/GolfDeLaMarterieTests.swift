@@ -61,15 +61,6 @@ class TournamentTest: XCTestCase{
             XCTAssertEqual(error as! ScheduleAPI.LiveLeaderBoardError, ScheduleAPI.LiveLeaderBoardError.invalidURL)
         }
     }
-//    func testInvalidData() async{
-//        let mockSession = MockGolfData()
-//        let golfApi = ScheduleAPI(session: mockSession)
-//        do{
-//            let _ = try await golfApi.fetchAllTournament()
-//        }catch {
-//            XCTAssertEqual(error as! ScheduleAPI.LiveLeaderBoardError, ScheduleAPI.LiveLeaderBoardError.requestFailed)
-//        }
-//    }
 }
 
 class LeaderboardTest: XCTestCase{
