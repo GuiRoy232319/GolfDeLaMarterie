@@ -36,7 +36,7 @@ struct ProfilView: View {
             Text(String(format: "Index: %.1f", Float(round(player.first!.index * 10) / 10)))
                 .italic()
             Button {
-                
+                fatalError()
             } label: {
                 Label("Editer",systemImage: "pencil")
                     .foregroundColor(.orange)

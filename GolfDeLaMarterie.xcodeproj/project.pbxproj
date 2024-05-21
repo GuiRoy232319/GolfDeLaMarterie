@@ -96,13 +96,6 @@
 			remoteGlobalIDString = F0817C662B6B8A22000C4937;
 			remoteInfo = GolfDeLaMarterie;
 		};
-		F0817C852B6B8A25000C4937 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F0817C5F2B6B8A22000C4937 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F0817C662B6B8A22000C4937;
-			remoteInfo = GolfDeLaMarterie;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -134,7 +127,6 @@
 		F0817C742B6B8A25000C4937 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F0817C7A2B6B8A25000C4937 /* GolfDeLaMarterieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolfDeLaMarterieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0817C7E2B6B8A25000C4937 /* GolfDeLaMarterieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfDeLaMarterieTests.swift; sourceTree = "<group>"; };
-		F0817C842B6B8A25000C4937 /* GolfDeLaMarterieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolfDeLaMarterieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0817C9A2B6B91AF000C4937 /* GPSLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPSLocation.swift; sourceTree = "<group>"; };
 		F0817C9C2B6B91C7000C4937 /* StructHole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructHole.swift; sourceTree = "<group>"; };
 		F0817C9F2B6B91D4000C4937 /* StructParcours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructParcours.swift; sourceTree = "<group>"; };
@@ -206,13 +198,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F0817C812B6B8A25000C4937 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -244,7 +229,6 @@
 			children = (
 				F0817C672B6B8A22000C4937 /* GolfDeLaMarterie.app */,
 				F0817C7A2B6B8A25000C4937 /* GolfDeLaMarterieTests.xctest */,
-				F0817C842B6B8A25000C4937 /* GolfDeLaMarterieUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -530,24 +514,6 @@
 			productReference = F0817C7A2B6B8A25000C4937 /* GolfDeLaMarterieTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F0817C832B6B8A25000C4937 /* GolfDeLaMarterieUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F0817C942B6B8A25000C4937 /* Build configuration list for PBXNativeTarget "GolfDeLaMarterieUITests" */;
-			buildPhases = (
-				F0817C802B6B8A25000C4937 /* Sources */,
-				F0817C812B6B8A25000C4937 /* Frameworks */,
-				F0817C822B6B8A25000C4937 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F0817C862B6B8A25000C4937 /* PBXTargetDependency */,
-			);
-			name = GolfDeLaMarterieUITests;
-			productName = GolfDeLaMarterieUITests;
-			productReference = F0817C842B6B8A25000C4937 /* GolfDeLaMarterieUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -562,10 +528,6 @@
 						CreatedOnToolsVersion = 15.2;
 					};
 					F0817C792B6B8A25000C4937 = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = F0817C662B6B8A22000C4937;
-					};
-					F0817C832B6B8A25000C4937 = {
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = F0817C662B6B8A22000C4937;
 					};
@@ -591,7 +553,6 @@
 			targets = (
 				F0817C662B6B8A22000C4937 /* GolfDeLaMarterie */,
 				F0817C792B6B8A25000C4937 /* GolfDeLaMarterieTests */,
-				F0817C832B6B8A25000C4937 /* GolfDeLaMarterieUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -628,13 +589,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F0817C782B6B8A25000C4937 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F0817C822B6B8A25000C4937 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -721,13 +675,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F0817C802B6B8A25000C4937 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -735,11 +682,6 @@
 			isa = PBXTargetDependency;
 			target = F0817C662B6B8A22000C4937 /* GolfDeLaMarterie */;
 			targetProxy = F0817C7B2B6B8A25000C4937 /* PBXContainerItemProxy */;
-		};
-		F0817C862B6B8A25000C4937 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F0817C662B6B8A22000C4937 /* GolfDeLaMarterie */;
-			targetProxy = F0817C852B6B8A25000C4937 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1003,52 +945,6 @@
 			};
 			name = Release;
 		};
-		F0817C952B6B8A25000C4937 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 4PACRYHD6Z;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MACOSX_DEPLOYMENT_TARGET = 14.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.GolfDeLaMarterieUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GolfDeLaMarterie;
-			};
-			name = Debug;
-		};
-		F0817C962B6B8A25000C4937 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 4PACRYHD6Z;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MACOSX_DEPLOYMENT_TARGET = 14.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.GolfDeLaMarterieUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GolfDeLaMarterie;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1075,15 +971,6 @@
 			buildConfigurations = (
 				F0817C922B6B8A25000C4937 /* Debug */,
 				F0817C932B6B8A25000C4937 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F0817C942B6B8A25000C4937 /* Build configuration list for PBXNativeTarget "GolfDeLaMarterieUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F0817C952B6B8A25000C4937 /* Debug */,
-				F0817C962B6B8A25000C4937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
