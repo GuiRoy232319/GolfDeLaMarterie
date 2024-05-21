@@ -27,24 +27,3 @@ final class Friend{
     }
 }
 
-extension Friend: Hashable {
-        static func == (lhs: Friend, rhs: Friend) -> Bool {
-            lhs.id == rhs.id &&
-            lhs.firstName == rhs.firstName &&
-            lhs.lastName == rhs.lastName &&
-            lhs.gender == rhs.gender &&
-            lhs.index == rhs.index &&
-            lhs.mail == rhs.mail &&
-            lhs.tel == rhs.tel
-        }
-
-        func hash(into hasher: inout Hasher) {
-            hasher.combine(id)
-            hasher.combine(firstName)
-            hasher.combine(lastName)
-            hasher.combine(gender)
-            hasher.combine(index)
-            hasher.combine(mail)
-            hasher.combine(tel)
-        }
-}

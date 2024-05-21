@@ -9,7 +9,7 @@ import Foundation
 import SwiftData
 
 @Model
-final class Player {
+final class Player: Hashable {
     var firstName: String
     var lastName: String
     var gender: gender
@@ -29,28 +29,6 @@ final class Player {
     }
 }
     
-    
-
-extension Player: Hashable {
-    static func == (lhs: Player, rhs: Player) -> Bool {
-        lhs.firstName == rhs.firstName &&
-        lhs.lastName == rhs.lastName &&
-        lhs.gender == rhs.gender &&
-        lhs.index == rhs.index &&
-        lhs.mail == rhs.mail &&
-        lhs.friends == rhs.friends
-    }
-
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(firstName)
-        hasher.combine(lastName)
-        hasher.combine(gender)
-        hasher.combine(index)
-        hasher.combine(mail)
-        hasher.combine(friends)
-    }
-}
-
 enum gender: Hashable, Codable, CaseIterable{
     case Man
     case Woman
