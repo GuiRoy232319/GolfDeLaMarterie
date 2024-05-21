@@ -5,7 +5,7 @@
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "nil"
           }
         },
@@ -536,7 +536,14 @@
       }
     },
     "Missed Cut" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Missed Cut"
+          }
+        }
+      }
     },
     "Mode Compétition" : {
       "localizations" : {
@@ -1029,7 +1036,14 @@
       }
     },
     "Tournois" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tournaments"
+          }
+        }
+      }
     },
     "Trou n°" : {
       "localizations" : {
