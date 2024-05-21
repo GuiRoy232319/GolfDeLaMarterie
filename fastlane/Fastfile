@@ -8,8 +8,7 @@ platform :ios do
 
   desc "Runs all the tests"
 lane :test do
-  run_tests(projet: "GolfDeLaMarterie.xcodeproj",
-            device: "iPhone 15 Pro",
+  run_tests(project: "GolfDeLaMarterie.xcodeproj",
             scheme: "GolfDeLaMarterieTests")
     end
   end
