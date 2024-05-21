@@ -7,7 +7,7 @@ platform :ios do
   end
 
   desc "Runs all the tests"
-lane :test do
+lane :tests do
   run_tests(projet: "GolfDeLaMarterie.xcodeproj",
             device: "iPhone 15 Pro",
             scheme: "GolfDeLaMarterieTests")
