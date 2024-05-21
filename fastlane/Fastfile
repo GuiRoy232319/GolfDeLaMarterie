@@ -7,10 +7,7 @@ platform :ios do
   end
 
   desc "Runs all the tests"
-  lane :test do
-    scan(
-scheme: "GolfDeLaMarterie",
-device: "iPhone 15"
-)
-  end
+  lane :tests do
+  run_tests(scheme: "GolfDeLaMarterieTests")
+    end
 end
