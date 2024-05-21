@@ -10,9 +10,6 @@ jobs:
           name: Install Fastlane
           command: gem install fastlane -NV
       - run:
-          name: Install CocoaPods
-          command: pod install
-      - run:
           name: Run Tests
           command: fastlane tests
 
