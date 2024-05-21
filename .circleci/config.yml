@@ -11,7 +11,7 @@ jobs:
           command: gem install fastlane -NV
       - run:
           name: Run Tests
-          command: fastlane tests
+          command: fastlane test
 
 workflows:
   version: 2
