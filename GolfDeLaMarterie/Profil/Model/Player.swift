@@ -33,7 +33,6 @@ final class Player {
 
 extension Player: Hashable {
     static func == (lhs: Player, rhs: Player) -> Bool {
-        lhs.id == rhs.id &&
         lhs.firstName == rhs.firstName &&
         lhs.lastName == rhs.lastName &&
         lhs.gender == rhs.gender &&
@@ -43,7 +42,6 @@ extension Player: Hashable {
     }
 
     func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
         hasher.combine(firstName)
         hasher.combine(lastName)
         hasher.combine(gender)
