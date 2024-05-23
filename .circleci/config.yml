@@ -10,9 +10,6 @@ jobs:
           name: Install Fastlane
           command: gem install fastlane -NV
       - run:
-          name: Remove corrupted Package.resolved
-          command: rm /Users/distiller/project/GolfDeLaMarterie.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
-      - run:
           name: Run Tests
           command: fastlane test
 workflows:
