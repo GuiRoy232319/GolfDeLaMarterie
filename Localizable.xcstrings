@@ -97,6 +97,9 @@
         }
       }
     },
+    "Aucune connexion internet" : {
+
+    },
     "Bunker" : {
       "localizations" : {
         "en" : {

@@ -11,12 +11,12 @@ var holes = LaMarterie
 struct RecapScoringSwiftUIView: View {
     var body: some View {
         GeometryReader{ geometry in
-            VStack{
+            NavigationStack{
                 if geometry.size.width < geometry.size.height{
-                    Spacer()
+                    Image(systemName: "rotate.left")
+                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                     Text("Passer en mode paysage")
-                        .bold()
-                    Spacer()
+                            .bold()
                 } else{
                     Text("Partie du 28/04/2024")
                         .font(.title)

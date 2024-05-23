@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F011F4542BE3AACD0041CADD /* LeaderBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F4532BE3AACD0041CADD /* LeaderBoardViewModel.swift */; };
+		F02184172BFF3B2700F1D800 /* ImagePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02184162BFF3B2700F1D800 /* ImagePickerViewModel.swift */; };
 		F0238E072BDB91D500818EBE /* SignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0238E062BDB91D500818EBE /* SignatureView.swift */; };
 		F030D7552BEA24A000831DC6 /* ScheduleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030D7542BEA24A000831DC6 /* ScheduleModel.swift */; };
 		F036713B2B6CE890005DFAAC /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F036713A2B6CE890005DFAAC /* CourseView.swift */; };
@@ -100,6 +101,7 @@
 
 /* Begin PBXFileReference section */
 		F011F4532BE3AACD0041CADD /* LeaderBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardViewModel.swift; sourceTree = "<group>"; };
+		F02184162BFF3B2700F1D800 /* ImagePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewModel.swift; sourceTree = "<group>"; };
 		F0238E062BDB91D500818EBE /* SignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureView.swift; sourceTree = "<group>"; };
 		F030D7542BEA24A000831DC6 /* ScheduleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleModel.swift; sourceTree = "<group>"; };
 		F036713A2B6CE890005DFAAC /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
@@ -434,6 +436,7 @@
 			isa = PBXGroup;
 			children = (
 				F0A3DE782B7144A000982303 /* GaugeView.swift */,
+				F02184162BFF3B2700F1D800 /* ImagePickerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -641,6 +644,7 @@
 				F0817C9D2B6B91C7000C4937 /* StructHole.swift in Sources */,
 				F030D7552BEA24A000831DC6 /* ScheduleModel.swift in Sources */,
 				F0817C6D2B6B8A22000C4937 /* MainTabView.swift in Sources */,
+				F02184172BFF3B2700F1D800 /* ImagePickerViewModel.swift in Sources */,
 				F0C89ED92BDD92DE00CA247B /* RecapScoringSwiftUIView.swift in Sources */,
 				F0731D802BC9297E00FAFFBE /* StructLeaderBoard.swift in Sources */,
 				F0A3DE732B70FCB100982303 /* NewPlayerView.swift in Sources */,
@@ -823,6 +827,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Golf de la Marterie";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Accés à votre bibliothèque d'image pour votre photo de profil";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -866,6 +871,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Golf de la Marterie";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Accés à votre bibliothèque d'image pour votre photo de profil";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

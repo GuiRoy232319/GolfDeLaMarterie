@@ -7,11 +7,15 @@
 
 import SwiftUI
 import SwiftData
+import PhotosUI
 
 struct ProfilView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var player : [Player]
     @State var pickerChoice: Int = 0
+    @State private var isPickerPresented = false
+    @State private var selectedImage: UIImage? = nil
+    
     var statDatas : [String] = ["Score Moyen","GIR et Putts Moyen","Mise en jeu"]
     
     init() {
@@ -21,22 +25,25 @@ struct ProfilView: View {
     
     var body: some View {
         NavigationStack{
-            
-            Image("moi")
-                .resizable()
-                .renderingMode(.original)
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 150, height: 150)
-                .cornerRadius(75)
-                .shadow(color: .black, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: 1, y: 1)
-                .padding(20)
-            
+            if let selectedImage = selectedImage{
+                Image(uiImage: selectedImage)
+                    .resizable()
+                    .renderingMode(.original)
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 150, height: 150)
+                    .cornerRadius(75)
+                    .shadow(color: .black, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: 1, y: 1)
+                    .padding(20)
+            } else{
+                Text("Aucune image selectionnée")
+                    .italic()
+            }
             Text(player.first!.firstName + " " + player.first!.lastName)
                 .bold()
             Text(String(format: "Index: %.1f", Float(round(player.first!.index * 10) / 10)))
                 .italic()
             Button {
-                fatalError()
+                isPickerPresented = true
             } label: {
                 Label("Editer",systemImage: "pencil")
                     .foregroundColor(.orange)
@@ -127,14 +134,16 @@ struct ProfilView: View {
                 .padding(5)
             }
         }
-                .navigationTitle("Mon Profil")
                 .ignoresSafeArea()
                 .background {
                     Color(.secondarySystemFill)
                     .blur(radius: 10)}
+                .sheet(isPresented: $isPickerPresented) {
+                    ImagePicker(selectedImage: $selectedImage)
+                }
         }
-    
 }
+
 #Preview {
     ProfilView()
         .modelContainer(previewContainer)
