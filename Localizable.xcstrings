@@ -166,7 +166,11 @@
     "Création de votre profil Joueur" : {
 
     },
+    "Données calculées disponible dans la prochaine version" : {
+
+    },
     "Eclectic" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -197,6 +201,9 @@
       }
     },
     "Enregistrer mon profil joueur" : {
+
+    },
+    "Entrée de green %lldm" : {
 
     },
     "Fairway manqué à droite : 23%" : {
@@ -280,6 +287,7 @@
       }
     },
     "Foursome" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -322,6 +330,7 @@
       }
     },
     "Greensome" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -424,6 +433,9 @@
         }
       }
     },
+    "Le joueur" : {
+
+    },
     "Le Parcours" : {
       "localizations" : {
         "en" : {
@@ -456,6 +468,7 @@
       }
     },
     "Les joueurs" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -507,6 +520,7 @@
       }
     },
     "Match Play" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -714,6 +728,9 @@
         }
       }
     },
+    "Pas Encore de Partie Enregistré Localement" : {
+
+    },
     "Passer en mode paysage" : {
       "localizations" : {
         "en" : {
@@ -725,6 +742,7 @@
       }
     },
     "Patsome" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -826,6 +844,7 @@
       }
     },
     "Ringer" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -845,9 +864,6 @@
           }
         }
       }
-    },
-    "Sauvergarde la partie" : {
-
     },
     "Schedule" : {
       "localizations" : {
@@ -954,6 +970,7 @@
       }
     },
     "Scramble" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -983,7 +1000,11 @@
         }
       }
     },
+    "Sortie de green %lldm" : {
+
+    },
     "Stroke Play" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -994,6 +1015,7 @@
       }
     },
     "Stroke Play du 12/12/2023" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {

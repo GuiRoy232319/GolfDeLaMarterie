@@ -23,8 +23,8 @@ final class Trou: Identifiable{
     var DistBleu : Int?
     var DistRouge : Int?
     var Greenprof : Int?
-    var greenIn : CLLocation?
-    var greenOut: CLLocation?
+    var greenIn : CLLocationCoordinate2D?
+    var greenOut: CLLocationCoordinate2D?
     var coupsRendus: Int64?
     var numberShoots: Int64?
     var numberPutts: Int64?
@@ -34,7 +34,7 @@ final class Trou: Identifiable{
     }
    
    
-    init(id: Int64? = nil, numTrou: Int64? = nil, parTrou: Int64? = nil , HCP: Int64? = nil, advice: String? = nil, holeBG: String? = nil, holeGreen: String? = nil, DistBlanc: Int? = nil, DistJaune: Int? = nil, DistBleu: Int? = nil, DistRouge: Int? = nil, Greenprof: Int? = nil, greenIn: CLLocation? = nil, greenOut: CLLocation? = nil, coupsRendus: Int64? = nil, numberShoots: Int64? = nil, numberPutts: Int64? = nil) {
+    init(id: Int64? = nil, numTrou: Int64? = nil, parTrou: Int64? = nil , HCP: Int64? = nil, advice: String? = nil, holeBG: String? = nil, holeGreen: String? = nil, DistBlanc: Int? = nil, DistJaune: Int? = nil, DistBleu: Int? = nil, DistRouge: Int? = nil, Greenprof: Int? = nil, greenIn: CLLocationCoordinate2D? = nil, greenOut: CLLocationCoordinate2D? = nil, coupsRendus: Int64? = nil, numberShoots: Int64? = nil, numberPutts: Int64? = nil) {
         self.id = id
         self.numTrou = numTrou
         self.parTrou = parTrou

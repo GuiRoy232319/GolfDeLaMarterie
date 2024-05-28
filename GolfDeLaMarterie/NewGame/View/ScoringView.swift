@@ -9,20 +9,28 @@ import SwiftUI
 import MapKit
 import CoreLocation
 
-var data = LaMarterie
-
-
 struct ScoringView: View {
-   
+    @StateObject private var locationManager = LocationManager()
+    @State private var mapRegion = MKCoordinateRegion(
+        center: CLLocationCoordinate2D(latitude: 44.99912, longitude: 0.87822),
+           span: MKCoordinateSpan(latitudeDelta: 0.025, longitudeDelta: 0.025)
+       )
+    @State private var data = LaMarterie
+    
     var body: some View {
         TabView {
             ForEach(data) { item in
                 VStack{
-                    Map()
-                        .mapStyle(.hybrid)
-                        .frame(width: 350, height: 200)
-                        .cornerRadius(30)
-                        .padding(.top,40)
+                    if let userLocation = locationManager.location{
+                        Map()
+                            .onAppear{
+                                mapRegion.center = userLocation
+                            }
+                            .mapStyle(.hybrid)
+                            .frame(width: 350, height: 200)
+                            .cornerRadius(30)
+                            .padding(.top,40)
+                    }
                     Divider()
                     HStack{
                         Text("Trou n°")
@@ -54,23 +62,15 @@ struct ScoringView: View {
                             .italic()
                     }
                     HStack{
-                        Image("Blanc")
-                            .resizable()
-                            .frame(width: 20, height: 20)
-                        Text(" \(item.DistBlanc!)m")
-                        Image("Jaune")
-                            .resizable()
-                            .frame(width: 20, height: 20)
-                        Text(" \(item.DistJaune!)m")
-                        Image("Bleu")
-                            .resizable()
-                            .frame(width: 20, height: 20)
-                        Text(" \(item.DistBleu!)m")
-                        Image("Rouge")
-                            .resizable()
-                            .frame(width: 20, height: 20)
-                        Text(" \(item.DistRouge!)m")
-                    }.font(.headline)
+                        if let userLocation = locationManager.location{
+                            Text("Entrée de green \(Int(calculateDistance(from: userLocation, to: item.greenIn!)))m")
+                                .bold()
+                                .italic()
+                            Text("Sortie de green \(Int(calculateDistance(from: userLocation, to: item.greenOut!)))m")
+                                .bold()
+                                .italic()
+                        }
+                    }
                     Divider()
                     VStack{
                         Text("""
@@ -93,8 +93,16 @@ struct ScoringView: View {
         }.tabViewStyle(.page)
             .ignoresSafeArea(edges: .top)
     }
+    private func calculateDistance(from userLocation: CLLocationCoordinate2D, to destination: CLLocationCoordinate2D) -> Double {
+          let userLocation = CLLocation(latitude: userLocation.latitude, longitude: userLocation.longitude)
+          let destinationLocation = CLLocation(latitude: destination.latitude, longitude: destination.longitude)
+          let distance = userLocation.distance(from: destinationLocation) // Distance in meters
+          return distance
+      }
 }
 
-#Preview {
-    ScoringView()
+struct ScoringView_Previews: PreviewProvider {
+    static var previews: some View {
+        ScoringView()
+    }
 }

@@ -78,6 +78,8 @@ struct ProfilView: View {
                     .padding(.vertical, 15.0)
                     .padding(.horizontal, 5)
                 if pickerChoice == 0{
+                    Text("Données calculées disponible dans la prochaine version")
+                        .font(.footnote)
                     VStack{
                         HStack{
                             Text("Score moyen Par 3 :")
@@ -106,6 +108,8 @@ struct ProfilView: View {
                     }
                 }
                 if pickerChoice == 1{
+                    Text("Données calculées disponible dans la prochaine version")
+                        .font(.footnote)
                     VStack{
                         GaugeView(gradient: Gradient(colors: [.red,.blue, .green]), progress: 62, par: 50)
                             .gaugeStyle(.accessoryLinear)
@@ -123,6 +127,8 @@ struct ProfilView: View {
                     .padding(20)
                 }
                 if pickerChoice == 2{
+                    Text("Données calculées disponible dans la prochaine version")
+                        .font(.footnote)
                     VStack{
                         GaugeView(gradient: Gradient(colors: [.green,.blue,.red,.red]),progress: 31, par: 50)
                             .gaugeStyle(.accessoryLinear)

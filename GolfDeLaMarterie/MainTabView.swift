@@ -24,6 +24,7 @@ struct MainTabView: View {
                 .tabItem {
                     Label("Nouvelle Partie", systemImage: "figure.golf")
                 }
+/// Available in V2
             SavedGameView()
                 .tabItem {
                     Label("Mes Parties", systemImage: "rectangle.and.pencil.and.ellipsis")

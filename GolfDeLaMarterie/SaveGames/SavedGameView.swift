@@ -9,17 +9,16 @@ import SwiftUI
 import SwiftData
 
 struct SavedGameView: View {
+    @Environment(\.modelContext) var modelContext
+    @Query var player: [Player]
     
     var body: some View {
-        @Environment(\.modelContext) var modelContext
-        @Query var party: [Party]
-        
         NavigationStack{
-            if party.isEmpty{
+            if player.first!.parties.isEmpty{
                 Text("Pas Encore de Partie Enregistré Localement")
             } else{
                 List{
-                    ForEach(party) { item in
+                    ForEach(player.first!.parties) { item in
                         NavigationLink {
                             RecapScoringSwiftUIView()
                         } label: {

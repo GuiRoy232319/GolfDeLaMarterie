@@ -839,6 +839,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Golf de la Marterie";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Usage des données gps pour les distances de green";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Usage des données gps pour les distances de green";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Usage des données gps pour les distances de green";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Accés à votre bibliothèque d'image pour votre photo de profil";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -883,6 +886,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Golf de la Marterie";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Usage des données gps pour les distances de green";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Usage des données gps pour les distances de green";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Usage des données gps pour les distances de green";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Accés à votre bibliothèque d'image pour votre photo de profil";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
