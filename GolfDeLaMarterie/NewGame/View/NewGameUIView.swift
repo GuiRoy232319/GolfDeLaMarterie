@@ -13,15 +13,9 @@ struct NewGameUIView: View {
     @Query var players: [Player]
     @State private var competitionIsOn = false
     @State private var signatureIsOn = false
-    var gameMode = ["Stroke Play","Stableford","Scramble","Match Play","Foursome","Greensome","Patsome", "Ringer Score", "Eclectic"]
     @State private var selectedGameMode = "Stroke Play"
-    @Binding internal var firstName : String
-    @Binding internal var lastname : String
-    @Binding internal var mail : String
-    @Binding internal var tel : String
-    @Binding internal var index : Double
-    @Binding internal var gend : Bool
-    
+    @State private var allFriends: [Friend] = []
+   
     
     var body: some View {
         NavigationStack{
@@ -39,7 +33,7 @@ struct NewGameUIView: View {
                                     NewPlayerView()
                         .bold()
                     )} header: {
-                        Text("Les joueurs")
+                        Text("Le joueur")
                             .fontWeight(.black)
                     }
                 Section{
@@ -71,6 +65,10 @@ struct NewGameUIView: View {
                 }
                 NavigationLink {
                     ScoringView()
+                        .onAppear(perform: {
+                            let newParty = Party(competition: competitionIsOn, signature: signatureIsOn, type: selectedGameMode, date: Date(), score: [], putts: [], fairwayTouched: [])
+                            players.first?.parties.append(newParty)
+                        })
                 }label: {
                     Text("Valider les réglages")
                         .bold()
@@ -84,6 +82,6 @@ struct NewGameUIView: View {
 }
 
 #Preview {
-    NewGameUIView(firstName: Binding.constant(""), lastname: Binding.constant(""), mail: Binding.constant(""), tel: Binding.constant(""), index: Binding.constant(24), gend: Binding.constant(true))
+    NewGameUIView()
         .modelContainer(previewContainer)
 }

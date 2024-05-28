@@ -7,18 +7,6 @@
 import Foundation
 import UIKit
 
-extension UIViewController{
-    func showAlert(message: String){
-        DispatchQueue.main.async{
-            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-               let rootViewController = windowScene.windows.first?.rootViewController {
-                let alertController = UIAlertController(title: "Alerte", message: message, preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                rootViewController.present(alertController, animated: true, completion: nil)
-            }
-        }
-    }
-}
 
 
 public enum NetworkError: Error, LocalizedError {

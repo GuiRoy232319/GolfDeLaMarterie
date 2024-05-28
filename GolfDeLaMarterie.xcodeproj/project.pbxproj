@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F00E86BC2C05CB380081289F /* SchemaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00E86BB2C05CB380081289F /* SchemaManager.swift */; };
 		F011F4542BE3AACD0041CADD /* LeaderBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F4532BE3AACD0041CADD /* LeaderBoardViewModel.swift */; };
 		F02184172BFF3B2700F1D800 /* ImagePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02184162BFF3B2700F1D800 /* ImagePickerViewModel.swift */; };
 		F0238E072BDB91D500818EBE /* SignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0238E062BDB91D500818EBE /* SignatureView.swift */; };
@@ -16,6 +17,7 @@
 		F03A50E62B70D3BD0043E487 /* NewGameUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03A50E52B70D3BD0043E487 /* NewGameUIView.swift */; };
 		F03A50E82B70D6570043E487 /* StructBoule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03A50E72B70D6570043E487 /* StructBoule.swift */; };
 		F03A50EA2B70E9900043E487 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03A50E92B70E9900043E487 /* Player.swift */; };
+		F044F7602C05E4290064E50F /* CoreLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F044F75F2C05E4290064E50F /* CoreLocationManager.swift */; };
 		F04B1B932BD668F900C38178 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B1B922BD668F900C38178 /* PreviewData.swift */; };
 		F04B1B952BD66A8800C38178 /* SamplePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B1B942BD66A8800C38178 /* SamplePlayer.swift */; };
 		F04BD5522B73AAD100701C7A /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04BD5512B73AAD100701C7A /* VideoPlayerView.swift */; };
@@ -28,6 +30,7 @@
 		F0731D802BC9297E00FAFFBE /* StructLeaderBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0731D7F2BC9297E00FAFFBE /* StructLeaderBoard.swift */; };
 		F0731D842BC92C0700FAFFBE /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0731D832BC92C0700FAFFBE /* ErrorHandling.swift */; };
 		F0731D862BC92C8400FAFFBE /* MockLeaderBoardApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0731D852BC92C8400FAFFBE /* MockLeaderBoardApi.swift */; };
+		F076B11C2BFF5210006FABE9 /* profilCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F076B11B2BFF5210006FABE9 /* profilCreateView.swift */; };
 		F0817C6B2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C6A2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift */; };
 		F0817C6D2B6B8A22000C4937 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C6C2B6B8A22000C4937 /* MainTabView.swift */; };
 		F0817C712B6B8A24000C4937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0817C702B6B8A24000C4937 /* Assets.xcassets */; };
@@ -37,7 +40,6 @@
 		F0817C9D2B6B91C7000C4937 /* StructHole.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C9C2B6B91C7000C4937 /* StructHole.swift */; };
 		F0817CA22B6B91D5000C4937 /* StructParcours.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817C9F2B6B91D4000C4937 /* StructParcours.swift */; };
 		F0817CA32B6B91D5000C4937 /* Struct Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CA02B6B91D5000C4937 /* Struct Distance.swift */; };
-		F0817CA52B6B921E000C4937 /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CA42B6B921E000C4937 /* FirebaseHelper.swift */; };
 		F0817CA72B6B9BC3000C4937 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CA62B6B9BC3000C4937 /* BackgroundView.swift */; };
 		F0817CA92B6BA181000C4937 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0817CA82B6BA181000C4937 /* ProfilView.swift */; };
 		F08F30302BD27BC200F84479 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F08F302F2BD27BC200F84479 /* FirebaseAnalytics */; };
@@ -79,6 +81,7 @@
 		F09D3B092BCD31CF008EB889 /* Hole18.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AF72BCD31CD008EB889 /* Hole18.mp4 */; };
 		F09D3B0A2BCD31CF008EB889 /* Hole13.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AF82BCD31CE008EB889 /* Hole13.mp4 */; };
 		F09D3B0B2BCD31CF008EB889 /* Hole3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F09D3AF92BCD31CF008EB889 /* Hole3.mp4 */; };
+		F0A1955E2C0467BC00EEA3B6 /* Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A1955D2C0467BC00EEA3B6 /* Party.swift */; };
 		F0A3DE732B70FCB100982303 /* NewPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE722B70FCB100982303 /* NewPlayerView.swift */; };
 		F0A3DE752B712A3C00982303 /* SavedGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE742B712A3C00982303 /* SavedGameView.swift */; };
 		F0A3DE792B7144A000982303 /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE782B7144A000982303 /* GaugeView.swift */; };
@@ -100,6 +103,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F00E86BB2C05CB380081289F /* SchemaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemaManager.swift; sourceTree = "<group>"; };
 		F011F4532BE3AACD0041CADD /* LeaderBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardViewModel.swift; sourceTree = "<group>"; };
 		F02184162BFF3B2700F1D800 /* ImagePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewModel.swift; sourceTree = "<group>"; };
 		F0238E062BDB91D500818EBE /* SignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureView.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 		F03A50E52B70D3BD0043E487 /* NewGameUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameUIView.swift; sourceTree = "<group>"; };
 		F03A50E72B70D6570043E487 /* StructBoule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructBoule.swift; sourceTree = "<group>"; };
 		F03A50E92B70E9900043E487 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		F044F75F2C05E4290064E50F /* CoreLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationManager.swift; sourceTree = "<group>"; };
 		F04B1B922BD668F900C38178 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		F04B1B942BD66A8800C38178 /* SamplePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePlayer.swift; sourceTree = "<group>"; };
 		F04BD5512B73AAD100701C7A /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
@@ -122,6 +127,7 @@
 		F0731D7F2BC9297E00FAFFBE /* StructLeaderBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructLeaderBoard.swift; sourceTree = "<group>"; };
 		F0731D832BC92C0700FAFFBE /* ErrorHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
 		F0731D852BC92C8400FAFFBE /* MockLeaderBoardApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLeaderBoardApi.swift; sourceTree = "<group>"; };
+		F076B11B2BFF5210006FABE9 /* profilCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilCreateView.swift; sourceTree = "<group>"; };
 		F0817C672B6B8A22000C4937 /* GolfDeLaMarterie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolfDeLaMarterie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0817C6A2B6B8A22000C4937 /* GolfDeLaMarterieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfDeLaMarterieApp.swift; sourceTree = "<group>"; };
 		F0817C6C2B6B8A22000C4937 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -133,7 +139,6 @@
 		F0817C9C2B6B91C7000C4937 /* StructHole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructHole.swift; sourceTree = "<group>"; };
 		F0817C9F2B6B91D4000C4937 /* StructParcours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructParcours.swift; sourceTree = "<group>"; };
 		F0817CA02B6B91D5000C4937 /* Struct Distance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Struct Distance.swift"; sourceTree = "<group>"; };
-		F0817CA42B6B921E000C4937 /* FirebaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
 		F0817CA62B6B9BC3000C4937 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		F0817CA82B6BA181000C4937 /* ProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilView.swift; sourceTree = "<group>"; };
 		F08F30512BD27C2000F84479 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -158,6 +163,7 @@
 		F09D3AF72BCD31CD008EB889 /* Hole18.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole18.mp4; sourceTree = "<group>"; };
 		F09D3AF82BCD31CE008EB889 /* Hole13.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole13.mp4; sourceTree = "<group>"; };
 		F09D3AF92BCD31CF008EB889 /* Hole3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hole3.mp4; sourceTree = "<group>"; };
+		F0A1955D2C0467BC00EEA3B6 /* Party.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Party.swift; sourceTree = "<group>"; };
 		F0A3DE722B70FCB100982303 /* NewPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlayerView.swift; sourceTree = "<group>"; };
 		F0A3DE742B712A3C00982303 /* SavedGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedGameView.swift; sourceTree = "<group>"; };
 		F0A3DE782B7144A000982303 /* GaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeView.swift; sourceTree = "<group>"; };
@@ -207,10 +213,11 @@
 			isa = PBXGroup;
 			children = (
 				F0731D832BC92C0700FAFFBE /* ErrorHandling.swift */,
-				F0817CA42B6B921E000C4937 /* FirebaseHelper.swift */,
 				F0731D852BC92C8400FAFFBE /* MockLeaderBoardApi.swift */,
 				F04B1B922BD668F900C38178 /* PreviewData.swift */,
 				F04B1B942BD66A8800C38178 /* SamplePlayer.swift */,
+				F00E86BB2C05CB380081289F /* SchemaManager.swift */,
+				F044F75F2C05E4290064E50F /* CoreLocationManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -329,6 +336,7 @@
 		F0F224BB2BDFE9A2007E8BA2 /* SaveGames */ = {
 			isa = PBXGroup;
 			children = (
+				F0C89ED82BDD92DE00CA247B /* RecapScoringSwiftUIView.swift */,
 				F0A3DE742B712A3C00982303 /* SavedGameView.swift */,
 			);
 			path = SaveGames;
@@ -394,7 +402,6 @@
 		F0F224C22BDFEAFC007E8BA2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				F0C89ED82BDD92DE00CA247B /* RecapScoringSwiftUIView.swift */,
 				F05204792BD92D51005596C8 /* PlayerScoring.swift */,
 				F0A3DE722B70FCB100982303 /* NewPlayerView.swift */,
 				F0238E062BDB91D500818EBE /* SignatureView.swift */,
@@ -454,6 +461,8 @@
 			children = (
 				F038E31F2BD689B70024A4CD /* Friend.swift */,
 				F03A50E92B70E9900043E487 /* Player.swift */,
+				F076B11B2BFF5210006FABE9 /* profilCreateView.swift */,
+				F0A1955D2C0467BC00EEA3B6 /* Party.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -635,11 +644,12 @@
 				F0817CA32B6B91D5000C4937 /* Struct Distance.swift in Sources */,
 				F052047A2BD92D51005596C8 /* PlayerScoring.swift in Sources */,
 				F04BD5522B73AAD100701C7A /* VideoPlayerView.swift in Sources */,
-				F0817CA52B6B921E000C4937 /* FirebaseHelper.swift in Sources */,
 				F03A50E62B70D3BD0043E487 /* NewGameUIView.swift in Sources */,
 				F0731D7E2BC927F900FAFFBE /* Schedulde2024View.swift in Sources */,
+				F076B11C2BFF5210006FABE9 /* profilCreateView.swift in Sources */,
 				F03A50EA2B70E9900043E487 /* Player.swift in Sources */,
 				F03A50E82B70D6570043E487 /* StructBoule.swift in Sources */,
+				F0A1955E2C0467BC00EEA3B6 /* Party.swift in Sources */,
 				F0932B9E2BE4BF9E0065CC0A /* LeaderboardView.swift in Sources */,
 				F0817C9D2B6B91C7000C4937 /* StructHole.swift in Sources */,
 				F030D7552BEA24A000831DC6 /* ScheduleModel.swift in Sources */,
@@ -647,6 +657,7 @@
 				F02184172BFF3B2700F1D800 /* ImagePickerViewModel.swift in Sources */,
 				F0C89ED92BDD92DE00CA247B /* RecapScoringSwiftUIView.swift in Sources */,
 				F0731D802BC9297E00FAFFBE /* StructLeaderBoard.swift in Sources */,
+				F00E86BC2C05CB380081289F /* SchemaManager.swift in Sources */,
 				F0A3DE732B70FCB100982303 /* NewPlayerView.swift in Sources */,
 				F0A3DE792B7144A000982303 /* GaugeView.swift in Sources */,
 				F059D43B2BEDFC4A007AD479 /* MockSchedule&Leaderboard.swift in Sources */,
@@ -666,6 +677,7 @@
 				F038E3202BD689B70024A4CD /* Friend.swift in Sources */,
 				F0A665F92BF613D200C767BE /* URLSessionProtocol.swift in Sources */,
 				F0817CA22B6B91D5000C4937 /* StructParcours.swift in Sources */,
+				F044F7602C05E4290064E50F /* CoreLocationManager.swift in Sources */,
 				F0BB441B2BD8FA250051FD3A /* ScoringView.swift in Sources */,
 				F036713B2B6CE890005DFAAC /* CourseView.swift in Sources */,
 			);

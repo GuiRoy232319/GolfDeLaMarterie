@@ -9,6 +9,8 @@ import Foundation
 import MapKit
 
 final class Trou: Identifiable{
+   
+    
     var id: Int64?
     var numTrou: Int64?
     var parTrou : Int64?

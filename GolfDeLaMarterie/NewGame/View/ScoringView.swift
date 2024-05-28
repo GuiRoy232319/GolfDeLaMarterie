@@ -9,13 +9,11 @@ import SwiftUI
 import MapKit
 import CoreLocation
 
-var item = LaMarterie[0]
 var data = LaMarterie
 
 
 struct ScoringView: View {
-    @State var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 59.67309, longitude: 14.82155), span: MKCoordinateSpan(latitudeDelta: 0.025, longitudeDelta: 0.025))
-    @State var manager = CLLocationManager()
+   
     var body: some View {
         TabView {
             ForEach(data) { item in

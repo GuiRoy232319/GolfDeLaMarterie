@@ -9,9 +9,6 @@ import SwiftUI
 
 struct CourseView: View {
     private var data = LaMarterie
-    @State private var selectedIndex: Int = 0
-    @State private var selectedHoleIndex = 0
-   
     init() {
         // Large Navigation Title
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.orange]

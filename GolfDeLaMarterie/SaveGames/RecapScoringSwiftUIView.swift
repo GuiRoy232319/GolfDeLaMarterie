@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import SwiftData
+
 var holes = LaMarterie
 
 struct RecapScoringSwiftUIView: View {

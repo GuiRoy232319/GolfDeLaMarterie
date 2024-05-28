@@ -100,6 +100,9 @@
     "Aucune connexion internet" : {
 
     },
+    "Aucune image selectionnée" : {
+
+    },
     "Bunker" : {
       "localizations" : {
         "en" : {
@@ -160,6 +163,9 @@
         }
       }
     },
+    "Création de votre profil Joueur" : {
+
+    },
     "Eclectic" : {
       "localizations" : {
         "en" : {
@@ -189,6 +195,9 @@
           }
         }
       }
+    },
+    "Enregistrer mon profil joueur" : {
+
     },
     "Fairway manqué à droite : 23%" : {
       "localizations" : {
@@ -517,6 +526,12 @@
         }
       }
     },
+    "Merci d'inscrire votre nom et prénom dans les champs prévus pour" : {
+
+    },
+    "Merci d'inscrire votre nom et prénom dans les champs prévus pour." : {
+
+    },
     "Mes Parties" : {
       "localizations" : {
         "en" : {
@@ -830,6 +845,9 @@
           }
         }
       }
+    },
+    "Sauvergarde la partie" : {
+
     },
     "Schedule" : {
       "localizations" : {

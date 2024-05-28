@@ -10,6 +10,7 @@ import SwiftData
 import FirebaseCore
 import FirebaseAnalytics
 
+
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
@@ -19,33 +20,34 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 }
 
 
-
 @main
 struct GolfDeLaMarterieApp: App {
-
-    
-    @Binding var firstName: String
-    @Binding var lastName: String
-    @Binding var mail: String
-    @Binding var tel: String
-    @Binding var index: Double
-    @Binding var gend: Bool
+  
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
-    init() {
-        _firstName = Binding.constant("")
-        _lastName = Binding.constant("")
-        _mail = Binding.constant("")
-        _tel = Binding.constant("")
-        _index = Binding.constant(54)
-        _gend = Binding.constant(true)
-    }
+/// Persitent Container Creation
+    var sharedModelContainer: ModelContainer = {
+        let schema = SchemaManager.shared.schema
+        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+        do {
+            let modelContainer = try ModelContainer(for: schema, configurations: [modelConfiguration])
+            return modelContainer
+        } catch {
+            fatalError("Could not create ModelContainer: \(error)")
+        }
+    }()
     
     var body: some Scene {
+        #if os(iOS)
         WindowGroup {
-            MainTabView(firstName: $firstName, lastname: $lastName, mail: $mail, tel: $tel, index: $index, gend: $gend)
+            MainTabView()
+                .modelContainer(sharedModelContainer)
+        }
+        #else
+        WindowGroup {
+            MainTabView()
                 .modelContainer(previewContainer)
         }
-        
+        #endif
     }
 }

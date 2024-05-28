@@ -9,13 +9,7 @@ import SwiftUI
 
 struct MainTabView: View {
     @Environment(\.modelContext) private var context
-    @Binding internal var firstName : String
-    @Binding internal var lastname : String
-    @Binding internal var mail : String
-    @Binding internal var tel : String
-    @Binding internal var index : Double
-    @Binding internal var gend : Bool
-    
+ 
     var body: some View {
          TabView{
             ProfilView()
@@ -26,7 +20,7 @@ struct MainTabView: View {
                 .tabItem {
                     Label("Le Parcours", systemImage: "flag.and.flag.filled.crossed")
                 }
-            NewGameUIView(firstName: $firstName, lastname: $lastname, mail: $mail, tel: $tel, index: $index, gend: $gend)
+            NewGameUIView()
                 .tabItem {
                     Label("Nouvelle Partie", systemImage: "figure.golf")
                 }
@@ -39,12 +33,11 @@ struct MainTabView: View {
                     Label("LeaderBoard", systemImage: "list.star")
                 }
         }
-      
         .tabViewStyle(.automatic)
- 
     }
 }
 
 #Preview {
-    MainTabView(firstName: Binding.constant("John"), lastname: Binding.constant("Wick"), mail: Binding.constant("Babayage@FuckOff.com"), tel: Binding.constant("+16552489345"), index: Binding.constant(0.4), gend: Binding.constant(true))
+    MainTabView()
+        .modelContainer(previewContainer)
 }

@@ -6,105 +6,29 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct SavedGameView: View {
+    
     var body: some View {
+        @Environment(\.modelContext) var modelContext
+        @Query var party: [Party]
+        
         NavigationStack{
-            List{
-                Section{
-                    NavigationLink {
-                        RecapScoringSwiftUIView()
-                    } label: {
-                        Text("Stroke Play du 12/12/2023")
+            if party.isEmpty{
+                Text("Pas Encore de Partie Enregistré Localement")
+            } else{
+                List{
+                    ForEach(party) { item in
+                        NavigationLink {
+                            RecapScoringSwiftUIView()
+                        } label: {
+                            Text("\(item.date)")
+                        }
                     }
-                    }header: {
-                    Text("Stroke Play")
-                            .font(.headline)
-                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 }
-                Section{
-                    NavigationLink {
-                        RecapScoringSwiftUIView()
-                    } label: {
-                        Text("Stroke Play du 12/12/2023")
-                    }
-                    }header: {
-                    Text("Scramble")
-                            .font(.headline)
-                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                }
-                Section{
-                    NavigationLink {
-                        RecapScoringSwiftUIView()
-                    } label: {
-                        Text("Stroke Play du 12/12/2023")
-                    }
-                    }header: {
-                    Text("Match Play")
-                            .font(.headline)
-                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                }
-                Section{
-                    NavigationLink {
-                        RecapScoringSwiftUIView()
-                    } label: {
-                        Text("Stroke Play du 12/12/2023")
-                    }
-                    }header: {
-                    Text("Foursome")
-                            .font(.headline)
-                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                }
-                Section{
-                    NavigationLink {
-                        RecapScoringSwiftUIView()
-                    } label: {
-                        Text("Stroke Play du 12/12/2023")
-                    }
-                    }header: {
-                    Text("Greensome")
-                            .font(.headline)
-                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                }  
-                Section{
-                    NavigationLink {
-                        RecapScoringSwiftUIView()
-                    } label: {
-                        Text("Stroke Play du 12/12/2023")
-                    }
-                    }header: {
-                    Text("Patsome")
-                            .font(.headline)
-                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                }
-                Section{
-                    NavigationLink {
-                        RecapScoringSwiftUIView()
-                    } label: {
-                        Text("Stroke Play du 12/12/2023")
-                    }
-                    }header: {
-                    Text("Ringer")
-                            .font(.headline)
-                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                }
-                Section{
-                    NavigationLink {
-                        RecapScoringSwiftUIView()
-                    } label: {
-                        Text("Stroke Play du 12/12/2023")
-                    }
-                    }header: {
-                    Text("Eclectic")
-                            .font(.headline)
-                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                    }
-            
             }
-            .listStyle(.sidebar)
-            .navigationTitle("Mes Parties")
         }
-        .background(Color(.clear))
     }
 }
 #Preview {
