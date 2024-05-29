@@ -97,6 +97,16 @@
         }
       }
     },
+    "Aucun joueur enregistré" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Player Register"
+          }
+        }
+      }
+    },
     "Aucune connexion internet" : {
       "localizations" : {
         "en" : {
@@ -239,11 +249,22 @@
       }
     },
     "Entrée de green %lldm" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Green In %11dm"
+          }
+        }
+      }
+    },
+    "Entrée de green:" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Green In"
           }
         }
       }
@@ -1071,6 +1092,17 @@
       }
     },
     "Sortie de green %lldm" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Green Out"
+          }
+        }
+      }
+    },
+    "Sortie de green:" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {

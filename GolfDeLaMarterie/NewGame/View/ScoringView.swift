@@ -10,24 +10,15 @@ import MapKit
 import CoreLocation
 
 struct ScoringView: View {
-    @StateObject private var locationManager = LocationManager()
-    @State private var mapRegion = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 44.99912, longitude: 0.87822),
-           span: MKCoordinateSpan(latitudeDelta: 0.025, longitudeDelta: 0.025)
-       )
-    @State private var data = LaMarterie
     
+    @StateObject private var locationManager = LocationManager()
+    @State private var data = LaMarterie
+
     var body: some View {
         TabView {
             ForEach(data) { item in
                 VStack{
-                    if let userLocation = locationManager.location{
-                        Map(coordinateRegion: $mapRegion, showsUserLocation: true)
-                            .mapStyle(.hybrid)
-                            .frame(width: 350, height: 200)
-                            .cornerRadius(30)
-                            .padding(.top,40)
-                    }
+                    LocalVideoView(videoFilename: item.holeBG!, videoExtension: "mp4")
                     Divider()
                     HStack{
                         Text("Trou n°")
@@ -50,22 +41,36 @@ struct ScoringView: View {
                         Text("HCP:")
                             .bold()
                         Text("\(item.HCP!)")
+                            .foregroundColor(.red)
                             .bold()
                             .italic()
                         Text("Profondeur Green:")
                             .bold()
                         Text("\(item.Greenprof!)m")
+                            .foregroundColor(.red)
                             .bold()
                             .italic()
                     }
                     HStack{
                         if let userLocation = locationManager.location{
-                            Text("Entrée de green \(Int(calculateDistance(from: userLocation, to: item.greenIn!)))m")
-                                .bold()
-                                .italic()
-                            Text("Sortie de green \(Int(calculateDistance(from: userLocation, to: item.greenOut!)))m")
-                                .bold()
-                                .italic()
+                            HStack{ 
+                                Text("Entrée de green:")
+                                    .bold()
+                                    .italic()
+                                Text("\(Int(calculateDistance(from: userLocation, to: item.greenIn!)))m")
+                                    .foregroundColor(.blue)
+                                    .bold()
+                                    .italic()
+                            }
+                            HStack{
+                                Text("Sortie de green:")
+                                    .bold()
+                                    .italic()
+                                Text(" \(Int(calculateDistance(from: userLocation, to: item.greenOut!)))m")
+                                    .foregroundColor(.blue)
+                                    .bold()
+                                    .italic()
+                            }
                         }
                     }
                     Divider()
@@ -90,6 +95,7 @@ struct ScoringView: View {
         }.tabViewStyle(.page)
             .ignoresSafeArea(edges: .top)
     }
+    
     private func calculateDistance(from userLocation: CLLocationCoordinate2D, to destination: CLLocationCoordinate2D) -> Double {
           let userLocation = CLLocation(latitude: userLocation.latitude, longitude: userLocation.longitude)
           let destinationLocation = CLLocation(latitude: destination.latitude, longitude: destination.longitude)

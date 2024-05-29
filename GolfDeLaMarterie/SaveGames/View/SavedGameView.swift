@@ -13,6 +13,9 @@ struct SavedGameView: View {
     @Query var player: [Player]
     
     var body: some View {
+        if player.isEmpty{
+            Text("Aucun joueur enregistré")
+        }else{
         NavigationStack{
             if player.first!.parties.isEmpty{
                 Text("Pas Encore de Partie Enregistré Localement")
@@ -26,6 +29,7 @@ struct SavedGameView: View {
                         }
                     }
                 }
+            }
             }
         }
     }
