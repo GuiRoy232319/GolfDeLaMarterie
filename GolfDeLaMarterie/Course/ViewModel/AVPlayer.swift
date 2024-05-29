@@ -10,6 +10,10 @@ import AVFoundation
 import AVKit
 import CoreImage
 
+
+//---------------------------
+//MARK: Video Player Model
+//---------------------------
 struct AVPlayerVideoPlayer: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: AVPlayerViewController, context: Context) {
     }
@@ -20,6 +24,7 @@ struct AVPlayerVideoPlayer: UIViewControllerRepresentable {
         self.player = AVPlayer(url: videoURL)
     }
     
+    // Creating The Video Player in UI
     func makeUIViewController(context: Context) -> AVPlayerViewController {
         let playerViewController = AVPlayerViewController()
         playerViewController.player = player
@@ -44,7 +49,7 @@ struct AVPlayerVideoPlayer: UIViewControllerRepresentable {
     }
 }
     
-
+    // Rendering Border Color in function of the dominent Color in Video
 extension UIImage {
     var dominantColor: Color? {
         guard let inputImage = CIImage(image: self) else { return nil }

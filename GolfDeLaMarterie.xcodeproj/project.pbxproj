@@ -8,10 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		F00E86BC2C05CB380081289F /* SchemaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00E86BB2C05CB380081289F /* SchemaManager.swift */; };
-		F011F4542BE3AACD0041CADD /* LeaderBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011F4532BE3AACD0041CADD /* LeaderBoardViewModel.swift */; };
 		F02184172BFF3B2700F1D800 /* ImagePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02184162BFF3B2700F1D800 /* ImagePickerViewModel.swift */; };
 		F0238E072BDB91D500818EBE /* SignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0238E062BDB91D500818EBE /* SignatureView.swift */; };
-		F030D7552BEA24A000831DC6 /* ScheduleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030D7542BEA24A000831DC6 /* ScheduleModel.swift */; };
+		F030D7552BEA24A000831DC6 /* APICallSchedule2024.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030D7542BEA24A000831DC6 /* APICallSchedule2024.swift */; };
 		F036713B2B6CE890005DFAAC /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F036713A2B6CE890005DFAAC /* CourseView.swift */; };
 		F038E3202BD689B70024A4CD /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = F038E31F2BD689B70024A4CD /* Friend.swift */; };
 		F03A50E62B70D3BD0043E487 /* NewGameUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03A50E52B70D3BD0043E487 /* NewGameUIView.swift */; };
@@ -87,6 +86,8 @@
 		F0A3DE792B7144A000982303 /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE782B7144A000982303 /* GaugeView.swift */; };
 		F0A665F92BF613D200C767BE /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A665F82BF613D200C767BE /* URLSessionProtocol.swift */; };
 		F0BB441B2BD8FA250051FD3A /* ScoringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BB441A2BD8FA250051FD3A /* ScoringView.swift */; };
+		F0C2F5592C07110500128435 /* APICallLeaderBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C2F5582C07110500128435 /* APICallLeaderBoard.swift */; };
+		F0C2F55B2C07113900128435 /* TournamentStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C2F55A2C07113900128435 /* TournamentStructure.swift */; };
 		F0C89ED92BDD92DE00CA247B /* RecapScoringSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C89ED82BDD92DE00CA247B /* RecapScoringSwiftUIView.swift */; };
 		F0E603022BF363F600D0D83F /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = F0E603012BF363F600D0D83F /* Reachability */; };
 		F0F224B72BDFC38B007E8BA2 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F0F224B62BDFC38B007E8BA2 /* Localizable.xcstrings */; };
@@ -104,10 +105,9 @@
 
 /* Begin PBXFileReference section */
 		F00E86BB2C05CB380081289F /* SchemaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemaManager.swift; sourceTree = "<group>"; };
-		F011F4532BE3AACD0041CADD /* LeaderBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardViewModel.swift; sourceTree = "<group>"; };
 		F02184162BFF3B2700F1D800 /* ImagePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewModel.swift; sourceTree = "<group>"; };
 		F0238E062BDB91D500818EBE /* SignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureView.swift; sourceTree = "<group>"; };
-		F030D7542BEA24A000831DC6 /* ScheduleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleModel.swift; sourceTree = "<group>"; };
+		F030D7542BEA24A000831DC6 /* APICallSchedule2024.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallSchedule2024.swift; sourceTree = "<group>"; };
 		F036713A2B6CE890005DFAAC /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 		F038E31F2BD689B70024A4CD /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		F03A50E52B70D3BD0043E487 /* NewGameUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameUIView.swift; sourceTree = "<group>"; };
@@ -169,6 +169,8 @@
 		F0A3DE782B7144A000982303 /* GaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeView.swift; sourceTree = "<group>"; };
 		F0A665F82BF613D200C767BE /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		F0BB441A2BD8FA250051FD3A /* ScoringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringView.swift; sourceTree = "<group>"; };
+		F0C2F5582C07110500128435 /* APICallLeaderBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallLeaderBoard.swift; sourceTree = "<group>"; };
+		F0C2F55A2C07113900128435 /* TournamentStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentStructure.swift; sourceTree = "<group>"; };
 		F0C89ED82BDD92DE00CA247B /* RecapScoringSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecapScoringSwiftUIView.swift; sourceTree = "<group>"; };
 		F0F224B62BDFC38B007E8BA2 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -213,7 +215,6 @@
 			isa = PBXGroup;
 			children = (
 				F0731D832BC92C0700FAFFBE /* ErrorHandling.swift */,
-				F0731D852BC92C8400FAFFBE /* MockLeaderBoardApi.swift */,
 				F04B1B922BD668F900C38178 /* PreviewData.swift */,
 				F04B1B942BD66A8800C38178 /* SamplePlayer.swift */,
 				F00E86BB2C05CB380081289F /* SchemaManager.swift */,
@@ -303,6 +304,57 @@
 			path = Videos;
 			sourceTree = "<group>";
 		};
+		F0C2F5552C07106500128435 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F0C2F5562C07106C00128435 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F0A3DE742B712A3C00982303 /* SavedGameView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0C2F5572C07107200128435 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F0C89ED82BDD92DE00CA247B /* RecapScoringSwiftUIView.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F0C2F55C2C0711CE00128435 /* APICall */ = {
+			isa = PBXGroup;
+			children = (
+				F0C2F5582C07110500128435 /* APICallLeaderBoard.swift */,
+				F030D7542BEA24A000831DC6 /* APICallSchedule2024.swift */,
+			);
+			path = APICall;
+			sourceTree = "<group>";
+		};
+		F0C2F55D2C0711DC00128435 /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				F0731D7F2BC9297E00FAFFBE /* StructLeaderBoard.swift */,
+				F0C2F55A2C07113900128435 /* TournamentStructure.swift */,
+			);
+			path = Structure;
+			sourceTree = "<group>";
+		};
+		F0C2F55E2C07120E00128435 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				F0731D852BC92C8400FAFFBE /* MockLeaderBoardApi.swift */,
+				F059D43C2BEDFF3B007AD479 /* MockLeaderBoard.swift */,
+				F059D43A2BEDFC49007AD479 /* MockSchedule&Leaderboard.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		F0F224B82BDFE98B007E8BA2 /* Profil */ = {
 			isa = PBXGroup;
 			children = (
@@ -336,8 +388,9 @@
 		F0F224BB2BDFE9A2007E8BA2 /* SaveGames */ = {
 			isa = PBXGroup;
 			children = (
-				F0C89ED82BDD92DE00CA247B /* RecapScoringSwiftUIView.swift */,
-				F0A3DE742B712A3C00982303 /* SavedGameView.swift */,
+				F0C2F5552C07106500128435 /* Model */,
+				F0C2F5562C07106C00128435 /* View */,
+				F0C2F5572C07107200128435 /* ViewModel */,
 			);
 			path = SaveGames;
 			sourceTree = "<group>";
@@ -355,10 +408,9 @@
 		F0F224BD2BDFEA74007E8BA2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F0731D7F2BC9297E00FAFFBE /* StructLeaderBoard.swift */,
-				F030D7542BEA24A000831DC6 /* ScheduleModel.swift */,
-				F059D43A2BEDFC49007AD479 /* MockSchedule&Leaderboard.swift */,
-				F059D43C2BEDFF3B007AD479 /* MockLeaderBoard.swift */,
+				F0C2F55E2C07120E00128435 /* Mock */,
+				F0C2F55D2C0711DC00128435 /* Structure */,
+				F0C2F55C2C0711CE00128435 /* APICall */,
 				F0A665F82BF613D200C767BE /* URLSessionProtocol.swift */,
 			);
 			path = Model;
@@ -367,7 +419,6 @@
 		F0F224BE2BDFEA9B007E8BA2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				F011F4532BE3AACD0041CADD /* LeaderBoardViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -442,6 +493,7 @@
 		F0F224C62BDFEBAA007E8BA2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F076B11B2BFF5210006FABE9 /* profilCreateView.swift */,
 				F0A3DE782B7144A000982303 /* GaugeView.swift */,
 				F02184162BFF3B2700F1D800 /* ImagePickerViewModel.swift */,
 			);
@@ -461,7 +513,6 @@
 			children = (
 				F038E31F2BD689B70024A4CD /* Friend.swift */,
 				F03A50E92B70E9900043E487 /* Player.swift */,
-				F076B11B2BFF5210006FABE9 /* profilCreateView.swift */,
 				F0A1955D2C0467BC00EEA3B6 /* Party.swift */,
 			);
 			path = Model;
@@ -639,7 +690,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F011F4542BE3AACD0041CADD /* LeaderBoardViewModel.swift in Sources */,
 				F0817CA72B6B9BC3000C4937 /* BackgroundView.swift in Sources */,
 				F0817CA32B6B91D5000C4937 /* Struct Distance.swift in Sources */,
 				F052047A2BD92D51005596C8 /* PlayerScoring.swift in Sources */,
@@ -652,7 +702,7 @@
 				F0A1955E2C0467BC00EEA3B6 /* Party.swift in Sources */,
 				F0932B9E2BE4BF9E0065CC0A /* LeaderboardView.swift in Sources */,
 				F0817C9D2B6B91C7000C4937 /* StructHole.swift in Sources */,
-				F030D7552BEA24A000831DC6 /* ScheduleModel.swift in Sources */,
+				F030D7552BEA24A000831DC6 /* APICallSchedule2024.swift in Sources */,
 				F0817C6D2B6B8A22000C4937 /* MainTabView.swift in Sources */,
 				F02184172BFF3B2700F1D800 /* ImagePickerViewModel.swift in Sources */,
 				F0C89ED92BDD92DE00CA247B /* RecapScoringSwiftUIView.swift in Sources */,
@@ -662,6 +712,7 @@
 				F0A3DE792B7144A000982303 /* GaugeView.swift in Sources */,
 				F059D43B2BEDFC4A007AD479 /* MockSchedule&Leaderboard.swift in Sources */,
 				F0238E072BDB91D500818EBE /* SignatureView.swift in Sources */,
+				F0C2F55B2C07113900128435 /* TournamentStructure.swift in Sources */,
 				F04B1B952BD66A8800C38178 /* SamplePlayer.swift in Sources */,
 				F0731D752BC7C60900FAFFBE /* LaMarterieCourseData.swift in Sources */,
 				F09D3AE42BCD1535008EB889 /* AVPlayer.swift in Sources */,
@@ -673,6 +724,7 @@
 				F0731D862BC92C8400FAFFBE /* MockLeaderBoardApi.swift in Sources */,
 				F0817CA92B6BA181000C4937 /* ProfilView.swift in Sources */,
 				F0817C9B2B6B91AF000C4937 /* GPSLocation.swift in Sources */,
+				F0C2F5592C07110500128435 /* APICallLeaderBoard.swift in Sources */,
 				F0A3DE752B712A3C00982303 /* SavedGameView.swift in Sources */,
 				F038E3202BD689B70024A4CD /* Friend.swift in Sources */,
 				F0A665F92BF613D200C767BE /* URLSessionProtocol.swift in Sources */,

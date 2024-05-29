@@ -8,6 +8,11 @@
 import SwiftUI
 import AVFoundation
 import AVKit
+
+//---------------------
+//MARK: Video ViewModel
+//---------------------
+
 struct LocalVideoView: View {
     let videoFilename: String
     let videoExtension: String
@@ -19,14 +24,13 @@ struct LocalVideoView: View {
                     .frame(width: 354, height: 199)
                     .cornerRadius(15)
                     .shadow(radius: 20)
-                
-               
             } else {
                 Text("La vidéo n'a pas pu être chargée.")
             }
         }
     }
 }
+
 struct VideoPlayerView: View {
     let videoID: String
        var body: some View {

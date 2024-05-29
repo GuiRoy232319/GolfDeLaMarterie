@@ -8,6 +8,10 @@
 import SwiftUI
 import PhotosUI
 
+
+//------------------------
+//MARK: Picker Image Model
+//------------------------
 struct ImagePicker: UIViewControllerRepresentable {
     @Binding var selectedImage: UIImage?
 

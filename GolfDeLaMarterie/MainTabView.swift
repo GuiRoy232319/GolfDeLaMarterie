@@ -16,7 +16,7 @@ struct MainTabView: View {
             .tabItem {
                 Label("Mon Profil", systemImage: "person.fill")
             }
-            CourseView()
+            ScoringView()
                 .tabItem {
                     Label("Le Parcours", systemImage: "flag.and.flag.filled.crossed")
                 }

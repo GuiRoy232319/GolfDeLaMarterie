@@ -9,6 +9,7 @@ import Foundation
 import SwiftData
 import SwiftUI
 
+///Player Class and Relationship
 @Model
 final class Player{
     var firstName: String

@@ -5,14 +5,14 @@
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "nil"
+            "state" : "translated",
+            "value" : "No Data"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "nil"
+            "value" : "Aucunes données"
           }
         }
       }
@@ -98,10 +98,24 @@
       }
     },
     "Aucune connexion internet" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Internet Connection"
+          }
+        }
+      }
     },
     "Aucune image selectionnée" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Image"
+          }
+        }
+      }
     },
     "Bunker" : {
       "localizations" : {
@@ -164,10 +178,24 @@
       }
     },
     "Création de votre profil Joueur" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profil Creation"
+          }
+        }
+      }
     },
     "Données calculées disponible dans la prochaine version" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calculated Datas in next version"
+          }
+        }
+      }
     },
     "Eclectic" : {
       "extractionState" : "stale",
@@ -201,10 +229,24 @@
       }
     },
     "Enregistrer mon profil joueur" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Register my profil"
+          }
+        }
+      }
     },
     "Entrée de green %lldm" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Green In %11dm"
+          }
+        }
+      }
     },
     "Fairway manqué à droite : 23%" : {
       "localizations" : {
@@ -434,7 +476,14 @@
       }
     },
     "Le joueur" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Player"
+          }
+        }
+      }
     },
     "Le Parcours" : {
       "localizations" : {
@@ -541,10 +590,24 @@
       }
     },
     "Merci d'inscrire votre nom et prénom dans les champs prévus pour" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter your first and last name"
+          }
+        }
+      }
     },
     "Merci d'inscrire votre nom et prénom dans les champs prévus pour." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter your first and last name"
+          }
+        }
+      }
     },
     "Mes Parties" : {
       "localizations" : {
@@ -729,7 +792,14 @@
       }
     },
     "Pas Encore de Partie Enregistré Localement" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Party Register"
+          }
+        }
+      }
     },
     "Passer en mode paysage" : {
       "localizations" : {
@@ -1001,7 +1071,14 @@
       }
     },
     "Sortie de green %lldm" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Green Out"
+          }
+        }
+      }
     },
     "Stroke Play" : {
       "extractionState" : "stale",

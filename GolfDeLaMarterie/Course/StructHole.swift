@@ -9,8 +9,6 @@ import Foundation
 import MapKit
 
 final class Trou: Identifiable{
-   
-    
     var id: Int64?
     var numTrou: Int64?
     var parTrou : Int64?
@@ -54,7 +52,8 @@ final class Trou: Identifiable{
         self.numberPutts = numberPutts
     }
     
-///Verify if the is touch in regulation or not
+//MARK: Verify if the is touch in regulation or not
+    
     func verifGreenInRegulation() -> Bool {
         if let numberShoots = numberShoots, let parTrou = parTrou {
                  return numberShoots <= parTrou - 2

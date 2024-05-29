@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+//------------------
+//MARK: Model Gauge
+//------------------
 struct GaugeView: View {
     @State private var currentProgress: Double = 0
     var gradient = Gradient(colors: [.blue, .green, .red])

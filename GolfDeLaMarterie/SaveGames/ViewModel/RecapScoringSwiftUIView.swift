@@ -8,7 +8,7 @@
 import SwiftUI
 import SwiftData
 
-var holes = LaMarterie
+private var holes = LaMarterie
 
 struct RecapScoringSwiftUIView: View {
     var body: some View {

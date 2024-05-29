@@ -8,6 +8,10 @@
 import SwiftUI
 import SwiftData
 
+
+//----------------------------------------
+//MARK: New Player ViewModel (Saving in v2)
+//----------------------------------------
 struct NewPlayerView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var player : [Friend]

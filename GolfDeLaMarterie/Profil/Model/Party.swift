@@ -8,6 +8,8 @@
 import Foundation
 import SwiftData
 
+
+/// Player's Party For save it in ModelContainer
 @Model
 final class Party{
     var competition: Bool

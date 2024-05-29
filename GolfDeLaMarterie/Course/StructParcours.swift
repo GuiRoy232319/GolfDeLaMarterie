@@ -12,7 +12,8 @@ final class Parcours: Identifiable{
     var coupsRecus : Int64 = 0
     var allHoles: [Trou] = LaMarterie
     
-/// Determines the ideal departure based on gender and index
+//MARK: Determines the ideal departure based on gender and index
+    
     func depart(ind: Double, gender: String) -> boule{
             if ind >= 14.5 && gender == "Homme"{
                 return boule(slope: 126, SSS: 70.6, Start: "Jaune")
@@ -27,7 +28,8 @@ final class Parcours: Identifiable{
             }
         }
     
-    ///get the number of strokes returned by the course according to the handicap
+//MARK: Get the number of strokes returned by the course according to the handicap
+    
     func coupRecus(slope: Int64, SSS: Float, index: Double, Par: Int64) -> Int64{
             let first = (index * Double(slope)) / 113
             let second =  (SSS - Float(Par))

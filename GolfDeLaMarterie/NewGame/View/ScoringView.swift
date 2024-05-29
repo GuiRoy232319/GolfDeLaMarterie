@@ -22,10 +22,7 @@ struct ScoringView: View {
             ForEach(data) { item in
                 VStack{
                     if let userLocation = locationManager.location{
-                        Map()
-                            .onAppear{
-                                mapRegion.center = userLocation
-                            }
+                        Map(coordinateRegion: $mapRegion, showsUserLocation: true)
                             .mapStyle(.hybrid)
                             .frame(width: 350, height: 200)
                             .cornerRadius(30)

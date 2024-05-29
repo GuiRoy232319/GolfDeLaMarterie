@@ -16,7 +16,7 @@ struct Distance {
 struct Dist_Depart {
     var trou : [Distance]
 }
-///Filter Distance by DepartureColor
+//MARK: Filter Distance by DepartureColor
 private func from(_ depart: Departurecolor) -> [Distance]{
         return Dist.filter({$0.color == depart})
         }

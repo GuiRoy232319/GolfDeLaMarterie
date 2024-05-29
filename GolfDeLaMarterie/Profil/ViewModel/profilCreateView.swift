@@ -8,6 +8,9 @@
 import SwiftUI
 import SwiftData
 
+//--------------------------------
+//MARK: Profil Creation Model
+//--------------------------------
 struct ProfilCreateView : View {
     @Environment(\.modelContext) private var modelContext
     @Query private var myProfil : [Player]

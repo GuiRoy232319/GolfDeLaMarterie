@@ -7,23 +7,15 @@
 
 import Foundation
 
-struct Tournament: Codable {
-    let TournamentID: Int
-    let Name: String
-    let IsInProgress: Bool
-    let IsOver: Bool
-    let Players: [Player1]?
-    let StartDate: String
-}
-
-
 class ScheduleAPI{
     private let session : URLSessionProtocol
+    var site = "https://api.sportsdata.io/golf/v2/json/tournaments?key=acfd2c6acf10425bba8673ef43d8cae9"
     
     init(session: URLSessionProtocol = URLSession.shared){
         self.session = session
     }
-    var site = "https://api.sportsdata.io/golf/v2/json/tournaments?key=acfd2c6acf10425bba8673ef43d8cae9"
+   
+    ///Fetching Data From API
     func fetchAllTournament() async throws-> [Tournament]{
         guard let url = URL(string: site) else { throw LiveLeaderBoardError.invalidURL}
         do{

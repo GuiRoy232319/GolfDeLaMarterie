@@ -8,6 +8,7 @@
 import Foundation
 import SwiftData
 
+///Model for Player's Friend
 @Model
 final class Friend{
     var firstName: String

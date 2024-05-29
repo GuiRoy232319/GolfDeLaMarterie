@@ -8,6 +8,9 @@
 import SwiftUI
 import PencilKit
 
+//----------------------------------------
+//MARK: Signature ViewModel (Deploy in v2)
+//----------------------------------------
 struct SignatureView: View {
     @State private var playerCanvas = PKCanvasView()
     @State private var scoredCanvas = PKCanvasView()
